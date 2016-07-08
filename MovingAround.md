@@ -19,9 +19,9 @@ Do this:
 
 `$ ls`
 
+This will list everything in the directory you are in. Mine looks like this:
+
 ``` Bash
-christian:~$ pwd
-/Users/christian
 christian:~$ ls
 Applications			Music
 Applications (Parallels)	Pictures
@@ -34,3 +34,5 @@ Dropbox				trifacta
 Library				waller.csv.sav
 Movies
 ```
+
+It listed the names of all the folders and files of the directory I'm in. But sometimes, I want to know more information about the files, like their modification date.
