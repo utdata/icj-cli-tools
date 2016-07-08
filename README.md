@@ -20,3 +20,6 @@ It'll look something like this:
 For the PCs, we'll use a program called `Windows Powershell`. Go to your Windows Start menu and search for `Powershell` and you should be able to find it.
 
 ![Powershell](images/powershell-start.png)
+
+---
+Next up: [Moving around](moving.md)
