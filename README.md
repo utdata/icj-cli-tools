@@ -21,5 +21,8 @@ For the PCs, we'll use a program called `Windows Powershell`. Go to your Windows
 
 ![Powershell](images/powershell-start.png)
 
+## Bash
+
+So, Terminal and Powershell are programs that can run a **shell**, which is the user interface your computer understands. The default language for these interactions is called **Bash**. All these crazy [commands](Commands.md) I'm going to teach you are Bash commands.
 ---
-Next up: [Moving around](moving.md)
+Next up: [Moving around](MovingAround.md)
