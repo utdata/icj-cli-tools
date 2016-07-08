@@ -27,7 +27,7 @@ So, Terminal and Powershell are programs that can run a **shell**, which is the 
 
 Folks (including myself) will use the term **shell** to mean "the terminal window you have open". This means when I say "type into your shell", I mean type at the prompt in your terminal window.
 
-When I write out commands for you to type you, I will include a `$` at the beginning to indicate this should go at the prompt. DON'T TYPE IN THE $. It's just included so you know you are typing into a shell.
+When I write out commands for you to type you, I will include a `$` at the beginning to indicate this should go at the prompt in your shell. DON'T TYPE IN THE $.
 
 `$ pwd`
 
