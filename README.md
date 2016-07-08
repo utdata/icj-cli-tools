@@ -13,7 +13,7 @@ Look for a program called `Terminal` on your computer. (Or, you can download [iT
 
 It'll look something like this:
 
-![iTerm2](images/iterm2-start.png)
+![iTerm2](images/iterm2-start.png | width=100)
 
 ## PCs
 
