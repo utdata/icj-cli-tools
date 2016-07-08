@@ -13,10 +13,10 @@ Look for a program called `Terminal` on your computer. (Or, you can download [iT
 
 It'll look something like this:
 
-![![iTerm2](images/iterm2-start.png)]
+![iTerm2](images/iterm2-start.png)
 
 ## PCs
 
 For the PCs, we'll use a program called `Windows Powershell`. Go to your Windows Start menu and search for `Powershell` and you should be able to find it.
 
-![![Powershell](images/powershell-start.png)]
+![Powershell](images/powershell-start.png)
