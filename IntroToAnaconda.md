@@ -9,7 +9,7 @@ There is a software package called **conda** makes creating these environments a
 
 While **conda** is the package manager software, the folks who make it also bundle together conda with Python in a couple of ways:
 
-The full **[Anaconda](https://www.continuum.io/downloads)** includes a Python distribution, the conda package manager, Jupyter notebooks and a suite of the popular data science packages already loaded. It's pretty big, like 825M, so it needs space and takes a couple of minutes to download and install.
+The full **[Anaconda](https://www.continuum.io/downloads)** includes a Python distribution, the conda package manager, Jupyter notebooks and a suite of the popular data science packages already loaded. It's pretty big, like 1.8G, so it needs space and takes a couple of minutes to download and install.
 
 If you are worried about disc space, you can use **[Miniconda](http://conda.pydata.org/miniconda.html)**, which is a smaller version with just Python and conda, and you can install just the packages you need.
 
@@ -21,5 +21,5 @@ We'll be using Python 3.5 in our class, so you might as well download that versi
 
 ## Download and install
 
-* [Anaconda](https://www.continuum.io/downloads)
-* [Miniconda](http://conda.pydata.org/miniconda.html)
+* [Anaconda](https://www.continuum.io/downloads). For my Macbook Air, I used the Python 3.5 64-bit graphical installer. You don't have to sign up for Anaconda Cloud at this time.
+* [Miniconda](http://conda.pydata.org/miniconda.html). I used the Miniconda version because I already have full Anaconda on the Mac side of my machine. Use the default to set your PATH variable.

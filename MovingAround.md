@@ -265,13 +265,31 @@ Remember, you can also ALWAYS get back to your home folder with this, no matter 
 
 `$ cd ~`
 
-## more on relatives paths
+## More on relatives paths
 
 You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move up and the name of the directory to move into. So a path like this: `ls ../../Users/Cory` is travel two folders up, then into `Users` then into `Cory` and then list all the files there.
 
 This is very powerful in programming, because you might be developing on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like http://statesman.com/scripts/coolone/file01.py. You want to reference it as `./file02.py` meaning the file in the same folder.
 
 One last thing: You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/coolone/file01.py`. That's called a **site-relative** path. This ensures if you know the site-relative path to a file, you can always find it no matter what directory you are currently in.
+
+## Read the manual
+
+If you are unsure about how any of these terminal commands work, there are manual pages for each one already on your computer. Now, I'm not saying they are extremely well-written and intuitive, but they are there.
+
+`$ man ls`
+
+Will open the manual page for `cd` and tell you have to **change directory**.
+
+But man pages, as they are called, are a special program of themselves, and have a special way to get around in them, as you'll discover quickly if you try to scroll to see more.
+
+* hit `f` or `space` to advance one page through the file
+* hit `j` to go down one line
+* hit `k` to go up one line
+* hit `g` to go the the top
+* hit `q` to quit
+
+Man pages are useful to figure out the **flags** for commands, so you can learn that `ls -lt` will give you that long list sorted in order of time, most-recently modified at top. 
 
 ---
 
