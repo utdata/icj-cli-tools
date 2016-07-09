@@ -272,3 +272,7 @@ You can `ls` files or `cd` into any directory relative to your current working d
 This is very powerful in programming, because you might be developing on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like http://statesman.com/scripts/coolone/file01.py. You want to reference it as `./file02.py` meaning the file in the same folder.
 
 One last thing: You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/coolone/file01.py`. That's called a **site-relative** path. This ensures if you know the site-relative path to a file, you can always find it no matter what directory you are currently in.
+
+---
+
+Next: [Installing Anaconda](IntroToAnaconda.md)
