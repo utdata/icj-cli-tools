@@ -289,8 +289,16 @@ But man pages, as they are called, are a special program of themselves, and have
 * hit `g` to go the the top
 * hit `q` to quit
 
-Man pages are useful to figure out the **flags** for commands, so you can learn that `ls -lt` will give you that long list sorted in order of time, most-recently modified at top. 
+Man pages are useful to figure out the **flags** for commands, so you can learn that `ls -lt` will give you that long list sorted in order of time, most-recently modified at top.
 
+## -h for help
+
+Sometimes there isn't a man page for a command, but there is help file. One of the commands we'll learn in a bit is `in2csv` which turns files into well-formatted csv files for processing. If we wanted to know the flags and such to use it, we could try this:
+
+`$ in2csv -h`
+
+This gives you a list of the flags and arguments for that command.
+ 
 ---
 
 Next: [Installing Anaconda](IntroToAnaconda.md)
