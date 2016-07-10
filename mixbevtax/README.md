@@ -20,12 +20,12 @@ Where those last numbers are the month and year.
 
 Before March 2016, these files were published on a different web page, and while the page is no longer available, the data files are, as least as of July 2016. Unfortunately for this data set, the file naming convention was not consistent, so you can't just `curl` the files programatically.
 
-But you can try going to [archive.org](https://web.archive.org) and searching for this url: http://www.window.state.tx.us/taxinfo/taxfiles.html
+But you can try going to [archive.org](https://web.archive.org) and searching for this url: http://comptroller.texas.gov/taxinfo/taxfiles.html
 
 Those result would often look something like:
 
-* [bev02-23.csv](http://www.window.state.tx.us/filelib/bev02-23.csv) 2.3MB - (Released 02-23-15)
-* [bev01-21.csv](http://www.window.state.tx.us/filelib/bev01-21.csv) 2.2MB - (Released 01-21-15)
-* [bev12-23.csv](http://www.window.state.tx.us/filelib/bev12-23.csv) 2.4MB - (Released 12-23-14)
+* [bev03-24.csv](http://comptroller.texas.gov/filelib/bev03-24.csv) 2.5MB - (Released 03-24-16)
+* [bev02-23.csv](http://comptroller.texas.gov/filelib/bev02-23.csv) 2.5MB - (Released 02-23-16)
+* [bev01-21.csv](http://comptroller.texas.gov/filelib/bev01-21.csv) 2.4MB - (Released 01-21-16)
 
-I suspect that files that were released on the same date of a previous year were overwritten.
+I *suspect* that files that were released on the same date of a previous year were overwritten.
