@@ -1,0 +1,20 @@
+Column_Order|Column_Description|Data_Type|Size
+Col01|Taxpayer Number|Number|11
+Col02|Taxpayer Name|Char|50
+Col03|Taxpayer Address|Char|40
+Col04|Taxpayer City|Char|20
+Col05|Taxpayer State|Char|2
+Col06|Taxpayer Zip Code|Number|5
+Col07|Taxpayer County|Number|3
+Col08|Outlet Number|Number|5
+Col09|Location Name|Char|50
+Col10|Location Address|Char|40
+Col11|Location City|Char|20
+Col12|Location State|Char|2
+Col13|Location Zip Code|Number|5
+Col14|Location County|Number|3
+Col15|Location Room Capacity|Number|5
+Col16|Location Tot Room Receipts|Number|13
+Col17|Location Taxable Receipts|Number|13
+
+
