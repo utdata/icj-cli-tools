@@ -37,4 +37,4 @@ Now we are going to launch our Jupyter Notebooks server, and we'll do the rest o
 
 This will start a Jupyter Notebooks server and throw you into a browser window. It will look something like this:
 
-![notebook-start.png](images/notebook-start.png)
+![notebook-start.png](../images/notebook-start.png)
