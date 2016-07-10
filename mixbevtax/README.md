@@ -16,6 +16,11 @@ Where those last numbers are the month and year.
 
 (Some day I'll write a Python script to automate the download?)
 
+You can reach the folks who manage this data here:
+* E-mail: open.records@cpa.state.tx.us
+* Phone: 1-800-531-5441, ext. 6-6013 (512-936-6013 in Austin)
+
+
 ## Old archive page
 
 Before March 2016, these files were published on a different web page, and while the page is no longer available, the data files are, as least as of July 2016. Unfortunately for this data set, the file naming convention was not consistent, so you can't just `curl` the files programatically.

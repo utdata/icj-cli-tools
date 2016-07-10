@@ -20,8 +20,8 @@ According to the portal:
 
 The data is released monthly, but the Statesman has learned that monthly data does not always include all records, and that Quarterly data files are more reliable. However, the Comptroller has yet to upload Quarterly data to TexasTransparency as of July 2016, but it can be requested.
 
-E-mail: open.records@cpa.state.tx.us
-Phone: 1-800-531-5441, ext. 6-6013 (936-6013 in Austin)
+* E-mail: open.records@cpa.state.tx.us
+* Phone: 1-800-531-5441, ext. 6-6013 (512-936-6013 in Austin)
 
 ## Old archive page
 
