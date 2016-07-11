@@ -35,6 +35,10 @@ Now we are going to launch our Jupyter Notebooks server, and we'll do the rest o
 
 `$ jupyter notebook`
 
-This will start a Jupyter Notebooks server and throw you into a browser window. It will look something like this:
+This will start a Jupyter Notebooks server and throw you into a browser window. It will look something like the image below. Go under "New" and select **Bash**.
 
 ![notebook-start.png](../images/notebook-start.png)
+
+What this will also do is take over your terminal window, which is now running the Jupyter Notebooks server. If you need to do further terminal work, you'll need to open a new window (command-n) or tab (command-t).
+
+Now we'll move into my [Hotels data pipline](hotels/Hotels data pipeline.ipynb) notebook.
