@@ -310,5 +310,3 @@ This gives you a list of the flags and arguments for that command.
 ---
 
 Next: [Looking at files](LookingAtFiles.md)
-
-Or maybe Next: [Installing Anaconda](IntroToAnaconda.md)
