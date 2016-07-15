@@ -265,13 +265,21 @@ Remember, you can also ALWAYS get back to your home folder with this, no matter 
 
 `$ cd ~`
 
-## More on relatives paths
+## On the right path
+
+### Relative paths
 
 You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move up and the name of the directory to move into. So a path like this: `ls ../../Users/Cory` is travel two folders up, then into `Users` then into `Cory` and then list all the files there.
 
 This is very powerful in programming, because you might be developing on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like http://statesman.com/scripts/coolone/file01.py. You want to reference it as `./file02.py` meaning the file in the same folder.
 
-One last thing: You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/coolone/file01.py`. That's called a **site-relative** path. This ensures if you know the site-relative path to a file, you can always find it no matter what directory you are currently in.
+### Root-relative paths
+
+You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/coolone/file01.py`. That's called a **root-relative** path. (The "root" is the very top level of your machine.) If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in.
+
+### Absolute-relative paths
+
+And absolute path includes the.domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/coolone/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
 
 ## Read the manual
 
@@ -298,7 +306,9 @@ Sometimes there isn't a man page for a command, but there is help file. One of t
 `$ in2csv -h`
 
 This gives you a list of the flags and arguments for that command.
- 
+
 ---
 
-Next: [Installing Anaconda](IntroToAnaconda.md)
+Next: [Looking at files](LookingAtFiles.md)
+
+Or maybe Next: [Installing Anaconda](IntroToAnaconda.md)
