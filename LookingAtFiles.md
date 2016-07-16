@@ -3,7 +3,7 @@ Looking at files
 
 Some more command-line juju working with files. These commands will help you deal with other stuff we work on later.
 
-## Let's get something to work with. We'll go to our home directory, make a directory to work in, then move into it. (This is review from [Moving Around](MovingAround.md)).
+Let's get something to work with. We'll go to our home directory, make a directory to work in, then move into it. (This is review from [Moving Around](MovingAround.md)).
 
 ```
 $ cd ~

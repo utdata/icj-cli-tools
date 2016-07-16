@@ -27,7 +27,7 @@ So, Terminal and Git Bash are programs that can run a **shell**, which is the us
 
 Folks (including myself) will use the term **shell** to mean "the terminal window you have open". This means when I say "type into your shell", I mean type at the prompt in your terminal window.
 
-When I write out commands for you to type you, I will include a `$` at the beginning to indicate this should go at the prompt in your shell. DON'T TYPE IN THE $.
+When I write out commands for you to type, I will include a `$` at the beginning to indicate this should go at the prompt in your shell. DON'T TYPE IN THE $.
 
 `$ pwd`
 

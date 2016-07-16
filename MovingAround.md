@@ -9,13 +9,13 @@ I want to make sure we are all starting from the same relative location, so blin
 
 `$ cd ~`
 
-That tilde is usually at the top left of your keyboard. I'll explaining the `cd` command a little further down.
+That tilde is usually at the top left of your keyboard.
 
-This puts you in the "home" directory for the user who is logged in as, hopefully you. You can always use `cd ~` to get you back to home.
+You used your first Bash command, `cd`, which is "change directory". The `~` is a shortcut that takes you to the "home" directory of the logged in user. You can always use `cd ~` to get you back to home.
 
 ## print working directory
 
-One of the hardest things to get a handle on with working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, do this:
+One of the hardest things to get a handle on when first working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, do this:
 
 `$ pwd`
 
@@ -23,7 +23,7 @@ That should tell you where you are in your computer's file system. When I launch
 
 `/Users/christian`
 
-That tells me I'm in my own user directory. I bet you are in yours, but do it and see.
+That tells me I'm in my own user directory. I bet you are in yours, but do it and see. So, remember, `~` is a shortcut to take you to this longer directory path.
 
 ## list directory
 
@@ -126,6 +126,8 @@ drwxr-xr-x    5 christian  staff      170 Jul  4 20:24 trifacta
 ```
 The `-a` flag means "all files and folders", including hidden ones. When you normally open a folder on your computer, it only shows you some of the files and folders available. Hidden folders and files start with a period, and there can be a lot of them ... I have 50 of them in my home folder, far more than regular files and folders.
 
+
+
 Let's look at the first two listed here:
 
 ```
@@ -161,7 +163,7 @@ You should see your new `testy` directory there along with all your other stuff 
 
 `$ mkdir testy/mydirectory`
 
-Now you can do an `ls` on testy to see what you made inside of it.
+Now you can do an `ls` on testy to see what you made inside of `testy`.
 
 `$ ls testy`
 
@@ -173,8 +175,8 @@ mydirectory
 ```
 
 A couple of things about this:
-* You have listed the contents of a directory without being inside of you. You can list the contents of any folder on your computer if you know the path to it.
-* If you try to name a directory with a space in it, you'll get different results on Mac vs PCs. If you really want it to work, but quotes around your folder name that has spaces in it. Or better yet, avoid using spaces in files and folders.
+* You have listed the contents of a directory without being inside of you. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know it's path.
+* If you try to name a directory with a space in it, you'll not get what you want unless you put quotes around it. Or better yet, avoid using spaces in files and folders.
 
 ## change directory
 
@@ -209,7 +211,7 @@ christian:testy$ pwd
 So to break that down:
 * printed my working directory, which showed me I was in my Users folder.
 * I did `cd` into `testy` which moved me to inside that directory.
-* I did `ls` to see what was inside `testy` now that I'm in it, and it showed me that `mydirectory` was indeed inside.
+* Now that I'm inside `testy`, I did `ls` to see the contents of my current folder, and it showed me that `mydirectory` was indeed inside.
 * I did `pwd` to show that my current working directory (where I am) is inside the `testy` folder.
 
 Now let's go inside the `mydirectory` folder:
@@ -297,15 +299,17 @@ But man pages, as they are called, are a special program of themselves, and have
 * hit `g` to go the the top
 * hit `q` to quit
 
+Moving around the man pages is frustrating at first. There are [online versions](http://man.cx/) of these, but the `man` command doesn't need the internet. Those files are already on your computer.
+
 Man pages are useful to figure out the **flags** for commands, so you can learn that `ls -lt` will give you that long list sorted in order of time, most-recently modified at top.
 
 ## -h for help
 
-Sometimes there isn't a man page for a command, but there is help file. One of the commands we'll learn in a bit is `in2csv` which turns files into well-formatted csv files for processing. If we wanted to know the flags and such to use it, we could try this:
+Sometimes there isn't a man page for a command, but there is help file. One of the commands we'll learn in a bit is `in2csv` which turns files into well-formatted csv files for processing. Try this:
 
 `$ in2csv -h`
 
-This gives you a list of the flags and arguments for that command.
+This gives you a list of the flags and arguments for that command, along with other information.
 
 ---
 
