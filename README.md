@@ -9,7 +9,7 @@ Some of this lesson is cribbed from the book [The Command Line Crash Course](htt
 
 Oh, you are so lucky. Since Macs are Unix-based, you have everything you need already on your computer to get started with some command-line fun.
 
-Look for a program called `Terminal` on your computer. (Or, you can download [iTerm2](https://www.iterm2.com/), which is the program I use. For our purposes, it makes no difference.)
+Look for a program called **Terminal** on your computer. (Or, you can download **[iTerm2](https://www.iterm2.com/)**, which is the program I use. For our purposes, it makes no difference.)
 
 It'll look something like this:
 
@@ -17,15 +17,13 @@ It'll look something like this:
 
 ## PCs
 
-NOTE: CHANGE THIS TO USE GIT BASH. DOWNLOAD GIT FOR WINDOWS.
+For the PCs, I need you to download [GitHub for Windows](https://desktop.github.com/). After you do, you'll have a program called **Git Bash**, which is the terminal program we'll use. Windows is NOT a Unix-based machine like a Mac, so it doesn't naturally understand Unix commands. Git Bash is a program that does. (You might find GitHub Desktop useful in the future, too.)
 
-For the PCs, we'll use a program called `Windows Powershell`. Go to your Windows Start menu and search for `Powershell` and you should be able to find it.
-
-![Powershell](images/powershell-start.png)
+![Powershell](images/gitbash-startup.png)
 
 ## Bash
 
-So, Terminal and Powershell are programs that can run a **shell**, which is the user interface your computer understands. The default language for these interactions is called **Bash**. All these crazy [commands](Commands.md) I'm going to teach you are Bash commands.
+So, Terminal and Git Bash are programs that can run a **shell**, which is the user interface your computer understands. The default language for these interactions is called **Bash**. All these crazy [commands](Commands.md) I'm going to teach you are Bash commands.
 
 Folks (including myself) will use the term **shell** to mean "the terminal window you have open". This means when I say "type into your shell", I mean type at the prompt in your terminal window.
 
