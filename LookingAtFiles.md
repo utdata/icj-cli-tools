@@ -77,6 +77,8 @@ If I wanted to take two files, `file01.txt` and `file02.txt`, and then combine t
 
 `$ cat file01.txt file02.txt > combined.txt`
 
+Now, `combined.txt` would be the combination of both files.
+
 ## wc
 
 [wc](http://man.cx/wc) I think of as "word count", but it can also count lines and bytes.
@@ -118,4 +120,4 @@ You can "pipe" command together with the `|` character, which you'll find as the
 
 ----
 
-Next: [Installing Anaconda](IntroToAnaconda.md)
+Next: [Intro to Anaconda](IntroToAnaconda.md)

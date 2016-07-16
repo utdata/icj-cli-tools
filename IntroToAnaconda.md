@@ -1,15 +1,15 @@
 Introduction to Anaconda
 ===================
 
-We want to use some Python programming to do data processing and data analysis. When using Python, it is a good idea to cordon off your work area in something called a **virtual environment**, which creates a walled garden of Python wonderfulness, keeping the parts we need together and away from other projects or parts of your computer. This is especially important for Macs, as they use Python as part of the operating system, and we don't wanna mess that up.
+We want to use some Python tools to do data processing and data analysis. When using Python, it is a good idea to cordon off your work area in something called a **virtual environment**, which creates a walled garden of Python wonderfulness, keeping the parts we need together and away from other projects or parts of your computer. This is especially important for Macs, as they use Python as part of the operating system, and we don't wanna mess that up.
 
 There is a software package called **conda** makes creating these environments and loading packages pretty easy. If you are new to programming, I probably lost you, and that's OK. Let's just do it.
 
 ## Anaconda or Miniconda?
 
-While **conda** is the package manager software, the folks who make it also bundle together conda with Python in a couple of ways:
+While **conda** is the package manager software, the folks who make it bundle conda with Python in a couple of ways:
 
-The full **[Anaconda](https://www.continuum.io/downloads)** includes a Python distribution, the conda package manager, Jupyter notebooks and a suite of the popular data science packages already loaded. It's pretty big, like 1.8G, so it needs space and takes a couple of minutes to download and install.
+The full **[Anaconda](https://www.continuum.io/downloads)** includes a Python distribution, the conda package manager, Jupyter notebooks and a suite of the most popular data science packages. It's pretty big, like 1.8G, so it needs space and takes a couple of minutes to download and install.
 
 If you are worried about disc space, you can use **[Miniconda](http://conda.pydata.org/miniconda.html)**, which is a smaller version with just Python and conda, and you can install just the packages you need.
 
@@ -50,7 +50,7 @@ Let's break this command down word by word:
 * `create` is the command we are giving `conda`. The command creates a new environment.
 * `--name` is saying we want to give our environment a name, so we can refer to it later.
 * `data` is the name we are giving our environment.
-* `python=3` we are specifying Python 3. If you installed Anaconda3, it would give you 3 by default, but we are being careful.
+* `python=3` we are specifying Python 3. If you installed Anaconda3, it would give you 3 by default, but we are being careful and specifying it.
 * `csvkit` is a Python package we want included in our environment. We list it and all those we wish to install here (`pandas` and `jupyter`) because these packages sometimes have dependencies (as you'll see).
 
 When you ran the command, you get something like this. (It will differ if you are running Miniconda.):
@@ -90,12 +90,9 @@ Type `y` to proceed.
 
 Now that we created our environment (our special walled garden), it's time to enter it.
 
-For Macs:
 `$ source activate data`
 
-~~For Windows:
-`activate data`~~
-(OK ... there is a problem here, in that Anaconda doen't work with powershell, so we're trying to figure out what to do about that :(
+(You might see reference to Windows using only `activate`. Git Bash makes it work like Unix, so we use `source activate`.)
 
 On my machine, my prompt line has changed to indicate I'm in the 'data' environment:
 
@@ -103,3 +100,9 @@ On my machine, my prompt line has changed to indicate I'm in the 'data' environm
 christian:~$ source activate data
 (data) christian:~$
 ```
+
+I noticed on my Git Bash on Windows that it had the **(data)** part on the line above my prompt.
+
+---
+
+Next: [Using csvkit](csvkit/UsingCsvkit.md)
