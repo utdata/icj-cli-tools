@@ -20,7 +20,7 @@ We need some text to work with, so we're going to pull down some text from Githu
 * **-L** stands for "Location". It allows `curl` to follow a URL if it is redirected.
 * **-o** for "output". So we can write this to a file instead of our terminal window. We need to follow it with the file name we want. (We could use **-O** to just use the current file name.)
 
-`$ curl -L -o data.csv https://github.com/utdata/cli-tools/blob/master/csvkit/hotels/data-done/austin-hotels.csv?raw=true`
+`$ curl -L -o data.csv https://raw.githubusercontent.com/utdata/cli-tools/master/data/example.csv`
 
 OK, now we should be able to `ls` and see our file is there. My output looks like this:
 
