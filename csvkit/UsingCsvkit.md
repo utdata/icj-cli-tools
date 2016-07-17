@@ -46,4 +46,4 @@ What this will also do is take over your terminal window, which is now running t
 
 At the top of your new notebook, click on **Untitled** and name your notebook **QuarterlyHotelData**.
 
-Now, in another brower window, go open my [HotelsDataPipeline]() notebook in GitHub so you can follow along.
+Now, in another brower window, go open my [HotelsDataPipeline](https://github.com/utdata/cli-tools/blob/master/csvkit/HotelsDataPipeline.ipynb) notebook in GitHub so you can follow along.
