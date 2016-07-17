@@ -35,4 +35,4 @@ That means you type in "pwd" and then hit return.
 
 ---
 
-Next up: [Moving around](MovingAround.md)
+Next up: [Moving around](lectures/MovingAround.md)
