@@ -5,19 +5,22 @@ Using csvkit to process data
 
 I'm going to introduce Jupyter Notebooks with this lesson, too. This will allow you to write notes with your code and to repeat the steps as needed.
 
-## Create our project directory
+## Move into or create a class directory
 
-We need a place to work on all this stuff. So create a working directory for this project. Perhaps you can start with `cd ~` to get in your home directory, and then create a new working directory called `hotels`.
+We need a safe place to work. I suggest setting up a class directory in your home/Documents folder.
 
-`$ mkdir hotels`
+```
+$ cd ~/Documents
+$ pwd
+```
+This puts you inside your Documents directory and prints your path to make sure you are there.
 
-And then make another directory inside of that:
+`$ mkdir rwd2016`
 
-`$ mkdir hotels/data`
+Move into it:
 
-Then move inside the `hotels` directory:
+`$ cd rwd2016`
 
-`$ cd hotels`
 
 ## Starting up Jupyter Notebooks
 
@@ -41,4 +44,6 @@ This will start a Jupyter Notebooks server and throw you into a browser window. 
 
 What this will also do is take over your terminal window, which is now running the Jupyter Notebooks server. If you need to do further terminal work, you'll need to open a new window (command-n) or tab (command-t).
 
-Now we'll move into my [Hotels data pipline](hotels/Hotels data pipeline.ipynb) notebook.
+At the top of your new notebook, click on **Untitled** and name your notebook **QuarterlyHotelData**.
+
+Now, in another brower window, go open my [HotelsDataPipeline]() notebook in GitHub so you can follow along.
