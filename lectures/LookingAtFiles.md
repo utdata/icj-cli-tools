@@ -3,12 +3,13 @@ Looking at files
 
 Some more command-line juju working with files. These commands will help you deal with other stuff we work on later.
 
-Let's get something to work with. We'll go to our home directory, make a directory to work in, then move into it. (This is review from [Moving Around](MovingAround.md)).
+Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](MovingAround.md)).
 
 ```
-$ cd ~
-$ mkdir myproject
-$ cd myproject
+$ cd ~/Documents
+$ mkdir rwd2016
+$ mkdir rwd2016/myproject
+$ cd rwd2016/myproject
 ```
 
 We need some text to work with, so we're going to pull down some text from Github. I might as well explain what we are doing.
@@ -25,7 +26,7 @@ We need some text to work with, so we're going to pull down some text from Githu
 OK, now we should be able to `ls` and see our file is there. My output looks like this:
 
 ```
-christian:mydata$ ls
+christian:myproject$ ls
 data.csv
 ```
 
@@ -38,22 +39,22 @@ data.csv
 will give you this:
 
 ```
-christian:mydata$ head data.csv
-Month,Taxpayer Number,Taxpayer Name,Taxpayer Address,Taxpayer City,Taxpayer State,Taxpayer Zip Code,Taxpayer County,Outlet Number,Location Name,Location Address,Location City,Location State,Location Zip Code,Location County,Location Room Capacity,Location Tot Room Receipts,Location Taxable Receipts
-January,32016602719,BHAKTA DAYARAM,2627 MANOR RD,AUSTIN,TX,78722,227,00001,ACE MOTEL,2627 MANOR RD,AUSTIN,TX,78722,227,27,9165.0,8580.0
-January,32016658448,SIDNEY CORINNE LOCK,4300 AVENUE G,AUSTIN,TX,78751,227,00005,ADAMS HOUSE BED & BREAKFAST,4300 AVENUE G,AUSTIN,TX,78751,227,3,14903.0,13544.0
-January,32043492993,AMANDA K CRIBBS,4202 FLAGSTAFF DR,AUSTIN,TX,78759,227,00007,ALLANDALE RENTALS,1107A BRENTWOOD ST,AUSTIN,TX,78757,227,2,250.0,250.0
-January,32043492993,AMANDA K CRIBBS,4202 FLAGSTAFF DR,AUSTIN,TX,78759,227,00009,ALLANDALE RENTALS,11900 ALOE VERA TRL,AUSTIN,TX,78750,246,8,2728.0,2728.0
-January,32043492993,AMANDA K CRIBBS,4202 FLAGSTAFF DR,AUSTIN,TX,78759,227,00010,ALLANDALE RENTALS DUPLEX,2200 LANIER DR # B,AUSTIN,TX,78757,227,1,0.0,0.0
-January,32043492993,AMANDA K CRIBBS,4202 FLAGSTAFF DR,AUSTIN,TX,78759,227,00008,ALLANDALE RENTALS/DUPLEX,2200 LANIER DR # A,AUSTIN,TX,78757,227,4,773.0,773.0
-January,32043492993,AMANDA K CRIBBS,4202 FLAGSTAFF DR,AUSTIN,TX,78759,227,00004,ALLENDALE RENTALS,2105 LANIER DR,AUSTIN,TX,78757,227,1,2369.0,2369.0
-January,32043492993,AMANDA K CRIBBS,4202 FLAGSTAFF DR,AUSTIN,TX,78759,227,00006,ALLENDALE RENTALS,5010 PLACID PL,AUSTIN,TX,78731,227,1,4038.0,0.0
-January,32024286760,"ALTEMATE REAL ESTATE, LLC",2307B RIVERSIDE FARMS RD,AUSTIN,TX,78741,227,00008,ALTEMATE REAL ESTATE LLC,76 SAN MARCOS ST,AUSTIN,TX,78702,227,1,1125.0,1125.0
+christian:myproject$ head data.csv
+Quarter,Taxpayer Number,Taxpayer Name,Taxpayer Address,Taxpayer City,Taxpayer State,Taxpayer Zip Code,Taxpayer County,Outlet Number,Location Name,Location Address,Location City,Location State,Location Zip Code,Location County,Location Room Capacity,Location Tot Room Receipts,Location Taxable Receipts
+Q1,32051871906,DSN HOSPITALITY LLC,4710 S LAMAR BLVD,AUSTIN,TX,78745,227,00001,DSN HOSPITALITY LLC,3110 STATE HIGHWAY 71 EAST,AUSTIN,TX,78745,011,37,91205.03,90870.01
+Q1,32054409241,JEANETTE WELSHE,13801 EVERGREEN WAY,AUSTIN,TX,78737,105,00001,BED AND BREAKFAST,13801 EVERGREEN WAY,AUSTIN,TX,78737,105,4,5417.92,5417.92
+Q1,32047098168,AMY MARIE CAPUTO,13601 PAISANO CIR,AUSTIN,TX,78737,105,00001,FLORA PROPERTIES/AMY M. CAPUTO,13601 PAISANO CIR,AUSTIN,TX,78737,105,4,7280.23,7280.23
+Q1,32055460730,NATHANIEL R BAUERNFEIND,163 KINLOCH CT,AUSTIN,TX,78737,105,00001,NATHANIEL R BAUERNFEIND,163 KINLOCH CT,AUSTIN,TX,78737,105,1,4735.0,4735.0
+Q1,32049290466,SHARON K FOSTER,12932 NUTTY BROWN RD APT C,AUSTIN,TX,78737,105,00001,NUTTY BROWN CABIN,12932 NUTTY BROWN RD APT C,AUSTIN,TX,78737,105,1,1030.0,1030.0
+Q1,32049290466,SHARON K FOSTER,12932 NUTTY BROWN RD APT C,AUSTIN,TX,78737,105,00003,NUTTY BROWN MANOR,12932 NUTTY BROWN RD APT C,AUSTIN,TX,78737,105,1,2100.0,2100.0
+Q1,32049290466,SHARON K FOSTER,12932 NUTTY BROWN RD APT C,AUSTIN,TX,78737,105,00004,ROADRUNNER'S BUNGALOQ,12932 NUTTY BROWN RD,AUSTIN,TX,78737,105,1,0.0,0.0
+Q1,32020638758,LESLIE K RENFRO,12803 SHOSHONI TRL,AUSTIN,TX,78737,105,00002,THISTLE HILL STUDIO,12803 SHOSHONI TRL,AUSTIN,TX,78737,105,1,871.0,871.0
+Q1,32050668345,"TIPPING T, LLC",4405 MANZANILLO DR,AUSTIN,TX,78749,227,00001,TIPPING T,13127 FITZHUGH RD,AUSTIN,TX,78736,105,1,9427.0,9427.0
 ```
 
 It might look like more than 10 lines on your screen because they wrap.
 
-If you want to say how many lines, use the flag **-n** for number of lines:
+If you want to specify how many lines to display, use the flag **-n** for number of lines:
 
 `$ head -n 2 data.csv`
 
@@ -61,23 +62,11 @@ That will give you two lines, the first which is the header of that file.
 
 ## tail
 
-[tail](http://man.cx/tail) shows you the bottom of the file. It takes the same **-n** flags
+[tail](http://man.cx/tail) shows you the bottom of the file. It takes the same **-n** flags.
 
-## cat
+`$ tail data.csv`
 
-[cat](http://man.cx/cat) means to concatenate and print a file to your window. If you feed it two file names, it will give you the first, then the other. Do this:
-
-`$ cat data.csv`
-
-This will print the contents of `data.csv` to your screen. There so much of it you can even see it all.
-
-But what you can do is redirect that output into a file by using `>`.
-
-If I wanted to take two files, `file01.txt` and `file02.txt`, and then combine them into a single file on your computer, it would look like this. (Don't do this as we don't have the files, but ...):
-
-`$ cat file01.txt file02.txt > combined.txt`
-
-Now, `combined.txt` would be the combination of both files.
+That result won't show you the header, because you are looking at the last 10 lines of the file.
 
 ## wc
 
@@ -88,8 +77,8 @@ Now, `combined.txt` would be the combination of both files.
 gives you this output:
 
 ```
-christian:mydata$ wc data.csv
-    6692   88224 1162130 data.csv
+christian:myproject$ wc data.csv
+     100    1136   15642 data.csv
 ```
 
 The first column is lines, then words, then bytes.
@@ -98,25 +87,41 @@ If you want just the number of lines, us **-l**.
 
 `$ wc -l data.csv`
 
+## cat
+
+[cat](http://man.cx/cat) means to concatenate and print a file to your window. If you feed it two file names, it will give you the first, then the other. Do this:
+
+`$ cat data.csv`
+
+This will print the contents of `data.csv` to your screen. It's showing all 100 lines.
+
+But what you can do is redirect that output into a file by using `>`.
+
+If I wanted to take two files, `file01.txt` and `file02.txt`, and then combine them into a single file on your computer, it would look like this. (Don't do this as we don't have the files, but ...):
+
+`$ cat file01.txt file02.txt > combined.txt`
+
+Now, `combined.txt` would be the combination of both files.
+
 ## grep
 
 [grep](http://man.cx/grep) is for using regular expressions to find parts of a file. It takes a regular expression input and the file name and give in return the lines of the file that match that regular expression.
 
-`$ grep 'JW MARRIOT' data.csv`
+`$ grep 'ATX INVESTMENTS' data.csv`
 
-... will print out just the lines in `data.csv` that have 'JW MARRIOT' somewhere in them.
+... will print out just the lines in `data.csv` that have 'ATX INVESTMENTS' somewhere in them. Note that the name in the field is 'ATX INVESTMENTS LLC' but it found it with just part of that.
 
-If you want to just know how many lines there are with 'JW MARRIOT', use the **-c** flag for count:
+If you want to just know how many lines there are with 'ATX INVESTMENTS', use the **-c** flag for count:
 
-`$ grep -c  'JW MARRIOT' data.csv`
+`$ grep -c 'ATX INVESTMENTS' data.csv`
 
-The answer should be 11.
+The answer should be 4.
 
 ## piping commands
 
-You can "pipe" command together with the `|` character, which you'll find as the shift of your backslash key. You can string commands together with that, so if I just wanted to see the first two lines of those that have 'JW MARRIOT' in them, I can do this:
+You can "pipe" the results of one command into another command with the `|` character, which you'll find as the shift of your backslash key. You can string commands together with that, so if I just wanted to see the first lines that has 'ATX INVESTMENTS', I can do this:
 
-`$ grep 'JW MARRIOT' data.csv | head`
+`$ grep 'ATX INVESTMENTS' data.csv | head -n 1`
 
 ----
 
