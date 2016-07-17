@@ -28,7 +28,7 @@ If you are not already in the *data* conda environment [we made earlier](IntroTo
 
 `$ source activate data`
 
-Next, we're going to install a package that will allow us to run Bash in notebook.
+Next, we're going to install a package that will allow us to run Bash in notebook. I think you only have to do this one time and then you'll always have it.
 
 `$ pip install bash_kernel`
 
