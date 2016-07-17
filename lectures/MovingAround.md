@@ -175,7 +175,7 @@ mydirectory
 ```
 
 A couple of things about this:
-* You have listed the contents of a directory without being inside of you. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know it's path.
+* You have listed the contents of a directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know it's path.
 * If you try to name a directory with a space in it, you'll not get what you want unless you put quotes around it. Or better yet, avoid using spaces in files and folders.
 
 ## change directory
@@ -271,17 +271,17 @@ Remember, you can also ALWAYS get back to your home folder with this, no matter 
 
 ### Relative paths
 
-You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move up and the name of the directory to move into. So a path like this: `ls ../../Users/Cory` is travel two folders up, then into `Users` then into `Cory` and then list all the files there.
+You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move up and the name of the directory to move inside it. So a path like this: `ls ../../Users/Cory` is travel up two folders, then into `Users` then into `Cory` and then list all the files there.
 
-This is very powerful in programming, because you might be developing on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like http://statesman.com/scripts/coolone/file01.py. You want to reference it as `./file02.py` meaning the file in the same folder.
+This is very powerful in programming, because you might be developing on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like `http://statesman.com/scripts/file02.py`, but because might not be on statesman.com. If it's in the same folder, you could use `file02.py` or `./file02.py`.
 
 ### Root-relative paths
 
-You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/coolone/file01.py`. That's called a **root-relative** path. (The "root" is the very top level of your machine.) If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in.
+You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/file01.py`. That's called a **root-relative** path. (The "root" is the very top level of your machine.) If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in.
 
 ### Absolute-relative paths
 
-And absolute path includes the.domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/coolone/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
+And absolute path includes the.domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
 
 ## Read the manual
 
@@ -291,7 +291,7 @@ If you are unsure about how any of these terminal commands work, there are manua
 
 Will open the manual page for `cd` and tell you have to **change directory**.
 
-But man pages, as they are called, are a special program of themselves, and have a special way to get around in them, as you'll discover quickly if you try to scroll to see more.
+But man pages, as they are called, are a special program themselves, and have a different commands to negotiate around them, as you'll discover quickly if you try to scroll to see more.
 
 * hit `f` or `space` to advance one page through the file
 * hit `j` to go down one line
@@ -299,9 +299,9 @@ But man pages, as they are called, are a special program of themselves, and have
 * hit `g` to go the the top
 * hit `q` to quit
 
-Moving around the man pages is frustrating at first. There are [online versions](http://man.cx/) of these, but the `man` command doesn't need the internet. Those files are already on your computer.
+Moving around the man pages is frustrating at first. There are [online versions](http://man.cx/) of these, but the `man` command doesn't need the internet. These files are already on your computer.
 
-Man pages are useful to figure out the **flags** for commands, so you can learn that `ls -lt` will give you that long list sorted in order of time, most-recently modified at top.
+Man pages are useful to figure out the options or **flags** for commands, so you can learn that `ls -lt` will give you that long list sorted in order of time, most-recently modified at top.
 
 ## -h for help
 
