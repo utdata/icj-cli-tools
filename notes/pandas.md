@@ -1,7 +1,7 @@
 Personal notes on Pandas
 =========================
 
-I've been using the [ModeAnalytics tutorial](https://community.modeanalytics.com/python) on Python to learn a bit about pandas, and considering using it in class.
+I've been using the [ModeAnalytics tutorial](https://community.modeanalytics.com/python) on Python to learn a bit about [pandas](https://community.modeanalytics.com/python/libraries/pandas/), and considering using it in class.
 
 ### to get SQL query in notebook
 
