@@ -43,9 +43,9 @@ This will start a Jupyter Notebooks server and throw you into a browser window. 
 
 This process will also take over your terminal window, which is now running the Jupyter Notebooks server. If you need to do further terminal work, you'll need to open a new window (command-n) or tab (command-t).
 
-At the top of your new notebook, click on **Untitled** and name your notebook **QuarterlyHotelData**.
+At the top of your new notebook, click on **Untitled** and name your notebook **APD Demographics**.
 
-Now, in another brower window, go open my [HotelsDataPipeline](https://github.com/utdata/cli-tools/blob/master/lectures/csvkit/HotelsDataPipeline.ipynb) notebook in GitHub so you can follow along.
+Now, in another brower window, go open my [APD Demographics data pipeline](https://github.com/utdata/cli-tools/blob/master/lectures/csvkit/APD%20Demographics%20data%20pipeline.ipynb) notebook in GitHub so you can follow along.
 
 ## Moving around Notebooks
 
