@@ -23,7 +23,7 @@ For the PCs, I need you to download [GitHub for Windows](https://desktop.github.
 
 ## Bash
 
-So, Terminal and Git Bash are programs that can run a **shell**, which is the user interface your computer understands. The default language for these interactions is called **Bash**. All these crazy [commands](Commands.md) I'm going to teach you are Bash commands.
+So, Terminal and Git Bash are programs that can run a **shell**, which is the user interface your computer understands. The default language for these interactions is called **Bash**. All these crazy [commands](lectures/Commands.md) I'm going to teach you are Bash commands.
 
 Folks (including myself) will use the term **shell** to mean "the terminal window you have open". This means when I say "type into your shell", I mean type at the prompt in your terminal window.
 
