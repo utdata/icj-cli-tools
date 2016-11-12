@@ -1,6 +1,8 @@
 Moving around in Bash
 =====================
 
+(NOTE TO SELF: THIS SECTION KIND OF CONFUSING. PERHAPS I CAN MAKE I EASIER WITH A MORE USEFUL EXAMPLE? GET SOME FEEDBACK!)
+
 Of note: I use "folder" and "directory" interchangeably here. The are the same thing.
 
 ## home directory
