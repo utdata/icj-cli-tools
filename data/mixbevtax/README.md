@@ -6,11 +6,11 @@ By Christian McDonald
 
 ## Downloading files
 
-Recent files are held by the State Comptroller and available on [TexasTransparency.org](http://www.texastransparency.org/Data_Center/Search_Datasets.php) portal. You can search and download files there, along with the [record layout](MIXEDBEVTAX_LYOT.txt). That said, there was a previous system for these files outlined below, and the [old record layout](OLD-MIXEDBEVTAX-LAYOUT.txt) was much more detailed and useful.
+Recent files are held by the State Comptroller and available on [TexasTransparency.org](https://www.comptroller.texas.gov/transparency/open-data/search-datasets/) portal. You can search and download files there, along with the [record layout](MIXEDBEVTAX_LYOT.txt). That said, there was a previous system for these files outlined below, and the [old record layout](OLD-MIXEDBEVTAX-LAYOUT.txt) was much more detailed and useful.
 
 These files *seem* to be consistently named, so you could download them programatically.
 
-`curl -L -O http://www.texastransparency.org/Data_Center/files/MIXEDBEV_03_2016.CSV`
+`curl -L -O https://www.comptroller.texas.gov/auto-data/odc/MIXEDBEV_10_2016.CSV`
 
 Where those last numbers are the month and year.
 
