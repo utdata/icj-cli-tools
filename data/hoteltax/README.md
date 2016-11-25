@@ -4,11 +4,11 @@ Hotel Occupancy Tax Receipts
 By Christian McDonald
 [christian.mcdonald@utexas.edu]
 
-Hotel Occupancy Tax data is available on the Texas Comptroller's [TexasTransparency.org](http://www.texastransparency.org/Data_Center/Search_Datasets.php) portal. You can search for and download the data and [record layout](HOTELTAX_LYOT.TXT) there. (That record layout is less detailed than an [older record](old-hoteltax-layout.txt) layout on the previous portal described below.)
+Hotel Occupancy Tax data is available on the Texas Comptroller's [TexasTransparency.org](https://www.comptroller.texas.gov/transparency/open-data/search-datasets/) portal. You can search for and download the data and [record layout](HOTELTAX_LYOT.TXT) there. (That record layout is less detailed than an [older record](old-hoteltax-layout.txt) layout on the previous portal described below.)
 
 The file names on TexasTransparency are not consistent, at least not in the beginning. They generally follow this format:
 
-http://www.texastransparency.org/Data_Center/files/HOTEL_01_2016.csv
+`https://www.comptroller.texas.gov/auto-data/odc/HOTEL_08_2016.CSV`
 
 But sometimes the `.csv` is `.CSV`. Some files are just missing or blank.
 
