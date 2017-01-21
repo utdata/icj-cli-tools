@@ -14,11 +14,11 @@ $ cd ~/Documents
 ```
 This puts you inside your Documents directory and prints your path to make sure you are there.
 
-`$ mkdir rwd2016`
+`$ mkdir rwd`
 
 Move into it:
 
-`$ cd rwd2016`
+`$ cd rwd`
 
 
 ## Starting up Jupyter Notebooks
