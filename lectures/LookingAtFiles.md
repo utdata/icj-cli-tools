@@ -7,9 +7,9 @@ Let's get something to work with. We'll go to our home directory, make a class d
 
 ```
 $ cd ~/Documents
-$ mkdir rwd2016
-$ mkdir rwd2016/myproject
-$ cd rwd2016/myproject
+$ mkdir rwd
+$ mkdir rwd/myproject
+$ cd rwd/myproject
 ```
 
 We need some text to work with, so we're going to pull down some text from Github. I might as well explain what we are doing.
