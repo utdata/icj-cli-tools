@@ -3,7 +3,7 @@ Using Jupyter Notebooks
 
 Our next lession will use [csvkit](http://csvkit.rtfd.org/), a collection of Python-based command-line tools that can help process a large amount of data really quickly. The Tutorial on the docs is pretty good, and I encourage you to go through it either before or after this lesson.
 
-But I'm also going to introduce Jupyter Notebooks with this lesson, too. This will allow you to write notes with your code and to repeat the steps as needed.
+But I'm also going to introduce Jupyter Notebooks with this lesson, too. This will allow you to write notes with your code and to repeat the steps as needed. It is not necessary to use Jupyter Notebooks for some of this, but it makes it much easier to run command-line based commands both in bash and in Python.
 
 ## Move into or create a class directory
 
@@ -27,7 +27,13 @@ If you are not already in the *data* conda environment [we made earlier](IntroTo
 
 `$ source activate data`
 
-Next, we're going to install a package that will allow us to run Bash in notebook. I think you only have to do this one time and then you'll always have it. (I'm having trouble with the Bash kernel on Windows running in Parallels. I suggest Windows users try this, but be ready to bail the lab Macs for this.)
+Next, we're going to install a package that will allow us to run Bash in a Jupyter Notebook. You only have to do this steop one time and then you'll always have it within the `data` environment.
+
+> (Running Bash (or Python) in a notebook is much easier than using the command-line alone. I should probably start you without it so you know how lucly you are, but I won't.)
+
+> (Also, I'm having trouble with the Bash kernel on Windows running in Parallels. I suggest Windows users try this, but be ready to be flexible in class if it doesn't work. You can always use a Python notebook, but start the cell with `%% bash` to emulate the bash command-line.)
+
+OK, let's install the package. (I may choose to explain **pip** in class. Or, not.)
 
 `$ pip install bash_kernel`
 
@@ -37,7 +43,7 @@ Now we are going to launch our Jupyter Notebooks server, and we'll do the rest o
 
 `$ jupyter notebook`
 
-This will start a Jupyter Notebooks server and throw you into a browser window. It will look something like the image below. Go under "New" and select **Bash**.
+This will start a Jupyter Notebooks server and throw you into a browser window. It will look something like the image below. Go under "New" and select **Bash**. (Windows users might have to use Python, then start each cell with `%% bash`.)
 
 ![notebook-start.png](../images/notebook-start.png)
 

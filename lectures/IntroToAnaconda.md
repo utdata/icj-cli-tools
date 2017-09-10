@@ -17,11 +17,11 @@ You can start with either. I use Anaconda on my Mac, and Miniconda on my Windows
 
 ## Which version of Python?
 
-We'll be using Python 3.5 in our class, so you might as well download that version of the installer so it will use 3.5 by default. If it ends up mattering to you later, you can build environments in either version of the language.
+We'll be using Python 3.6 in our class, so you might as well download that version of the installer so it will use 3.6 by default. If it ends up mattering to you later, you can build environments in either version of the language.
 
 ## Download and install
 
-* [Anaconda](https://www.continuum.io/downloads). For my Macbook Air, I used the Python 3.5 64-bit graphical installer. You don't have to sign up for Anaconda Cloud at this time.
+* [Anaconda](https://www.continuum.io/downloads). For my Macbook Air, I used the Python 3.6 64-bit graphical installer. You don't have to sign up for Anaconda Cloud at this time.
 * [Miniconda](http://conda.pydata.org/miniconda.html). I used the Miniconda version because I already have full Anaconda on the Mac side of my machine. Use the default to set your PATH variable.
 
 ## Update conda
