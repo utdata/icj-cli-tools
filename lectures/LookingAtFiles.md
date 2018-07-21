@@ -36,7 +36,7 @@ data.csv
 
 `$ head data.csv`
 
-will give you this:
+will give you this: 
 
 ```
 christian:myproject$ head data.csv
@@ -95,17 +95,21 @@ If you want just the number of lines, us **-l**.
 
 This will print the contents of `data.csv` to your screen. It's showing all 100 lines.
 
-But what you can do is redirect that output into a file by using `>`.
+But what you can do is redirect that output into a file by using `>`. Do this.
 
-If I wanted to take two files, `file01.txt` and `file02.txt`, and then combine them into a single file on your computer, it would look like this. (Don't do this as we don't have the files, but ...):
+`$ cat data.csv > file01.csv`
 
-`$ cat file01.txt file02.txt > combined.txt`
+What you've done is take the contents of data.csv, printed the contents and then redirected that content into another file called file01.csv. Since that didn't exists already, it was created on the fly.
 
-Now, `combined.txt` would be the combination of both files.
+If I wanted to take two files, `file01.csv` and `file02.csv`, and then combine them into a single file on your computer, it would look like this. (You don't have to do these commands, just understand them.):
+
+`$ cat file01.csv file02.csv > combined.csv`
+
+Now, `combined.csv` would be the combination of both files.
 
 ## grep
 
-[grep](http://man.cx/grep) is for using regular expressions to find parts of a file. It takes a regular expression input and the file name and give in return the lines of the file that match that regular expression.
+[grep](http://man.cx/grep) is for using regular expressions to find patterns within a file. It takes a regular expression input and the file name and give in return the lines of the file that match that regular expression.
 
 `$ grep 'ATX INVESTMENTS' data.csv`
 
@@ -125,4 +129,4 @@ You can "pipe" the results of one command into another command with the `|` char
 
 ----
 
-Next: [Intro to Anaconda](IntroToAnaconda.md)
+Back to the list: [Lessons](README.md#Lessons)
