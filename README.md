@@ -1,5 +1,7 @@
 # Introduction to command-line tools
 
+> FIX THE LINKS ONCE EVERYING IS MOVED. THERE ARE LOTS OF BROKEN ONES.
+
 This lesson is a beginner's guide to using command-line tools for coding and data-journalism. It is designed for students who may have never used Terminal before. It is geared toward Macs, but Windows users should be able to follow along if they install [git for windows](https://gitforwindows.org/)  and use Git BASH.
 
 Some of this lesson is cribbed from the book [The Command Line Crash Course](http://cli.learncodethehardway.org/book/) by Learn Code the Hard Way.
@@ -16,7 +18,7 @@ It'll look something like this:
 
 ## PCs
 
-For the PCs, I need you to download [Git for Windows](https://gitforwindows.org/). After you do, you'll have a program called **Git Bash**, which is the terminal program we'll use. Windows is NOT a Unix-based machine like a Mac, so it doesn't naturally understand Unix commands. Git Bash is a program that does.
+For the PCs, I need you to install [Git for Windows](https://gitforwindows.org/). After you do, you'll have a program called **Git Bash**, which is the terminal program we'll use. Windows is NOT a Unix-based machine like a Mac, so it doesn't naturally understand Unix commands. Git Bash is a program that does.
 
 ![git bash](images/gitbash-startup.png)
 
@@ -34,7 +36,7 @@ That means you type in "pwd" and then hit return.
 
 ## Typing vs copy/paste
 
-I encourage you to type commands into your terminal instead of copy and pasting them from the lessons. Build muscle _and_ mind memory. Typing a command wrong and then having to figure out why it broke will help you learn it and remember it. If you just copy and paste blindly, then you won't learn anything other than commmand-c and command-p.
+I encourage you to type commands into your terminal instead of copy and pasting them from the lessons. Build muscle _and_ mind memory. Typing a command wrong and then having to figure out why it broke will help you learn it and remember it. If you just copy and paste blindly, then you won't learn anything other than command-c and command-p.
 
 ---
 ## Lessons
