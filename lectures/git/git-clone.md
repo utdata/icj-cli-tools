@@ -114,6 +114,6 @@ We've been writing in Markdown, and here are two resources about that syntax:
 * [Markdown tutorial](https://guides.github.com/features/mastering-markdown/)
 * [Markdown syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
-## Turn this in
+------
 
-There is likely an assignment in Canvas for this assignment. Submit the URL for your repo.
+Next: [Git branches](git-branch.md)

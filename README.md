@@ -46,10 +46,11 @@ I encourage you to type commands into your terminal instead of copy and pasting 
 
 ### Using Git and Github
 
-* [Git & Github](lessons/git/gitting-started.md)
-* [Sharing code](lessons/git/git-clone.md)
+* [Git & Github](lectures/git/gitting-started.md)
+* [Sharing code](lectures/git/git-clone.md)
+* [Git branches](lectures/git/git-branch.md)
 
 ### CSVkit
 
-* [Introduction to Anaconda](lecture/IntroToAndaconda.md) (needs rework)
+* [Introduction to Anaconda](lectures/IntroToAndaconda.md) (needs rework)
 * [Using Jupyter Notbooks](lectures/UsingNotebooks.md) (needs rework)
