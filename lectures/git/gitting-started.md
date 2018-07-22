@@ -167,4 +167,11 @@ Now let's make a change to your README.
 * Add the change. This time we'll use a fancy command to add all the changed files so we don't have to name it: `$ git add .`. That period means "all changed files".
 * Commit the change using `$ git commit -m "new change"`.
 * Push the changes to Github using `$ git push origin master`.
+* Got to Github in your browser and refresh to see your changes.
+
+And there you have it. You've learned the most common git and Github commands.
+
+----
+
+Next: [Working with others](git-clone.md)
 
