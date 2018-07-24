@@ -1,15 +1,18 @@
-Looking at files
-=================
+# Looking at files
 
-Some more command-line juju working with files. These commands will help you deal with other stuff we work on later.
+## Goal
 
-Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](MovingAround.md)).
+Let's learn some more command-line juju for working with files. These commands will help look at code files on your computer.
 
-```
-$ cd ~/Documents
-$ mkdir rwd
-$ mkdir rwd/myproject
-$ cd rwd/myproject
+## Set up
+
+Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](moving-around.md)).
+
+``` bash
+cd ~/Documents
+mkdir code
+mkdir code/myproject
+cd code/myproject
 ```
 
 We need some text to work with, so we're going to pull down some text from Github. I might as well explain what we are doing.
@@ -19,7 +22,7 @@ We need some text to work with, so we're going to pull down some text from Githu
 [curl](http://man.cx/curl) is a command to transfer files. I think of it as "Capture URL". We need to give `curl` a couple of flags (or options) for this job:
 
 * **-L** stands for "Location". It allows `curl` to follow a URL if it is redirected.
-* **-o** for "output". So we can write this to a file instead of our terminal window. We need to follow it with the file name we want. (We could use **-O** to just use the current file name.)
+* `-o` for "output". So we can write this to a file (which we are calling `data.csv`) instead of our terminal window. (We could use `-O` instead to just use the current file name.)
 
 `$ curl -L -o data.csv https://raw.githubusercontent.com/utdata/cli-tools/master/data/example.csv`
 
@@ -36,7 +39,7 @@ data.csv
 
 `$ head data.csv`
 
-will give you this:
+will give you this: 
 
 ```
 christian:myproject$ head data.csv
@@ -95,17 +98,21 @@ If you want just the number of lines, us **-l**.
 
 This will print the contents of `data.csv` to your screen. It's showing all 100 lines.
 
-But what you can do is redirect that output into a file by using `>`.
+But what you can do is redirect that output into a file by using `>`. Do this.
 
-If I wanted to take two files, `file01.txt` and `file02.txt`, and then combine them into a single file on your computer, it would look like this. (Don't do this as we don't have the files, but ...):
+`$ cat data.csv > file01.csv`
 
-`$ cat file01.txt file02.txt > combined.txt`
+What you've done is take the contents of data.csv, printed the contents and then redirected that content into another file called file01.csv. Since that didn't exist already, it was created on the fly.
 
-Now, `combined.txt` would be the combination of both files.
+If I wanted to take two files, `file01.csv` and `file02.csv`, and then combine them into a single file on your computer, it would look like this. (You don't have to do these commands, just understand them.):
+
+`$ cat file01.csv file02.csv > combined.csv`
+
+Now, `combined.csv` would be the combination of both files.
 
 ## grep
 
-[grep](http://man.cx/grep) is for using regular expressions to find parts of a file. It takes a regular expression input and the file name and give in return the lines of the file that match that regular expression.
+[grep](http://man.cx/grep) is for using regular expressions to find patterns within a file. It takes a regular expression input and the file name and give in return the lines of the file that match that regular expression.
 
 `$ grep 'ATX INVESTMENTS' data.csv`
 
@@ -117,7 +124,7 @@ If you want to just know how many lines there are with 'ATX INVESTMENTS', use th
 
 The answer should be 4.
 
-## piping commands
+## Piping commands
 
 You can "pipe" the results of one command into another command with the `|` character, which you'll find as the shift of your backslash key. You can string commands together with that, so if I just wanted to see the first lines that has 'ATX INVESTMENTS', I can do this:
 
@@ -125,4 +132,4 @@ You can "pipe" the results of one command into another command with the `|` char
 
 ----
 
-Next: [Intro to Anaconda](IntroToAnaconda.md)
+Back to the [README](../../README.md).

@@ -1,11 +1,12 @@
-Moving around in Bash
-=====================
+# Moving around in Bash
 
-(NOTE TO SELF: THIS SECTION KIND OF CONFUSING. PERHAPS I CAN MAKE I EASIER WITH A MORE USEFUL EXAMPLE? GET SOME FEEDBACK!)
+Of note: I use the terms "folder" and "directory" interchangeably here. The are the same thing.
 
-Of note: I use "folder" and "directory" interchangeably here. The are the same thing.
+## Goal
 
-## home directory
+Our goal here is to become familiar with Terminal and the Bash commands to move around and access different folders on your computer.
+
+## Home directory
 
 I want to make sure we are all starting from the same relative location, so blindly follow me by typing the following into your terminal. (Remember to not actually type the $).
 
@@ -15,9 +16,9 @@ That tilde is usually at the top left of your keyboard.
 
 You used your first Bash command, `cd`, which is "change directory". The `~` is a shortcut that takes you to the "home" directory of the logged in user. You can always use `cd ~` to get you back to home.
 
-## print working directory
+## pwd
 
-One of the hardest things to get a handle on when first working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, do this:
+One of the hardest things to get a handle on when first working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, we'll use [pwd](https://man.cx/pwd), or "print working directory" to do this:
 
 `$ pwd`
 
@@ -27,7 +28,7 @@ That should tell you where you are in your computer's file system. When I launch
 
 That tells me I'm in my own user directory. I bet you are in yours, but do it and see. So, remember, `~` is a shortcut to take you to this longer directory path.
 
-## list directory
+## List directory
 
 Do this:
 
@@ -35,7 +36,7 @@ Do this:
 
 This will list everything in the directory you are in. Mine looks like this:
 
-``` Bash
+``` bash
 christian:~$ ls
 Applications			Music
 Applications (Parallels)	Pictures
@@ -51,8 +52,8 @@ Movies
 
 It listed the names of all the folders and files of the directory I'm in.
 
-### flags
-But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which you can think of as adding nuance or detail to a command. They start with a dash, and you can pile them on, as I'll demonstrate. First, try this:
+### Flags
+But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which add nuance or detail to a command. They start with a dash, and you can pile them on, as I'll demonstrate. First, try this:
 
 `$ ls -l`
 
@@ -87,12 +88,12 @@ Well, that's a lot of info, and much of it jibberish. Let's break it down:
 * `drwxr-xr-x` and similar is the permission information for a that file or folder. We aren't going to get into it here, but [you can read more](https://en.wikipedia.org/wiki/File_system_permissions#Notation_of_traditional_Unix_permissions) if you like.
 * The next number is the number of files inside the folder, sort of. If this is a file, the number will be "1". If it is a folder, the number will always be at least "2". We'll come back to this.
 * Next is the owner of the file or folder.
-* Next is the group that owner was in when created? ()
+* Next is a permission level for the user when the file was created.
 * Next is the file size in bytes.
 * Next is the last modified date of the file or when a file was added to the folder.
 * File or folder name.
 
-### hidden files
+### Hidden files
 
 Let's add another flag to your command:
 
@@ -125,10 +126,10 @@ drwxr-xr-x   14 christian  staff      476 Oct  1  2015 gsutil
 drwxr-xr-x    3 christian  staff      102 Jul  8 17:20 test
 drwxr-xr-x    5 christian  staff      170 Jul  4 20:24 trifacta
 -rw-r--r--    1 christian  staff  8046293 Aug 13  2015 waller.csv.sav
+
 ```
-The `-a` flag means "all files and folders", including hidden ones. When you normally open a folder on your computer, it only shows you some of the files and folders available. Hidden folders and files start with a period, and there can be a lot of them ... I have 50 of them in my home folder, far more than regular files and folders.
 
-
+The `-a` flag means "all" files and folders, including hidden ones. When you normally open a folder on your computer, it only shows you some of the files and folders available. Hidden folders and files start with a period, and there can be a lot of them ... I have 50 of them in my home folder, far more than regular files and folders.
 
 Let's look at the first two listed here:
 
@@ -143,7 +144,7 @@ These are two special designations in the Unix world. A single period designates
 
 We can use these period designations (there's probably a fancy word for them I don't know) to move around into different directories, and to manage files in our current directories. But first ...
 
-## make directory
+## mkdir
 
 Let's do a review real quick. Where are you? What is your "working directory?"
 
@@ -153,7 +154,7 @@ What is in this current directory?
 
 `$ ls`
 
-OK, now let's make a new empty folder inside this directory:
+OK, now let's make a new empty folder inside this directory, using the [mkdir](https://man.cx/mkdir) command:
 
 `$ mkdir testy`
 
@@ -161,7 +162,9 @@ The list your directory again to see the new directory:
 
 `$ ls`
 
-You should see your new `testy` directory there along with all your other stuff in your working directory. Cool, let's make another directory inside of `testy`!
+You should see your new `testy` directory there along with all your other stuff in your working directory. Creating a directory like this is exactly the same as opening a desktop window on your Mac and doing Command-N to create a new folder. Folders and directories are the same thing.
+
+Cool, let's make another directory inside of `testy`!
 
 `$ mkdir testy/mydirectory`
 
@@ -171,18 +174,19 @@ Now you can do an `ls` on testy to see what you made inside of `testy`.
 
 Which should now show you what is inside the directory `testy`. Here is my command and output.
 
-```
+``` bash
 christian:~$ ls testy
 mydirectory
 ```
 
 A couple of things about this:
+
 * You have listed the contents of a directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know it's path.
-* If you try to name a directory with a space in it, you'll not get what you want unless you put quotes around it. Or better yet, avoid using spaces in files and folders.
+* If you try to name a directory with a space in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders. I try to avoid capitalization, too, because sometimes it matters.
 
-## change directory
+## cd
 
-OK, now that we have the same folders, let's move in and out of them. The `cd` command is **change directory**. Let's change directory into the `testy` folder we created:
+OK, now that we have the same folders, let's move in and out of them. The [cd](https://man.cx/cd) command is **change directory**. Let's change directory into the `testy` folder we created:
 
 `$ cd testy`
 
@@ -211,7 +215,7 @@ christian:testy$ pwd
 ```
 
 So to break that down:
-* printed my working directory, which showed me I was in my Users folder.
+* I printed my working directory, which showed me I was in my Users folder.
 * I did `cd` into `testy` which moved me to inside that directory.
 * Now that I'm inside `testy`, I did `ls` to see the contents of my current folder, and it showed me that `mydirectory` was indeed inside.
 * I did `pwd` to show that my current working directory (where I am) is inside the `testy` folder.
@@ -247,49 +251,27 @@ christian:testy$ pwd
 /Users/christian/testy
 ```
 
-OK, just a couple more cds ... go back inside `mydirectory`:
-
-`$ cd mydirectory`
-
-Check where you are with `pwd`. This is the result of the last few commands for me:
-
-```
-christian:testy$ cd mydirectory/
-christian:mydirectory$ pwd
-/Users/christian/testy/mydirectory
-```
-
-Now you can cd back through two folders at once to get back to your home folder.
-
-`$ cd ../../`
-
-Now `pwd` so you can make sure you are there.
-
-Remember, you can also ALWAYS get back to your home folder with this, no matter where you are starting from:
-
-`$ cd ~`
-
 ## On the right path
 
 ### Relative paths
 
-You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move up and the name of the directory to move inside it. So a path like this: `ls ../../Users/Cory` is travel up two folders, then into `Users` then into `Cory` and then list all the files there.
+You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move "up" the folder structure and then use the name of the directory to move inside it. So a path like this: `ls ../../Users/Cory` is to travel up two folders, then into `Users` then into `Cory` and then list all the files there.
 
-This is very powerful in programming, because you might be developing on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like `http://statesman.com/scripts/file02.py`, but because might not be on statesman.com. If it's in the same folder, you could use `file02.py` or `./file02.py`.
+This is very powerful in programming, because you might be writing and testing code on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like `http://utdata.cmcdonald.com/scripts/file02.py`, because you might not always be on utdata.cmcdonald.com. If it's in the same folder, you could use `file02.py` or `./file02.py`.
 
 ### Root-relative paths
 
-You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/file01.py`. That's called a **root-relative** path. (The "root" is the very top level of your machine.) If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in.
+You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/file01.py`. That's called a **root-relative** path. If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in.
 
 ### Absolute-relative paths
 
-And absolute path includes the.domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
+And absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
 
-## Read the manual
+## man
 
 If you are unsure about how any of these terminal commands work, there are manual pages for each one already on your computer. Now, I'm not saying they are extremely well-written and intuitive, but they are there.
 
-`$ man ls`
+`$ man cd`
 
 Will open the manual page for `cd` and tell you have to **change directory**.
 
@@ -307,7 +289,7 @@ Man pages are useful to figure out the options or **flags** for commands, so you
 
 ## -h for help
 
-Sometimes there isn't a man page for a command, but there is help file. One of the commands we'll learn in a bit is `in2csv` which turns files into well-formatted csv files for processing. Try this:
+Sometimes there isn't a man page for a command, but there is help file. One of the program commands we might use later is `in2csv` which turns files into well-formatted csv files for processing. To get help, I would type:
 
 `$ in2csv -h`
 
@@ -315,4 +297,4 @@ This gives you a list of the flags and arguments for that command, along with ot
 
 ---
 
-Next: [Looking at files](LookingAtFiles.md)
+Next: [Looking at files](looking-at-files.md)
