@@ -1,6 +1,10 @@
 # Looking at files
 
-Let's learn some more command-line juju for working with files. These commands will help you deal with other stuff we work on later.
+## Goal
+
+Let's learn some more command-line juju for working with files. These commands will help look at code files on your computer.
+
+## Set up
 
 Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](moving-around.md)).
 

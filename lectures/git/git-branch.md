@@ -8,19 +8,19 @@ The workflow I typically use is [git feature branch workflow](https://confluence
 
 * `master` is the branch in production or ready for production. It should always work.
 * Create a **feature branch** to start on new work. Make your changes and push the branch to the repo.
-* Create a **pull request** to review changes. This allows you or others to see the changes within Github you are proposing to merge into master. There are functions that allow for official reviews, comments and such. You will also see potential code conflicts.
-* Make any changes necesarry and push them to the feature branch.
+* Create a **pull request** to review changes. This allows you or others to see the changes within Github you are proposing to merge into master. There are tools in Github that allow for official reviews, comments and such. You will also see potential code conflicts.
+* Make any changes necessary and push them to the feature branch.
 * Once ready, merge into `master`. All the history of your commits are added to master, and you can safely delete your feature branch on Github and your local machine.
 
 There can be more to it in some shops, like rebasing and squashing, but we won't get into that here.
 
-## Let's do it.
+## Let's do it
 
-* Go into your "myproject" repo in VS code and open your Integrated Terminal.
+* Go into your "myproject-name" repo in VS code and open your Integrated Terminal.
 * Create your branch: `$ git checkout -b newbranch`.
   * If you have the git-bash-prompt installed, you'll notice the name of the branch has changed in the square brackets.
 * Add a new file and call it `newfile.md`. Add a title and some text using proper Markdown syntax.
-* Save and add and commit your file, but when you push, you need to change that to `$ git commit origin newbranch` to ensure you are adding to your new branch. (It will give you an error if you try to push to master.
+* Save and add and commit your file, but when you push, you need to change that to `$ git commit origin newbranch` to ensure you are adding to your new branch. (It will give you an error if you try to push to master.)
 * Go to your repo on Github, and you might notice a yellow box that says a new branch was comitted. You can use the branch dropdown to switch to the new branch and check it out.
 * Click on the button **Compare & pull request** to create the new pull request.
   * Here you might name the request and in the comments outline what is being changed, how to test it locally and whatever information your collaborators our your future self might want to know.
@@ -42,7 +42,7 @@ Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
 ```
 
-You might notice this says you "branch is up-to-date with 'origin/master', and that is confusing, because we know we merged changes that are on Github. This message is referring to your LOCAL branch, not the one on github. We still need to pull in those changes:
+You might notice this says you "branch is up-to-date with 'origin/master', and that is confusing, because we know we merged changes that are on Github. This message is referring to your LOCAL branch, not the one on Github. We still need to pull in those changes:
 
 `$ git pull origin master`
 

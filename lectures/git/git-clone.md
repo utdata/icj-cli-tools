@@ -1,5 +1,7 @@
 # Cloning repos, sharing code
 
+## Goals
+
 We'll now see how you can collaborate in code with a classmate. Our goals are this:
 
 * To pick a partner
@@ -20,7 +22,7 @@ We'll now see how you can collaborate in code with a classmate. Our goals are th
 
 A note about **Download ZIP**: This allows you to download all the code, but to NOT be "hooked up" in git to this repo. This is useful if the repo is a template for a project, and you are starting a new one. We're not doing that here, but just so you know. We'll probably do it later.
 
-* Go into your terminal and cd into `~/Documents/code`.
+* Go into your Terminal app and cd into `~/Documents/code`.
 * Execute `$ git clone git@github.com:critmcdonald/myproject-crit.git` but put in the URL that you have copied from your partner's repo.
 
 This copies the repo as a folder in your `code` folder. If you wanted the repo to be a different name on your computer, you would add the name you want after the url. I tend to keep the same name unless there is a good reason not to.
@@ -51,7 +53,7 @@ We're going to create such a conflict so you can see that this looks like.
 * Go into your own repo and make a change within the first sentence.
 * Add, commit and push your changes to Github.
 
-So now, in your partner's repo, there is a change that you do not have in your copy, and vice versa.
+So now, in your partner's copy of your repo, there is a change that they do not have.
 
 ### Change your partner's repo
 
@@ -90,7 +92,7 @@ CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-Now look at the file, and it will look pretty crazy. Here is mine:
+Now look at the file in VS Code, and it will look pretty crazy. Here is mine:
 
 ![clone](../../images/conflict-screen.png)
 

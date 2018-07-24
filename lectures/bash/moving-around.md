@@ -2,6 +2,10 @@
 
 Of note: I use the terms "folder" and "directory" interchangeably here. The are the same thing.
 
+## Goal
+
+Our goal here is to become familiar with Terminal and the Bash commands to move around and access different folders on your computer.
+
 ## Home directory
 
 I want to make sure we are all starting from the same relative location, so blindly follow me by typing the following into your terminal. (Remember to not actually type the $).
