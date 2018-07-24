@@ -43,8 +43,10 @@ I encourage you to type commands into your terminal instead of copy and pasting 
 
 ### Learning the terminal
 
-* [Moving around](lectures/MovingAround.md)
-* [Looking at files](lectures/LookingAtFiles.md)
+* [Moving around](lectures/bash/moving-around.md)
+* [Looking at files](lectures/bash/looking-at-files.md)
+* [Bash commands](lectures/bash/bash-commands.md)
+* [Bash profiles](lectures/bash/bash-profiles.md)
 
 ### Using Git and Github
 
@@ -52,7 +54,7 @@ I encourage you to type commands into your terminal instead of copy and pasting 
 * [Sharing code](lectures/git/git-clone.md)
 * [Git branches](lectures/git/git-branch.md)
 
-### CSVkit
+### Python, Jupyter and csvkit
 
-* [Introduction to Anaconda](lectures/IntroToAndaconda.md) (needs rework)
-* [Using Jupyter Notbooks](lectures/UsingNotebooks.md) (needs rework)
+* [Introduction to Anaconda](lectures/python/intro-anaconda.md) (needs rework)
+* [Using Jupyter Notbooks](lectures/python/using-jupyter.md) (needs rework)

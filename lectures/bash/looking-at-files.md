@@ -1,15 +1,14 @@
-Looking at files
-=================
+# Looking at files
 
-Some more command-line juju working with files. These commands will help you deal with other stuff we work on later.
+Let's learn some more command-line juju for working with files. These commands will help you deal with other stuff we work on later.
 
-Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](MovingAround.md)).
+Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](moving-around.md)).
 
-```
-$ cd ~/Documents
-$ mkdir rwd
-$ mkdir rwd/myproject
-$ cd rwd/myproject
+``` bash
+cd ~/Documents
+mkdir code
+mkdir code/myproject
+cd code/myproject
 ```
 
 We need some text to work with, so we're going to pull down some text from Github. I might as well explain what we are doing.
@@ -19,7 +18,7 @@ We need some text to work with, so we're going to pull down some text from Githu
 [curl](http://man.cx/curl) is a command to transfer files. I think of it as "Capture URL". We need to give `curl` a couple of flags (or options) for this job:
 
 * **-L** stands for "Location". It allows `curl` to follow a URL if it is redirected.
-* **-o** for "output". So we can write this to a file instead of our terminal window. We need to follow it with the file name we want. (We could use **-O** to just use the current file name.)
+* `-o` for "output". So we can write this to a file (which we are calling `data.csv`) instead of our terminal window. (We could use `-O` instead to just use the current file name.)
 
 `$ curl -L -o data.csv https://raw.githubusercontent.com/utdata/cli-tools/master/data/example.csv`
 
@@ -99,7 +98,7 @@ But what you can do is redirect that output into a file by using `>`. Do this.
 
 `$ cat data.csv > file01.csv`
 
-What you've done is take the contents of data.csv, printed the contents and then redirected that content into another file called file01.csv. Since that didn't exists already, it was created on the fly.
+What you've done is take the contents of data.csv, printed the contents and then redirected that content into another file called file01.csv. Since that didn't exist already, it was created on the fly.
 
 If I wanted to take two files, `file01.csv` and `file02.csv`, and then combine them into a single file on your computer, it would look like this. (You don't have to do these commands, just understand them.):
 
@@ -121,7 +120,7 @@ If you want to just know how many lines there are with 'ATX INVESTMENTS', use th
 
 The answer should be 4.
 
-## piping commands
+## Piping commands
 
 You can "pipe" the results of one command into another command with the `|` character, which you'll find as the shift of your backslash key. You can string commands together with that, so if I just wanted to see the first lines that has 'ATX INVESTMENTS', I can do this:
 
@@ -129,4 +128,4 @@ You can "pipe" the results of one command into another command with the `|` char
 
 ----
 
-Back to the list: [Lessons](README.md#Lessons)
+Back to the [README](../../README.md).
