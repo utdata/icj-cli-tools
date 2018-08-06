@@ -2,7 +2,7 @@
 
 > FIX THE LINKS ONCE EVERYING IS MOVED. THERE ARE LOTS OF BROKEN ONES.
 
-This lesson is a beginner's guide to using command-line tools for coding and data-journalism. It is designed for students who may have never used Terminal before. It is geared toward Macs, but Windows users should be able to follow along if they install [git for windows](https://gitforwindows.org/)  and use Git BASH.
+This lesson is a beginner's guide to using command-line tools for coding and data-journalism. It is designed for students who may have never used Terminal before. It is geared toward Macs, but Windows users should be able to follow along if they use Git BASH, which shold be installed with the [git Windows installer](https://git-scm.com/download/).
 
 Some of this lesson is cribbed from the book [The Command Line Crash Course](http://cli.learncodethehardway.org/book/) by Learn Code the Hard Way.
 
@@ -18,9 +18,7 @@ It'll look something like this:
 
 ## PCs
 
-For the PCs, I need you to install [Git for Windows](https://gitforwindows.org/). After you do, you'll have a program called **Git Bash**, which is the terminal program we'll use. Windows is NOT a Unix-based machine like a Mac, so it doesn't naturally understand Unix commands. Git Bash is a program that does.
-
-![git bash](images/gitbash-startup.png)
+For the PCs, when you install git for Windows, it also installs  **Git Bash**, which is the terminal program we'll use. Windows is NOT a Unix-based machine like a Mac, so it doesn't naturally understand Unix commands. Git Bash is a program that does.
 
 ## Bash
 
@@ -48,9 +46,9 @@ I encourage you to type commands into your terminal instead of copy and pasting 
 * [Bash commands](lectures/bash/bash-commands.md)
 * [Bash profiles](lectures/bash/bash-profiles.md)
 
-### Using Git and Github
+### Using Git and Bitbucket
 
-* [Git & Github](lectures/git/gitting-started.md)
+* [Git & Bitbucket](lectures/git/gitting-started.md)
 * [Sharing code](lectures/git/git-clone.md)
 * [Git branches](lectures/git/git-branch.md)
 

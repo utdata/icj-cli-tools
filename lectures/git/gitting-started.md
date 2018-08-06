@@ -1,58 +1,110 @@
 # Git version control
 
-Make sure you've [installed VS Code, Git and configured Github](https://github.com/utdata/setting-up) before you get going here.
+Make sure you've [installed VS Code, Git, have configured it and have a Bitbucket account with SSH keys](https://bitbucket.org/utdata/setting-up/src/master/) before continuing here.
 
 ## Defining verison control
 
-[Search on google](https://www.google.com/search?q=understanding+git+version+control&oq=understanding+git+version+control) and you'll find a ton of [posts](https://www.atlassian.com/git/tutorials/what-is-version-control), [tutorials](https://www.codecademy.com/learn/learn-git) and [videos](https://www.youtube.com/watch?v=Y9XZQO1n_7c) about git and version control systems. I encourage you to explore some that fit you learning style. We'll just cover enough here to get you going and we'll learn by doing.
+[Search on google](https://www.google.com/search?q=understanding+git+version+control&oq=understanding+git+version+control) and you'll find a ton of [posts](https://www.atlassian.com/git/tutorials/what-is-version-control), [tutorials](https://www.codecademy.com/learn/learn-git) and [videos](https://www.youtube.com/watch?v=Y9XZQO1n_7c) about Git and version control systems. I encourage you to explore some that fit you learning style. We'll just cover enough here to get you going and we'll learn by doing.
 
-At its most basic, git allows you to save your work at intervals and it keeps a history of every save point on your computer. Once you have something that works, you save it and leave a comment about what you've done. You can then go back to that exact point in time if you need to. This frees the coder to experiment and make changes that may NOT work, because you know you can always go back. It works for any kind of file you want to put under verison control.
+At its most basic, Git allows you to save your work at intervals and it keeps a history of every save point on your computer. Once you have something that works, you save it and leave a comment about what you've done. You can then go back to that exact point in time if you need to. This frees the coder to experiment and make changes that may NOT work, because you know you can always go back. It works for any kind of file you want to put under verison control.
 
 Git allows for a "distributed" version control system, meaning that other people can share the entire code base. When they "check out" a repository (or repo), they get the entire code base. Contributors can then make changes and "check in" those changes for others to use.
 
-Github is the central server where we will save our code. It's also a project management tool and a social network of sorts. It's probalby the most popular code sharing app, but there are others, like Atlassian's [Bitbucket](https://bitbucket.org/).
+[Bitbucket Cloud](https://bitbucket.org/) is the central server where we will save our code. It's also a project management tool and a social network of sorts. It's used by a lot of large companies because there are suite of other products that work with that help programmers. Most importantly, they offer free accounts for university students. [Github](https://github.com/) is another popular code sharing service.
 
 ## Our goals
 
-A "repo" is a folder on your computer that is tracked by git. Our goals here are the following:
+A repository -- or "repo" -- is a folder on your computer that is tracked by git. Our goals here are the following:
 
-* Create a folder in your Documents folder called `code`. This is where we will store all our projects for the rest of the class
-* Create a folder inside of `code` called `myproject-firstname` but with your name. This will be your project and code.
-* Create a text file in `myproject-firstname` called `README.md`. Every coding project should have this file that describes the project, any dependencies the code base needs, etc. It is written in a language called [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf), which is a text-based syntax that Github turns into pretty HTML when it is published, but is completely readable as text. Here is [tutorial on Markdown](https://guides.github.com/features/mastering-markdown/) you may find useful.
-* We'll `init` (initialize) the folder to be tracked by git.
-* We'll `add` (or stage) our changes
-* We'll `commit` our changes, and include a comment about it.
-* We'll go to Github and create a master repo to save our work to
-* We'll `push` our repo to the master on github.
-* We'll make more changes, rinse and repeat.
+* Create a repo on Bitbucket.
+* Clone it to our own machine.
+* Edit files and use the git cycle to save and push them to Bitbucket.
 
-### Create our folder structure
+## Create a repo in Bitbucket
+
+Since we starting a new project that we know we want to track in Bitbucket, we'll start there. Know it is possible to connect and existing repo on your computer to a Bitbucket repo if needed.
+
+* Log into Bitbucket and click on the big + sign on the left navigation, then choose **Repository**.
+* For the repository name, call it "myproject-firstname".
+* Uncheck the private box so it is public.
+* For the README, choose **Yes, with a tutorial (for beginners)**.
+* Keep the version control as **Git**.
+
+This will take you to the home page for your repository. It lists the files in the repository and shows the README file that Bitbucket created.
+
+That README is written in a language called [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf), which is a text-based syntax that Bitbucket turns into pretty HTML when it is published, but is completely readable as text. Here is a [cheatsheet of the syntax](https://commonmark.org/help/) and [10-minute tutorial](https://commonmark.org/help/tutorial/) you may find useful.
+
+## Create our working space
 
 There are many ways to create folders on your computer. We're going to use the Terminal and the Code app so we can get used to using them.
 
 * Open your Terminal and type in `$ cd ~/Documents/`
-* Create your two directories, but use your name. Always user lowercase letters and no spaces in file and folder names. You'll thank me later:
+* Create your two directories, but use your name. Always use lowercase letters and no spaces in file and folder names. You'll thank me later:
 
-``` bash
+```bash
 mkdir code
-mkdire code/myproject-firstname
 ```
 
-* Move into your folder: `$ cd code/myproject-firstname`.
+* Move into your folder:
 
-### Creating files
+```bash
+cd code
+```
 
-We're going to start using our code editor now to manage both our files and our Terminal. If you've configured your text editor right, we'll be able to create our file and launch the editor in the right folder all at the same time.
+## Cloning your repo from Bitbucket
 
-`$ code README.md`
+Now, go back to your browser to the project you created.
+
+- Click on the **Clone** button at the top right.
+- The pop-up window shows the command you need to clone your repository to your computer. Click on the copy button to the right of it.
+- Go back to your Terminal and paste in that text and hit return to run the code.
+
+It should look something like this::
+
+```bash
+$ git clone git@bitbucket.org:christianmcdonald/myproject-christian.git
+Cloning into 'myproject-christian'...
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (3/3), done.
+```
+
+So, `git clone` is the command and what follows is the path to your project.
+
+Next, we need to move into the folder.
+
+```bash
+cd myproject-christian
+```
+
+We're going to start using our code editor now to manage both our files and our Terminal. If you've configured your text editor right, we should be able to open VS Code inside our repo.
+
+```bash
+code ./
+```
 
 Hollar if that doesn't work. [This may help if it doesn't](https://code.visualstudio.com/docs/setup/mac).
 
-Let's talk about that command. `code` is the command to invoke the VS Code editor. We followed that with the name of the file. It would open it if it existed, but it has intead created it since it wasn't there already.
+Let's talk about that command. `code` is the command to invoke the VS Code editor. We followed that `./` which means the current folder.
 
-You may have noticed we broke our rule about lowercase names for `README.md`. Uppercasing README is a convention that breaks the rule. Just the way it is.
+You should see the README file on the left pane. Go ahead and click on it and it will open in the editor.
 
-### Adding some content
+You may have noticed `README.md` breaks our rule about lowercase file names. Uppercasing README is a convention. Just the way it is.
+
+### The Integrated Terminal
+
+A cool thing about VS Code is you can open a Terminal window inside the editor and do shell commands there. You can find this under **View > Integrated Terminal**, or use **Control-`** on a Mac. This should open a terminal at the root of the project you have open. It will look something like this:
+
+![terminal](../../images/integrated-terminal.png)
+
+### Adding a new file
+
+We're going to use that Integrated Terminal to create a new file.
+
+> THIS IS WHERE I STOPPED EDITING
+
+### Adding content to our file
 
 Our README file is a Markdown file where we'll add some content that describes our project.
 
@@ -63,12 +115,6 @@ I'm learning git and github and this repo will help me. Don't judge.
 ```
 
 You can save the file, but keep it open.
-
-### Initialize the repo
-
-A cool thing about VS Code is you can open a Terminal window inside the editor and do shell commands there. You can find this under View > Integrated Terminal, or use Control-` on a Mac. This should open a terminal at the root of the project you have open. It will look something like this:
-
-![terminal](../../images/integrated-terminal.png)
 
 Inside this terminal, type in the command to initialize git. Here is my command and response:
 
