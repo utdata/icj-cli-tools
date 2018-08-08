@@ -51,6 +51,7 @@ I encourage you to type commands into your terminal instead of copy and pasting 
 * [Git & Bitbucket](lectures/git/gitting-started.md)
 * [Sharing code](lectures/git/git-clone.md)
 * [Git branches](lectures/git/git-branch.md)
+* [Git in VS Code](lectures/git/git-vscode.md)
 
 ### Python, Jupyter and csvkit
 
