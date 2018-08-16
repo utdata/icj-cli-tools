@@ -2,7 +2,7 @@
 
 There is a hidden file on your computer that is the profile for your bash terminal. If you have VS Code installed and configured as your text editor, you can open it with this:
 
-`$ code ~/.bashrc`
+`$ code ~/.bash_profile`
 
 We'll be adding lines to that file and then saving it. So see the changes reflected in your terminal, you have to exit and open a new one.
 
@@ -12,9 +12,11 @@ My prompt line in my terminal is really long. It looks like this:
 
 `CHRISTIANs-MacBook-Air-2:~ christian$`
 
-You can shorten it to just your login name by adding this line to your `.bashrc` file.
+You can shorten it to just your login name by adding this line to your `.bash_profile` file.
 
 `PS1='\u:\W\$ '`
+
+Now close your Terminal window and open a new one, and the prompt should be shorter.
 
 ## List all long including hidden
 
