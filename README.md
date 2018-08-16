@@ -46,9 +46,9 @@ I encourage you to type commands into your terminal instead of copy and pasting 
 * [Bash commands](lectures/bash/bash-commands.md)
 * [Bash profiles](lectures/bash/bash-profiles.md)
 
-### Using Git and Bitbucket
+### Using Git and Github
 
-* [Git & Bitbucket](lectures/git/gitting-started.md)
+* [Git & Github](lectures/git/gitting-started.md)
 * [Sharing code](lectures/git/git-clone.md)
 * [Git branches](lectures/git/git-branch.md)
 * [Git in VS Code](lectures/git/git-vscode.md)
