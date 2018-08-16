@@ -12,33 +12,22 @@ We'll now see how you can collaborate in code with a classmate. Our goals are th
 
 ## Clone a repo
 
-* In your browser, go to your partner's Bitbucket profile and click on Repositoris if necessary, then on their repo.
-* Look for the button **Clone**. You want to copy the URL for cloning, like this:
+* In your browser, go to your partner's Github profile and click on Repositories if necessary, then on their repo.
+* Look for the button **Clone or download**. You want to copy the URL for cloning, like this:
 
-![clone](../../images/clone-repo.png)
+![clone](../../images/github-clone-repo.png)
 
 * Go into your regular Terminal app and cd into `~/Documents/code`.
-* Paste the command and execute it. It will will look something like this:
+* Do `git clone {URL}` but paste the URL you copied. This is the same as you did with your own repo, but now you have downloaded your partner's repo.
 
-```bash
-$ git clone git@bitbucket.org:christianmcdonald/myproject-christian.git
-Cloning into 'myproject-christian'...
-remote: Counting objects: 9, done.
-remote: Compressing objects: 100% (8/8), done.
-remote: Total 9 (delta 1), reused 0 (delta 0)
-Receiving objects: 100% (9/9), done.
-Resolving deltas: 100% (1/1), done.
-(base) ✔ ~/Documents/code 
-```
-
-This copies the repo as a folder in your `code` folder. If you wanted the repo to be a different name on your computer, you would add the name you want after the url. I tend to keep the same name unless there is a good reason not to.
+If you wanted the repo to be a different name on your computer, you would add the name you want after the url. I tend to keep the same name unless there is a good reason not to.
 
 * `cd` into the folder you have downloaded and then do `$ code ./`, which will open a new VS Code window with all the files in that repo. You are ready to work.
 
 ## Make your edits
 
 * Use the VS Code Explorer on the left to find your partner's named file and open it.
-* Add a new sentence praising your partner's command of git and Bitbucket thus far. Save and close the file.
+* Add a new sentence praising your partner's command of git and Github thus far. Save and close the file.
 * Add a new file to the repo called `newfile.md`. You can use the **File > New file** menu or the little buttons in the Explorer.
 * Add a title and a paragraph of text, using proper Markdown syntax. Save and close your work. (Depending on time, we might talk about and load the Markdown Syntax Linter.)
 * Open the Integrated Terminal and go through the steps to check status, add files, commit files (with message), and push to origin master.
@@ -57,7 +46,7 @@ We're going to create such a conflict so you can see that this looks like.
 ### Your original change
 
 * Find your VS Code window with your own repo and make a change within the first sentence.
-* Add, commit and push your changes to Bitbucket.
+* Add, commit and push your changes to Github.
 
 So now, in your partner's copy of your repo, there is a change that they do not have.
 
@@ -68,9 +57,9 @@ So now, in your partner's copy of your repo, there is a change that they do not 
 
 ``` bash
 $ git push origin master
-To bitbucket.org:christianmcdonald/myproject-christian.git
+To github.com:critmcdonald/myproject-christian.git
  ! [rejected]        master -> master (non-fast-forward)
-error: failed to push some refs to 'git@bitbucket.org:christianmcdonald/myproject-christian.git'
+error: failed to push some refs to 'github.com:critmcdonald/myproject-christian.git'
 hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
@@ -86,7 +75,7 @@ So, you have to pull the remote changes first.
 
 ``` bash
 $ git pull origin master
-From bitbucket.org:christianmcdonald/myproject-christian
+From github.com:critmcdonald/myproject-christian.git
  * branch            master     -> FETCH_HEAD
 Auto-merging newfile.md
 CONFLICT (content): Merge conflict in newfile.md
@@ -107,7 +96,7 @@ Let's break this down:
 
 ### Get your own repo right
 
-* Go back to your own repo in VS Code and do `git pull origin master`. Depending on how you resolved the conflict together, you might have to go through the process again. You might go look at the repo on Bitbucket and copy/paste the line to ensure you have it the same. Add, commit and push as necessary.
+* Go back to your own repo in VS Code and do `git pull origin master`. Depending on how you resolved the conflict together, you might have to go through the process again. You might go look at the repo on Github and copy/paste the line to ensure you have it the same. Add, commit and push as necessary.
 
 ## Good coding practices: Syntax
 

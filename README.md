@@ -1,8 +1,8 @@
 # Introduction to command-line tools
 
-> FIX THE LINKS ONCE EVERYING IS MOVED. THERE ARE LOTS OF BROKEN ONES.
+You should've gone through the first part of [setting-up](https://github.com/utdata/setting-up) before starting this lesson.
 
-This lesson is a beginner's guide to using command-line tools for coding and data-journalism. It is designed for students who may have never used Terminal before. It is geared toward Macs, but Windows users should be able to follow along if they use Git BASH, which shold be installed with the [git Windows installer](https://git-scm.com/download/).
+This lesson is a beginner's guide to using command-line tools for coding and data-journalism. It is designed for students who may have never used Terminal before. It is geared toward Macs, but Windows users should be able to follow along if they use Git BASH, which should be installed with the [git Windows installer](https://git-scm.com/download/).
 
 Some of this lesson is cribbed from the book [The Command Line Crash Course](http://cli.learncodethehardway.org/book/) by Learn Code the Hard Way.
 
