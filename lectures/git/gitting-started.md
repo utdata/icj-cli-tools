@@ -2,7 +2,7 @@
 
 Make sure you've [installed VS Code, Git, have configured it and have a Github account with SSH keys](https://github.com/utdata/setting-up) before continuing here.
 
-## Defining verison control
+## Defining version control
 
 [Search on google](https://www.google.com/search?q=understanding+git+version+control&oq=understanding+git+version+control) and you'll find a ton of [posts](https://www.atlassian.com/git/tutorials/what-is-version-control), [tutorials](https://www.codecademy.com/learn/learn-git) and [videos](https://www.youtube.com/watch?v=Y9XZQO1n_7c) about Git and version control systems. I encourage you to explore some that fit you learning style. We'll just cover enough here to get you going and we'll learn by doing.
 
@@ -61,7 +61,7 @@ Now, go back to your browser to the project you created.
 
 ![github-clone](../../images/github-clone-repo.png)
 
-* Go back to your Terminal and paste in that text and hit return to run the code.
+* Go back to your Terminal and type in `git clone ` and then paste in the url you copied.
 
 It should look something like this::
 

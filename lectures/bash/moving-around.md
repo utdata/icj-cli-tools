@@ -142,7 +142,13 @@ drwxr-xr-x    5 root       admin      170 Feb 19 06:56 ..
 
 These are two special designations in the Unix world. A single period designates "this directory" and two periods designates the "parent directory". Every directory has these, so that's why the `ls -l` always shows two items inside a directory, even if it is "empty" of regular files or folders.
 
-We can use these period designations (there's probably a fancy word for them I don't know) to move around into different directories, and to manage files in our current directories. But first ...
+We can use these period designations (there's probably a fancy word for them I don't know) to move around into different directories, and to manage files in our current directories.
+
+Let's see this "dot" designation in action. Do this command:
+
+`$ open .`
+
+Since you are in your home directory, this should open that folder in your Finder.
 
 ## mkdir
 
@@ -182,7 +188,7 @@ mydirectory
 A couple of things about this:
 
 * You have listed the contents of a directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know it's path.
-* If you try to name a directory with a space in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders. I try to avoid capitalization, too, because sometimes it matters.
+* If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders. I try to avoid capitalization, too, because sometimes it matters.
 
 ## cd
 
@@ -263,9 +269,9 @@ This is very powerful in programming, because you might be writing and testing c
 
 You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/file01.py`. That's called a **root-relative** path. If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in.
 
-### Absolute-relative paths
+### Absolute paths
 
-And absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
+An absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
 
 ## man
 
