@@ -303,4 +303,4 @@ This gives you a list of the flags and arguments for that command, along with ot
 
 ---
 
-Next: [Looking at files](looking-at-files.md)
+Next: [Looking at files](bash-viewing-files.md)

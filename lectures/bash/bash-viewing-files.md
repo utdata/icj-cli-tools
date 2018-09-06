@@ -6,7 +6,7 @@ Let's learn some more command-line juju for working with files. These commands w
 
 ## Set up
 
-Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](moving-around.md)).
+Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](bash-moving-around.md)).
 
 ``` bash
 cd ~/Documents
