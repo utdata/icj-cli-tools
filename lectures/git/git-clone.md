@@ -1,5 +1,7 @@
 # Cloning repos, sharing code
 
+> For Fall 2018: Let's rename our `/code/` folder to `/icj/`!!!!
+
 ## Goals
 
 We'll now see how you can collaborate in code with a classmate. Our goals are this:
@@ -17,8 +19,8 @@ We'll now see how you can collaborate in code with a classmate. Our goals are th
 
 ![clone](../../images/github-clone-repo.png)
 
-* Go into your regular Terminal app and cd into `~/Documents/code`.
-* Do `git clone {URL}` but paste the URL you copied. This is the same as you did with your own repo, but now you have downloaded your partner's repo.
+* Go into your regular Terminal app and cd into `~/Documents/icj/`.
+* Do `git clone URL` but paste the URL you copied. This is the same as you did with your own repo, but now you have downloaded your partner's repo.
 
 If you wanted the repo to be a different name on your computer, you would add the name you want after the url. I tend to keep the same name unless there is a good reason not to.
 
@@ -64,7 +66,7 @@ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
-(base) ✘-1 ~/Documents/code/myproject-christian [master ↓·1↑·1|✔] 
+(base) ✘-1 ~/Documents/icj/myproject-christian [master ↓·1↑·1|✔] 
 ```
 
 You can see from the hints in the error message, that there are changes on the remote repo that you don't have. Git won't let you push new changes unless you have the current remote copy from the server. That keeps you from screwing up something that is already there (which is kinda what we are doing).
@@ -80,7 +82,7 @@ From github.com:critmcdonald/myproject-christian.git
 Auto-merging newfile.md
 CONFLICT (content): Merge conflict in newfile.md
 Automatic merge failed; fix conflicts and then commit the result.
-(base) ✘-1 ~/Documents/code/myproject-christian [master|MERGING ↓·1↑·1|✖ 1] 
+(base) ✘-1 ~/Documents/icj/myproject-christian [master|MERGING ↓·1↑·1|✖ 1] 
 ```
 
 Now look at the file in VS Code, and it will look pretty crazy. Here is mine:

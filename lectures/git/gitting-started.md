@@ -40,16 +40,16 @@ That README is written in a language called [Markdown](https://guides.github.com
 There are many ways to create folders on your computer. We're going to use the Terminal and the Code app so we can get used to using them.
 
 * Open your Terminal and type in `$ cd ~/Documents/`
-* Create a new directory to hold all your code, and call it `code`. Always use lowercase letters and no spaces in file and folder names. You'll thank me later:
+* Create a new directory to hold all your code for this class, and call it `icj`. Always use lowercase letters and no spaces in file and folder names. You'll thank me later:
 
 ```bash
-mkdir code
+mkdir icj
 ```
 
 * Move into your folder:
 
 ```bash
-cd code
+cd icj
 ```
 
 ## Cloning your repo from Github
@@ -148,14 +148,14 @@ Untracked files:
         christian.md
 
 nothing added to commit but untracked files present (use "git add" to track)
-✔ ~/Documents/code/myproject-christian [master|…1]
+✔ ~/Documents/icj/myproject-christian [master|…1]
 ```
 
 We have one untracked file, `myname.md`, and Git has been nice enough to tell you how to stage your file. Let's add it with `git add myname.md`. Here is the command and response:
 
 ``` bash
 $ git add christian.md
-✔ ~/Documents/code/myproject-christian [master|●1]
+✔ ~/Documents/icj/myproject-christian [master|●1]
 ```
 
 There wasn't really a response, but because I have the git-bash-prompt extension installed (which you should have installed in [setting-up](https://github.com/utdata/setting-up)), I have some feedback. We haven't talked about that yet, but that part `[master L|●1]` tells me we are on the `master` branch (more on that later) and that I have one staged file. Just watch how those signals change as we go through the cycle.
@@ -167,7 +167,7 @@ $ git commit -m "adding my new file"
 [master 8809887] adding my new file
  1 file changed, 3 insertions(+)
  create mode 100644 christian.md
-✔ ~/Documents/code/myproject-christian [master ↑·1|✔]
+✔ ~/Documents/icj/myproject-christian [master ↑·1|✔]
 ```
 
 Congrats! You have made your first commit, saving this point in time on your computer. Our next step is to push that to Github.
@@ -183,7 +183,7 @@ Writing objects: 100% (3/3), 374 bytes | 374.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To github.com:critmcdonald/myproject-christian.git
    105d1d6..8809887  master -> master
-✔ ~/Documents/code/myproject-christian [master|✔]
+✔ ~/Documents/icj/myproject-christian [master|✔]
 ```
 
 That's a lot of mumbo jumbo that we don't have to understand details of, we just have to recognize that it did "Writing" and you didn't get an error.
@@ -211,14 +211,14 @@ Changes not staged for commit:
         modified:   christian.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
-✔ ~/Documents/code/myproject-christian [master|✚ 1]
+✔ ~/Documents/icj/myproject-christian [master|✚ 1]
 ```
 
 * The return says we have one modified file. Since it is the only modified file and we want to stage it, we'll use a fancy command to add "all" the modified files so we don't have to name it. The period means "all changed files".
 
 ```bash
 $ git add .
-✔ ~/Documents/code/myproject-christian [master|●1]
+✔ ~/Documents/icj/myproject-christian [master|●1]
 ```
 
 There isn't really a response for staging a file if it is successful.
@@ -229,7 +229,7 @@ There isn't really a response for staging a file if it is successful.
 $ git commit -m "adding changes"
 [master 22acae0] adding changes
  1 file changed, 2 insertions(+)
-✔ ~/Documents/code/myproject-christian [master ↑·1|✔]
+✔ ~/Documents/icj/myproject-christian [master ↑·1|✔]
 ```
 
 * And then push them to master:
@@ -245,7 +245,7 @@ Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:critmcdonald/myproject-christian.git
    8809887..b36328f  master -> master
-✔ ~/Documents/code/myproject-christian [master|✔]
+✔ ~/Documents/icj/myproject-christian [master|✔]
 ```
 
 Well done! You've learned the basic git cycle and pushed code to Github so others can work on it. That's next.

@@ -34,7 +34,7 @@ Writing objects: 100% (3/3), 354 bytes | 354.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To github.com:critmcdonald/myproject-christian.git
  * [new branch]      featurebranch -> featurebranch
-✔ ~/Documents/code/myproject-christian [featurebranch L|✔]
+✔ ~/Documents/icj/myproject-christian [featurebranch L|✔]
 ```
 
 * Go to your repo on Github, and you'll notice your `branchfile.md` is not listed. This is because you are looking at your `master` branch.
@@ -71,7 +71,7 @@ Now let's clean up our local repo.
 $ git checkout master
 Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
-(base) ✔ ~/Documents/code/myproject-christian [master|✔]
+(base) ✔ ~/Documents/icj/myproject-christian [master|✔]
 ```
 
 You might notice this says you "branch is up-to-date with 'origin/master', and that is confusing, because we know we merged changes that are on Github. This message is referring to your LOCAL branch, not the one on Github. We still need to pull in those changes:
@@ -85,7 +85,7 @@ Fast-forward
  branchfile.md | 3 +++
  1 file changed, 3 insertions(+)
  create mode 100644 branchfile.md
-✔ ~/Documents/code/myproject-christian [master|✔]
+✔ ~/Documents/icj/myproject-christian [master|✔]
 ```
 
 This will pull the files from Github and bring them local.
@@ -103,7 +103,7 @@ The newbranch on Github went away when we merged it, but now we can delete it lo
 ``` bash
 $ git branch -D newbranch
 Deleted branch newbranch (was 1345054).
-✔ ~/Documents/code/myproject-christian [master|✔] 
+✔ ~/Documents/icj/myproject-christian [master|✔] 
 
 ```
 
