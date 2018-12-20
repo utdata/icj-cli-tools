@@ -34,4 +34,4 @@ I encourage you to type commands into your terminal instead of copy and pasting 
 
 ---
 
-**Next**: [Moving around in the Terminal](bash-moving-around.md)
+**Next**: [Moving around in the Terminal](bash-02-moving-around.md)

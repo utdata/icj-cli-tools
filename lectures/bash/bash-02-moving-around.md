@@ -6,9 +6,11 @@ Of note: I use the terms "folder" and "directory" interchangeably here. The are 
 
 Our goal here is to become familiar with Terminal and the Bash commands to move around and access different folders on your computer.
 
+We'll also create our class folder, which you will use for the rest of the semester.
+
 ## Home directory
 
-I want to make sure we are all starting from the same relative location, so blindly follow me by typing the following into your terminal. (Remember to not actually type the $).
+I want to make sure we are all starting from the same relative location, so blindly follow me by typing the following into your terminal. (If you see a command like this that starts with `$`, don't type that in. It's just a note that it is a terminal command).
 
 `$ cd ~`
 
@@ -53,6 +55,7 @@ Movies
 It listed the names of all the folders and files of the directory I'm in.
 
 ### Flags
+
 But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which add nuance or detail to a command. They start with a dash, and you can pile them on, as I'll demonstrate. First, try this:
 
 `$ ls -l`
@@ -150,112 +153,101 @@ Let's see this "dot" designation in action. Do this command:
 
 Since you are in your home directory, this should open that folder in your Finder.
 
-## mkdir
+## cd
+
+Both Macs and PCs have a `Documents` folder inside each user's home folder. It's typically where you save all your stuff (better than your Desktop!). It's time for us to move in our Terminal to inside this Documents folder.
+
+The [cd](https://man.cx/cd) command is **change directory**. Let's change directory into your `Documents`:
+
+`$ cd Documents`
+
+Macs are particular that you capitalize a folder like `Documents`. We shouldn't rename this folder, so we'll just deal with it and type the capital D.
 
 Let's do a review real quick. Where are you? What is your "working directory?"
 
 `$ pwd`
 
-What is in this current directory?
+What is in this current directory? It could be something like this:
+
+`/Users/ccm346/Documents`
+
+It should end with Documents. If it doesn't, PLEASE RAISE YOUR HAND.
+
+
+## mkdir
+
+Now, let's make a new empty folder inside this directory, using the [mkdir](https://man.cx/mkdir) command:
+
+`$ mkdir icj`
+
+Then list your directory again to see the new directory:
 
 `$ ls`
 
-OK, now let's make a new empty folder inside this directory, using the [mkdir](https://man.cx/mkdir) command:
+You should see your new `icj` directory there along with all your other stuff inside Documents. Creating a directory like this is exactly the same as opening a desktop window on your Mac and doing Command-N to create a new folder. Folders and directories are the same thing.
 
-`$ mkdir testy`
+Cool, let's make another directory inside of `icj`.
 
-The list your directory again to see the new directory:
+`$ mkdir icj/newdirectory`
 
-`$ ls`
+Now you can do an `ls` on icj to see what is inside it.
 
-You should see your new `testy` directory there along with all your other stuff in your working directory. Creating a directory like this is exactly the same as opening a desktop window on your Mac and doing Command-N to create a new folder. Folders and directories are the same thing.
+`$ ls icj`
 
-Cool, let's make another directory inside of `testy`!
-
-`$ mkdir testy/mydirectory`
-
-Now you can do an `ls` on testy to see what you made inside of `testy`.
-
-`$ ls testy`
-
-Which should now show you what is inside the directory `testy`. Here is my command and output.
+It should show you `newdirectory`. Something like this:
 
 ``` bash
-christian:~$ ls testy
-mydirectory
+christian:~$ ls icj
+newdirectory
 ```
 
 A couple of things about this:
 
-* You have listed the contents of a directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know it's path.
+* You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know its path.
 * If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders. I try to avoid capitalization, too, because sometimes it matters.
 
-## cd
+Now, let's go inside the `icj` folder:
 
-OK, now that we have the same folders, let's move in and out of them. The [cd](https://man.cx/cd) command is **change directory**. Let's change directory into the `testy` folder we created:
+`$ cd icj`
 
-`$ cd testy`
-
-Now you are inside of testy. Let's see what is inside:
+Let's see what is inside:
 
 `$ ls`
 
-That should show you a result with the `mydirectory` that we created earlier. Now let's get crazy:
-
-`$ ls ../`
-
-Remember I said that two periods means the parent directory? This should show you the list of files and folders in your home directory, (or where ever you've been working from for the last half hour.) Now, confirm where you are:
-
-`$ pwd`
+That should show you a result with the `mydirectory` that we created earlier.
 
 Here are the commands and results of these last few commands in my terminal. I started with a `pwd` so you can see where I started from:
 
 ```
 christian:~$ pwd
 /Users/christian
-christian:~$ cd testy
+christian:~$ cd icj
 christian:testy$ ls
-mydirectory
+newdirectory
 christian:testy$ pwd
-/Users/christian/testy
+/Users/christian/icj
 ```
 
 So to break that down:
+
 * I printed my working directory, which showed me I was in my Users folder.
-* I did `cd` into `testy` which moved me to inside that directory.
-* Now that I'm inside `testy`, I did `ls` to see the contents of my current folder, and it showed me that `mydirectory` was indeed inside.
-* I did `pwd` to show that my current working directory (where I am) is inside the `testy` folder.
+* I did `cd` into `icj` which moved me to inside that directory.
+* Now that I'm inside `icj`, I did `ls` to see the contents of my current folder, and it showed me that `newdirectory` was indeed inside.
+* I did `pwd` to show that my current working directory (where I am) is inside the `icj` folder.
 
-Now let's go inside the `mydirectory` folder:
+ Now let's get crazy:
 
-`$ cd mydirectory`
+`$ ls ../`
 
-and check where you are:
-
-`$ pwd`
-
-For me, the result is:
-
-```
-christian:mydirectory$ pwd
-/Users/christian/testy/mydirectory
-```
-
-Remember that `../` means the parent directory? You can move out of `mydirectory` into `testy` by using that to change directory:
-
-`$ cd ../`
-
-Check where you are:
+Remember I said that two periods means the parent directory? This should show you the list of files and folders in your Documents directory. Now, confirm where you are:
 
 `$ pwd`
 
-My result:
+Which should still be `icj`. So you had listed the files for the folder "above" you.
 
-```
-christian:mydirectory$ cd ../
-christian:testy$ pwd
-/Users/christian/testy
-```
+## tab completion
+
+If you are doing `ls` or `cd` or otherwise referencing a path in the terminal, you don't have to type the whole word for each directory. If you you are trying to list the contents of "newdirectory", then start with `ls newd` and then hit tab, and it will finish out the path as `ls newdirectory`. This is SUPER handy and you should use it often. Like all the time.
 
 ## On the right path
 
@@ -273,34 +265,17 @@ You can reference the "root" or the top level of whatever server or machine you 
 
 An absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
 
-## man
 
-If you are unsure about how any of these terminal commands work, there are manual pages for each one already on your computer. Now, I'm not saying they are extremely well-written and intuitive, but they are there.
+### Getting to your icj folder
 
-`$ man cd`
+There will be many times in the class that you will want to get into your `icj` folder, or something inside of it. Because everyone in class created this folder in the same place relative to their home folder, we can use a special command to get there, no matter where we are starting. And because of tab completion, as you are typing this, when you type Documents you only need `Docu` then hit tab and it will complete the rest of the word.
 
-Will open the manual page for `cd` and tell you have to **change directory**.
+`$ cd ~/Documents/icj`
 
-But man pages, as they are called, are a special program themselves, and have a different commands to negotiate around them, as you'll discover quickly if you try to scroll to see more.
+And if you knew you wanted to get inside a folder there, say called `my-project`, it would be:
 
-* hit `f` or `space` to advance one page through the file
-* hit `j` to go down one line
-* hit `k` to go up one line
-* hit `g` to go the the top
-* hit `q` to quit
-
-Moving around the man pages is frustrating at first. There are [online versions](http://man.cx/) of these, but the `man` command doesn't need the internet. These files are already on your computer.
-
-Man pages are useful to figure out the options or **flags** for commands, so you can learn that `ls -lt` will give you that long list sorted in order of time, most-recently modified at top.
-
-## -h for help
-
-Sometimes there isn't a man page for a command, but there is help file. One of the program commands we might use later is `in2csv` which turns files into well-formatted csv files for processing. To get help, I would type:
-
-`$ in2csv -h`
-
-This gives you a list of the flags and arguments for that command, along with other information.
+`$ cd ~/Documents/icj/my-project`
 
 ---
 
-Next: [Looking at files](bash-viewing-files.md)
+Next: [Looking at files](bash-03-viewing-files.md)
