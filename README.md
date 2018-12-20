@@ -20,8 +20,3 @@ This lesson is a beginner's guide to using command-line tools for coding and dat
 * [Sharing code](lectures/git/git-02-clone.md)
 * [Git branches](lectures/git/git-03-branch.md)
 * [Git in VS Code](lectures/git/git-04-vscode.md)
-
-### Python, Jupyter and csvkit
-
-* [Introduction to Anaconda](lectures/python/intro-anaconda.md) (needs rework)
-* [Using Jupyter Notbooks](lectures/python/using-jupyter.md) (needs rework)
