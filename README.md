@@ -8,7 +8,7 @@ This lesson is a beginner's guide to using command-line tools for coding and dat
 
 ### Learning the terminal
 
-* [What is a terminal?](lectures/bash-01-terminal.md)
+* [What is a terminal?](lectures/bash/bash-01-terminal.md)
 * [Moving around](lectures/bash/bash-02-moving-around.md)
 * [Looking at files](lectures/bash/bash-03-viewing-files.md)
 * [Bash commands](lectures/bash/bash-04-commands.md)
