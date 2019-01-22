@@ -4,7 +4,7 @@ Make sure you've [installed VS Code, Git, have configured it and have a Github a
 
 ## Defining version control
 
-[Search on google](https://www.google.com/search?q=understanding+git+version+control&oq=understanding+git+version+control) and you'll find a ton of [posts](https://www.atlassian.com/git/tutorials/what-is-version-control), [tutorials](https://www.codecademy.com/learn/learn-git) and [videos](https://www.youtube.com/watch?v=Y9XZQO1n_7c) about Git and version control systems. I encourage you to explore some that fit you learning style. We'll just cover enough here to get you going and we'll learn by doing.
+[Search on google](https://www.google.com/search?q=understanding+git+version+control&oq=understanding+git+version+control) and you'll find a ton of [posts](https://www.atlassian.com/git/tutorials/what-is-version-control), [tutorials](https://www.codecademy.com/learn/learn-git) and [videos](https://www.youtube.com/watch?v=Y9XZQO1n_7c) about Git and version control systems. I encourage you to explore some that fit your learning style. We'll just cover enough here to get you going and we'll learn by doing.
 
 At its most basic, Git allows you to save your work at intervals and it keeps a history of every save point on your computer. Once you have something that works, you save it and leave a comment about what you've done. You can then go back to that exact point in time if you need to. This frees the coder to experiment and make changes that may NOT work, because you know you can always go back. It works for any kind of file you want to put under version control.
 
@@ -23,7 +23,7 @@ A repository -- or "repo" -- is a folder on your computer that is tracked by git
 
 ### Visual Studio Code
 
-We'll start using our code editor, Visual Studio Code, with this assignment. I'll sometimes refer to thos program as VS Code or just Code.
+We'll start using our code editor, Visual Studio Code, with this assignment. I'll sometimes refer to this program as VS Code or just Code.
 
 ## Project setup
 
@@ -110,7 +110,7 @@ Congratulations ... you have now saved a snapshot in time of all these files. No
 
 - Go to [github.com](https://github.com) (and log in if you are not) and find the + sign at the top right.
 - Click on that and choose **New repository**.
-  - Name the repo the same as your local one: `yourname-html-css`.
+  - Name the repo the same as your local one: `yourname-git-practice`.
   - Give it a description so you know what it is later.
   - Keep it Public.
   - DO NOT include a README here, or a gitignore or license.
@@ -121,7 +121,7 @@ Congratulations ... you have now saved a snapshot in time of all these files. No
 
 ### Adding a new file
 
-We're going to use the Integrated Terminal again to create yet anther a new file.
+We're going to use the Integrated Terminal again to create yet another a new file.
 
 - Go into the Integrated Terminal and use the `touch` command to create a new file, **using your name** for the file name. It will be a Markdown file:
 
