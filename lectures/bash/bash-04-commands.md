@@ -20,7 +20,7 @@
 
 1. rm works for both files and folders in windows.
 2. rmdir works in Git Bash, but not in other Windows terminal programs.
-3. Know WHAT THE HELL you are doing with these. Might work as sudo in Git Bash?
+3. You best know what you are doing before running as sudo or root.
 
 ## man
 

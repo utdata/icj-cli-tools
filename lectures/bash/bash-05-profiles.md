@@ -12,7 +12,7 @@ My prompt line in my terminal is really long. It looks like this:
 
 `CHRISTIANs-MacBook-Air-2:~ christian$`
 
-You can shorten it to just your login name by adding this line to your `.bash_profile` file.
+You can shorten it to just your login name by adding this line to your `.bash_profile` file, which is found in your home directory: `code ~/.bash_profile` should open it in VS Code so you can edit it.
 
 `PS1='\u:\W\$ '`
 
@@ -20,6 +20,6 @@ Now close your Terminal window and open a new one, and the prompt should be shor
 
 ## List all long including hidden
 
-When I want to see everything in a directory, including all the hidden files and the other details like size, date, etc., then the command is `ls -al`. But I put in a alias so all I have to type is `ll` to get that long list. Add this to your `.baschrc`:
+When I want to see everything in a directory, including all the hidden files and the other details like size, date, etc., then the command is `ls -al`. But I put in a alias so all I have to type is `ll` to get that long list. Add this to your `.bash_profile`:
 
 `alias ll="ls -al"`

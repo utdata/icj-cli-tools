@@ -6,13 +6,13 @@ Let's learn some more command-line juju for working with files. These commands w
 
 ## Set up
 
-Let's get something to work with. We'll go to our home directory, make a class directory, make a project diretory, and then move into it. (This is review from [Moving Around](bash-moving-around.md)).
+Let's make sure we are in our class folder. (This is review from [Moving Around](bash-moving-around.md)).
 
 ``` bash
-cd ~/Documents
-mkdir code
-mkdir code/myproject
-cd code/myproject
+cd ~/Documents/icj
+mkdir myproject
+cd myproject
+pwd
 ```
 
 We need some text to work with, so we're going to pull down some text from Github. I might as well explain what we are doing.
@@ -28,7 +28,7 @@ We need some text to work with, so we're going to pull down some text from Githu
 
 OK, now we should be able to `ls` and see our file is there. My output looks like this:
 
-```
+```bash
 christian:myproject$ ls
 data.csv
 ```
