@@ -1,3 +1,25 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Moving around in Bash](#moving-around-in-bash)
+  - [Goal](#goal)
+  - [Home directory](#home-directory)
+  - [pwd](#pwd)
+  - [List directory](#list-directory)
+    - [Flags](#flags)
+    - [Hidden files](#hidden-files)
+  - [cd](#cd)
+  - [mkdir](#mkdir)
+  - [tab completion](#tab-completion)
+  - [On the right path](#on-the-right-path)
+    - [Relative paths](#relative-paths)
+    - [Root-relative paths](#root-relative-paths)
+    - [Absolute paths](#absolute-paths)
+    - [Getting to your icj folder](#getting-to-your-icj-folder)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Moving around in Bash
 
 Of note: I use the terms "folder" and "directory" interchangeably here. The are the same thing.

@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [What is a Terminal](#what-is-a-terminal)
+  - [Macintosh](#macintosh)
+  - [PCs](#pcs)
+  - [Code examples in lessons](#code-examples-in-lessons)
+  - [Typing vs copy/paste](#typing-vs-copypaste)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # What is a Terminal
 
 Terminal (Mac) and Git Bash (Windows) are programs that can run a **shell**, which is the user interface your computer understands. The default language for these interactions is called **Bash**. All these crazy [commands](lectures/Commands.md) I'm going to teach you are BASH commands.

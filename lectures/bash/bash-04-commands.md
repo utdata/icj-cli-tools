@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Commands in bash](#commands-in-bash)
+  - [man](#man)
+  - [-h for help](#-h-for-help)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Commands in bash
 
 | To do this               | Mac   | Windows       | Notes |
