@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Git branches and pull requests](#git-branches-and-pull-requests)
+  - [Feature branch workflow](#feature-branch-workflow)
+  - [Let's do it](#lets-do-it)
+  - [Create a pull request](#create-a-pull-request)
+  - [Git commands](#git-commands)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Git branches and pull requests
 
 One of the features of Git is to "branch" code into a copy so you can make changes while the original "master" branch lives on. This is useful in the coding world when you want to add a feature or make changes that you don't want to yet add to the master.

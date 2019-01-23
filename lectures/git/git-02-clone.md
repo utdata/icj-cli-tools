@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Cloning repos, sharing code](#cloning-repos-sharing-code)
+  - [Goals](#goals)
+  - [Clone a repo](#clone-a-repo)
+  - [Make your edits](#make-your-edits)
+  - [Pull your partner's edits](#pull-your-partners-edits)
+  - [Dealing with conflicts](#dealing-with-conflicts)
+    - [Your original change](#your-original-change)
+    - [Change your partner's repo](#change-your-partners-repo)
+    - [Get your own repo right](#get-your-own-repo-right)
+  - [Good coding practices: Syntax](#good-coding-practices-syntax)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Cloning repos, sharing code
 
 ## Goals
