@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Git version control](#git-version-control)
+  - [Defining version control](#defining-version-control)
+  - [Our goals](#our-goals)
+    - [Visual Studio Code](#visual-studio-code)
+  - [Project setup](#project-setup)
+    - [Folders and files](#folders-and-files)
+    - [The README](#the-readme)
+    - [Using gitignore](#using-gitignore)
+    - [Initializing your local repo](#initializing-your-local-repo)
+    - [Creating your public Github repo](#creating-your-public-github-repo)
+    - [Adding a new file](#adding-a-new-file)
+    - [The git cycle](#the-git-cycle)
+  - [Repeat: Add, commit, push](#repeat-add-commit-push)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Git version control
 
 Make sure you've [installed VS Code, Git, have configured it and have a Github account with SSH keys](https://github.com/utdata/icj-setting-up) before continuing here.
@@ -60,12 +80,12 @@ I want something like that on every project you make in this class: **title, you
 
 ### Using gitignore
 
-Your computer and the programs that run on it create all kinds of hidden files that you don't normally see. When looking in folders with the VS Code explorer, you might on a Mac a file called `.DS_Store`, which is a hidden file the Mac creates when you view a folder. On Windows, you might see `.Thumbs.db`, which is a record of images saved in a folder. We often don't want to save these files or others into our git history, so we create another hidden file called a [.gitignore](https://help.github.com/articles/ignoring-files/)file to tell git to ignore certain things. An easy way to create one is to use the website [gitignore.io](https://www.gitignore.io/).
+Your computer and the programs that run on it create all kinds of hidden files that you don't normally see. When looking in folders with the VS Code explorer, you might on a Mac a file called `.DS_Store`, which is a hidden file the Mac creates when you view a folder. On Windows, you might see `.Thumbs.db`, which is a record of images saved in a folder. We often don't want to save these files or others into our git history, so we create another hidden file called a [.gitignore](https://help.github.com/articles/ignoring-files/) file to tell git to ignore certain things. An easy way to create one is to use the website [gitignore.io](https://www.gitignore.io/).
 
 Creating hidden files like the `.gitignore` through the Mac/Windows regular file structure can be tricky, so it is best to do it from a terminal.
 
 - In your Integrated Terminal in VS Code type the command `touch .gitignore`. There is NO file extension for this file, so no `.txt` or anything ... it should be just `.gitignore`. Once created, it should show up in your list of files in VS Code on the left-hand screen. Go ahead and open it in VS Code by double-clicking on in the explorer.
-- Go to [gitignore.io](https://www.gitignore.io/) in a browser. Type in "macOS" and add it, then "Windows" and add it to the list. (If you were using other programs like MicrosoftOffice or languages like Python, you would add those as well.) Click the **Create** button.
+- Go to [gitignore.io](https://www.gitignore.io/) in a browser. Type in "VisualStudioCode" and choose it from the list. (Make sure is it "VisualStudioCode" and not just "VisualStudio"). Type in "macOS" and add it, then "Windows" and add it to the list. Do them both, even if you only work on a Mac, just to be nice for future collaborators. (If you were using other programs like MicrosoftOffice or languages like Python, you would add those as well.) Click the **Create** button.
 - Copy all the code there and paste it into your `.gitignore` file and save it.
 
 ### Initializing your local repo
