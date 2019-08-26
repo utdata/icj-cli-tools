@@ -131,4 +131,4 @@ We've been writing in Markdown, and here are two resources about that syntax:
 
 ------
 
-Next: [Git branches](git-branch.md)
+Next: [Git branches](git-03-branch.md)
