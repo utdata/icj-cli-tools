@@ -22,7 +22,7 @@
 
 # Moving around in Bash
 
-Of note: I use the terms "folder" and "directory" interchangeably here. The are the same thing.
+> Of note: I use the terms "folder" and "directory" interchangeably here. They are the same thing.
 
 ## Goal
 

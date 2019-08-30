@@ -34,7 +34,7 @@ For the PCs, when you install git for Windows, it also installs  **Git Bash**, w
 
 ## Code examples in lessons
 
-When I write out commands for you to type, I will include a `$` at the beginning to indicate this should go at the prompt in your shell. DON'T TYPE IN THE $.
+When I give example commands for you to type, you may see a `$` at the beginning to indicate this should go at the prompt in your terminal. DON'T TYPE IN THE $.
 
 `$ pwd`
 
