@@ -30,7 +30,7 @@ At its most basic, Git allows you to save your work at intervals and it keeps a 
 
 Git allows for a "distributed" version control system, meaning that other people can share the entire code base. When they "check out" a repository (or repo), they get the entire code base. Contributors can then make changes and "check in" those changes for others to use.
 
-[Github](https://github.com) is the central server where we will save our code. It's also a project management tool and a social network of sorts. It's probably the most popular programming service in the world. As a university student, you can get the [Student developer pack](https://help.github.com/articles/applying-for-a-student-developer-pack/) which includes free private repos, but you can do that later. [Bitbucket Cloud](https://bitbucket.org/) is another popular code sharing service.
+[Github](https://github.com) is the central server where we will save our code. It's also a project management tool and a social network of sorts. It's probably the most popular programming service in the world. ~~As a university student, you can get the [Student developer pack](https://help.github.com/articles/applying-for-a-student-developer-pack/) which includes free private repos, but you can do that later.~~ (<-- I'm not sure you need this anymore.) [Bitbucket Cloud](https://bitbucket.org/) is another popular code sharing service.
 
 ## Our goals
 
@@ -59,9 +59,9 @@ This is something we'll do time and again. Don't just follow the steps blindly .
 
 ### The README
 
-Every coding project should have a special file called a [README file](https://www.makeareadme.com/) which outlines what the project is and how to use it. It is often written in [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf), which is a text-based syntax that Github turns into pretty HTML when it is published, but is completely readable as text. It also has great support to show code, tables, lists and such. Here is a [cheatsheet of the syntax](https://commonmark.org/help/) and [10-minute tutorial](https://commonmark.org/help/tutorial/) you may find useful. For what it is worth, I write all lessons for this class in Markdown.
+Every coding project should have a special file called a [README file](https://www.makeareadme.com/) which outlines what the project is and how to use it. It is often written in [Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf), which is a text-based syntax that Github turns into pretty HTML when it is published, but is completely readable as text. It also has great support to show code, tables, lists and such. Here is a [cheatsheet of the syntax](https://commonmark.org/help/) and [10-minute tutorial](https://commonmark.org/help/tutorial/) you may find useful. For what it is worth, this document and all lessons for this class are written in Markdown.
 
-I want you to _always_ have a README file with your projects, and it should _always_ be called `README.md`. Yes, with capital letters for `README` and little-case letters for `.md`. It breaks filename convention because it is special.
+I want you to _always_ have a README file with your projects, and it should _always_ be called `README.md`. Yes, with capital letters for `README` and little-case letters for `.md`. It breaks filename conventions because it is special.
 
 - Create the file first. I would recommend using the Terminal inside VS Code and doing `touch README.md`. (There are other ways, but get used to using `touch`).
 - The file now appears in the file explorer in VS Code on the left. You can click on that to open it.
@@ -80,7 +80,7 @@ I want something like that on every project you make in this class: **title, you
 
 ### Using gitignore
 
-Your computer and the programs that run on it create all kinds of hidden files that you don't normally see. When looking in folders with the VS Code explorer, you might on a Mac a file called `.DS_Store`, which is a hidden file the Mac creates when you view a folder. On Windows, you might see `.Thumbs.db`, which is a record of images saved in a folder. We often don't want to save these files or others into our git history, so we create another hidden file called a [.gitignore](https://help.github.com/articles/ignoring-files/) file to tell git to ignore certain things. An easy way to create one is to use the website [gitignore.io](https://www.gitignore.io/).
+Your computer and the programs that run on it create all kinds of hidden files that you don't normally see. When looking in folders with the VS Code explorer, you might on a Mac a file called `.DS_Store`, which is a hidden file the computer creates when you view a folder. On Windows, you might see `.Thumbs.db`, which is a record of images saved in a folder. We often don't want to save these files or others into our git history, so we create another hidden file called a [.gitignore](https://help.github.com/articles/ignoring-files/) file to tell git to ignore certain things. An easy way to create one is to use the website [gitignore.io](https://www.gitignore.io/).
 
 Creating hidden files like the `.gitignore` through the Mac/Windows regular file structure can be tricky, so it is best to do it from a terminal.
 
@@ -164,12 +164,15 @@ You can save the file, but keep it open.
 
 There typically three steps to committing code in git:
 
-- `git status` to check what files have changed, etc.
 - `git add` to stage files that have changed.
 - `git commit` to commit (or save) the files. We'll add a comment at the same time.
 - `git push origin <branch>` to publish the changes to Github.
 
-You'll repeat these steps a lot.
+There is a fourth command we also use with the three above, but you can do it at any time to check where you are in the git workflow:
+
+- `git status` to check what files have changed, etc.
+
+We use these commands A LOT.
 
 Let's check the status of our repo.
 
@@ -226,7 +229,7 @@ To github.com:critmcdonald/christian-git-practice.git
 
 That's a lot of mumbo jumbo that we don't have to understand details of, we just have to recognize that it did "Writing" and you didn't get an error.
 
-Why `origin master`? This is the part that sends this to our Github repo to share with the world. The `master` part is the branch name, and that is something we'll get into in a future lesson.
+Why `origin master`? This is the part that sends this to our Github repo to share with the world. The `master` part is the branch name, and that is something we'll get into later in the semester.
 
 - Now go back to your browser and hit refresh on your repo, and you'll see the result there. Woo hoo!
 
