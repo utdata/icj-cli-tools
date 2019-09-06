@@ -311,8 +311,9 @@ If you are committing files with `git commit` and you forget to add the `-m` fla
 
 If this happens:
 
-- type your commit message into that first line.
-- Hit the `esc` key at the top left of your keyboard.
+- Press `i` on your keyboard to get into _insert_ mode.
+- Type your commit message into that first line.
+- Hit the `esc` key at the top left of your keyboard to get out of _insert_ mode.
 - Type `:wq` on your keyboard. Your cursor will move to the bottom of the window. That is OK.
 - Hit return to end the command.
 
