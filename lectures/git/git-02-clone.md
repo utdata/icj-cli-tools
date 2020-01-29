@@ -1,21 +1,6 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Cloning repos, sharing code](#cloning-repos-sharing-code)
-  - [Goals](#goals)
-  - [Clone a repo](#clone-a-repo)
-  - [Make your edits](#make-your-edits)
-  - [Pull your partner's edits](#pull-your-partners-edits)
-  - [Dealing with conflicts](#dealing-with-conflicts)
-    - [Your original change](#your-original-change)
-    - [Change your partner's repo](#change-your-partners-repo)
-    - [Get your own repo right](#get-your-own-repo-right)
-  - [Good coding practices: Syntax](#good-coding-practices-syntax)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Cloning repos, sharing code
+
+> We'll probably skip this ... and it probably needs edits.
 
 ## Goals
 
@@ -39,20 +24,21 @@ We'll now see how you can collaborate in code with a classmate. Our goals are th
 
 If you wanted the repo to be a different name on your computer, you would add the name you want after the url. I tend to keep the same name unless there is a good reason not to.
 
-- In your Terminal, `cd` into the folder you have downloaded
-- Then do `$ code ./`, which will open a new VS Code window with all the files in that repo.
-- You should be ready to work.
 
 ## Make your edits
 
-- Use the VS Code Explorer on the left to find your partner's named file and open it.
+- Launch VS Code if it isn't already.
+- Go to File > New Window.
+- Use the VS Code Explorer on the left to find your partner's folder and open it.
 - Add a new sentence praising your partner's command of git and Github thus far. Save and close the file.
-- Add a new file to the repo called `newfile.md`. There are a bunch of different ways you can do this ... just choose one:
+- Add a new file to the repo called `newfile.md`. There are a bunch of different ways you can do this ... just choose one method:
   - You use your terminal (even in VS Code) and type `touch newfile.md`.
   - You can use the **File > New file** menu and name it.
   - You can use the little buttons in the Explorer and name it.
 - Add a title and a paragraph of text, using proper Markdown syntax. Save and close your work. (Depending on time, we might talk about and load the Markdown Syntax Linter.)
 - Open the Integrated Terminal and go through the steps to check status, add files, commit files (with message), and push to origin master.
+
+> Before you can push, your partner probably needs to go into their Github repo and [add you as a collaborator](https://help.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository).
 
 ## Pull your partner's edits
 

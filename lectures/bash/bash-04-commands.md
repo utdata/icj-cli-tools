@@ -1,13 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Commands in bash](#commands-in-bash)
-  - [man](#man)
-  - [-h for help](#-h-for-help)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Commands in bash
 
 | To do this               | Mac   | Windows       | Notes |
@@ -54,8 +44,8 @@ Man pages are useful to figure out the options or **flags** for commands, so you
 
 ## -h for help
 
-Sometimes there isn't a man page for a command, but there is help file. One of the program commands we might use later is `in2csv` which turns files into well-formatted csv files for processing. To get help, I would type:
+Sometimes there isn't a man page for a command, but there is help file. If we wanted to look at a list of all the flags for the `curl` program, we would can get "help with the `-h` flag. I would type:
 
-`$ in2csv -h`
+`$ curl -h`
 
 This gives you a list of the flags and arguments for that command, along with other information.

@@ -1,25 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Moving around in Bash](#moving-around-in-bash)
-  - [Goal](#goal)
-  - [Home directory](#home-directory)
-  - [pwd](#pwd)
-  - [List directory](#list-directory)
-    - [Flags](#flags)
-    - [Hidden files](#hidden-files)
-  - [cd](#cd)
-  - [mkdir](#mkdir)
-  - [tab completion](#tab-completion)
-  - [On the right path](#on-the-right-path)
-    - [Relative paths](#relative-paths)
-    - [Root-relative paths](#root-relative-paths)
-    - [Absolute paths](#absolute-paths)
-    - [Getting to your icj folder](#getting-to-your-icj-folder)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Moving around in Bash
 
 > Of note: I use the terms "folder" and "directory" interchangeably here. They are the same thing.
@@ -32,11 +10,15 @@ We'll also create our class folder, which you will use for the rest of the semes
 
 ## Home directory
 
-I want to make sure we are all starting from the same relative location, so blindly follow me by typing the following into your terminal. (If you see a command like this that starts with `$`, don't type that in. It's just a note that it is a terminal command).
+I want to make sure we are all starting from the same relative location. Do this command and hit return:
 
 `$ cd ~`
 
 That tilde is usually at the top left of your keyboard.
+
+> Remember: If you see a command like this that starts with `$`, don't type that in. It's just a note that it is a terminal command.
+
+You probably didn't get anything in return and that is OK. Typically if you type a command in the shell and you don't get an error, you are fine.
 
 You used your first Bash command, `cd`, which is "change directory". The `~` is a shortcut that takes you to the "home" directory of the logged in user. You can always use `cd ~` to get you back to home.
 
@@ -82,6 +64,8 @@ But sometimes, I want to know more information about the files, like their modif
 
 `$ ls -l`
 
+> (That is dash L, not a number 1. Watch the spaces, too.)
+
 My output looks like this:
 
 ``` Bash
@@ -110,13 +94,13 @@ drwxr-xr-x   5 christian  staff      170 Jul  4 20:24 trifacta
 
 Well, that's a lot of info, and much of it jibberish. Let's break it down:
 
-* `drwxr-xr-x` and similar is the permission information for a that file or folder. We aren't going to get into it here, but [you can read more](https://en.wikipedia.org/wiki/File_system_permissions#Notation_of_traditional_Unix_permissions) if you like.
-* The next number is the number of files inside the folder, sort of. If this is a file, the number will be "1". If it is a folder, the number will always be at least "2". We'll come back to this.
-* Next is the owner of the file or folder.
-* Next is a permission level for the user when the file was created.
-* Next is the file size in bytes.
-* Next is the last modified date of the file or when a file was added to the folder.
-* File or folder name.
+- `drwxr-xr-x` and similar is the permission information for a that file or folder. We aren't going to get into it here, but [you can read more](https://en.wikipedia.org/wiki/File_system_permissions#Notation_of_traditional_Unix_permissions) if you like.
+- The next number is the number of files inside the folder, sort of. If this is a file, the number will be "1". If it is a folder, the number will always be at least "2". We'll come back to this.
+- Next is the owner of the file or folder.
+- Next is a permission level for the user when the file was created.
+- Next is the file size in bytes.
+- Next is the last modified date of the file or when a file was added to the folder.
+- File or folder name.
 
 ### Hidden files
 
@@ -183,7 +167,9 @@ The [cd](https://man.cx/cd) command is **change directory**. Let's change direct
 
 `$ cd Documents`
 
-Macs are particular that you capitalize a folder like `Documents`. We shouldn't rename this folder, so we'll just deal with it and type the capital D.
+> Macs are particular that you capitalize a folder like `Documents`. We shouldn't rename this folder, so we'll just deal with it and type the capital D.
+
+> Some PC's call this folder `My Documents`, so we might need some adjustments there. You might try typing "My" and hit the Tab key, and it will fill in the rest.
 
 Let's do a review real quick. Where are you? What is your "working directory?"
 
@@ -194,7 +180,6 @@ What is in this current directory? It could be something like this:
 `/Users/ccm346/Documents`
 
 It should end with Documents. If it doesn't, PLEASE RAISE YOUR HAND.
-
 
 ## mkdir
 
@@ -225,8 +210,8 @@ newdirectory
 
 A couple of things about this:
 
-* You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know its path.
-* If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders. I try to avoid capitalization, too, because sometimes it matters.
+- You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know its path.
+- If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders. I try to avoid capitalization, too, because sometimes it matters.
 
 Now, let's go inside the `icj` folder:
 
@@ -236,7 +221,7 @@ Let's see what is inside:
 
 `$ ls`
 
-That should show you a result with the `mydirectory` that we created earlier.
+That should show you a result with the `newdirectory` that we created earlier.
 
 Here are the commands and results of these last few commands in my terminal. I started with a `pwd` so you can see where I started from:
 
@@ -252,10 +237,10 @@ christian:testy$ pwd
 
 So to break that down:
 
-* I printed my working directory, which showed me I was in my Users folder.
-* I did `cd` into `icj` which moved me to inside that directory.
-* Now that I'm inside `icj`, I did `ls` to see the contents of my current folder, and it showed me that `newdirectory` was indeed inside.
-* I did `pwd` to show that my current working directory (where I am) is inside the `icj` folder.
+- I printed my working directory, which showed me I was in my Users folder.
+- I did `cd` into `icj` which moved me to inside that directory.
+- Now that I'm inside `icj`, I did `ls` to see the contents of my current folder, and it showed me that `newdirectory` was indeed inside.
+- I did `pwd` to show that my current working directory (where I am) is inside the `icj` folder.
 
  Now let's get crazy:
 
@@ -267,9 +252,9 @@ Remember I said that two periods means the parent directory? This should show yo
 
 Which should still be `icj`. So you had listed the files for the folder "above" you.
 
-## tab completion
+## Tab completion
 
-If you are doing `ls` or `cd` or otherwise referencing a path in the terminal, you don't have to type the whole word for each directory. If you you are trying to list the contents of "newdirectory", then start with `ls newd` and then hit tab, and it will finish out the path as `ls newdirectory`. This is SUPER handy and you should use it often. Like all the time.
+If you are doing `ls` or `cd` or otherwise referencing a path in the terminal, you don't have to type the whole word for each directory. If  you are trying to list the contents of "newdirectory", then start with `ls newd` and then hit tab, and it will finish out the path as `ls newdirectory`. This is SUPER handy and you should use it often. Like all the time.
 
 ## On the right path
 

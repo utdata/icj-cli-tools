@@ -1,20 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Looking at files](#looking-at-files)
-  - [Goal](#goal)
-  - [Set up](#set-up)
-  - [curl](#curl)
-  - [head](#head)
-  - [tail](#tail)
-  - [wc](#wc)
-  - [cat](#cat)
-  - [grep](#grep)
-  - [Piping commands](#piping-commands)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Looking at files
 
 ## Goal

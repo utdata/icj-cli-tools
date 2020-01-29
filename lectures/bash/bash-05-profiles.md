@@ -1,13 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-- [Editing the Bash profile](#editing-the-bash-profile)
-  - [Shorten your terminal name](#shorten-your-terminal-name)
-  - [List all long including hidden](#list-all-long-including-hidden)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Editing the Bash profile
 
 There is a hidden file on your computer that is the profile for your bash terminal. If you have VS Code installed and configured as your text editor, you can open it with this:
