@@ -280,7 +280,7 @@ To github.com:critmcdonald/christian-git-practice.git
 
 Well done! You've learned the basic git cycle and pushed code to Github so others can work on it. That's next.
 
-----
+---
 
 Next: [Working with others](git-02-clone.md)
 

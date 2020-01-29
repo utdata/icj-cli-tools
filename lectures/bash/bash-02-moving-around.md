@@ -191,13 +191,13 @@ Then list your directory again to see the new directory:
 
 `$ ls`
 
-You should see your new `icj` directory there along with all your other stuff inside Documents. Creating a directory like this is exactly the same as opening a desktop window on your Mac and doing Command-N to create a new folder. Folders and directories are the same thing.
+You should see your new `icj` directory there along with all your other stuff inside Documents. Creating a directory like this is exactly the same as opening a desktop window on your Mac creating a new folder. Folders and directories are the same thing.
 
 Cool, let's make another directory inside of `icj`.
 
 `$ mkdir icj/newdirectory`
 
-Now you can do an `ls` on icj to see what is inside it.
+Now you can do an `ls` on icj folder to see what is inside it.
 
 `$ ls icj`
 
@@ -229,9 +229,9 @@ Here are the commands and results of these last few commands in my terminal. I s
 christian:~$ pwd
 /Users/christian
 christian:~$ cd icj
-christian:testy$ ls
+christian:icj$ ls
 newdirectory
-christian:testy$ pwd
+christian:icj$ pwd
 /Users/christian/icj
 ```
 
@@ -285,4 +285,6 @@ And if you knew you wanted to get inside a folder there, say called `my-project`
 
 ---
 
-Next: [Looking at files](bash-03-viewing-files.md)
+Next: [Git version control](../git/git-01-git-intro.md)
+
+If you want to learn more about using the command line, you can review [Looking at files](bash-03-viewing-files.md) on your own time.
