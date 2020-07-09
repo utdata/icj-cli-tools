@@ -10,7 +10,7 @@ At its most basic, Git allows you to save your work at intervals and it keeps a 
 
 Git allows for a "distributed" version control system, meaning that all the code can be stored on a central server (like on the Internet) so other people can work on the shared code. When they "check out" a repository (or repo), they get the entire code base. Contributors can then make changes and "check in" those changes for others to use.
 
-[Github](https://github.com) is the central server where we will save our code. It's also a project management tool and a social network of sorts. It's probably the most popular programming service in the world. ~~As a university student, you can get the [Student developer pack](https://help.github.com/articles/applying-for-a-student-developer-pack/) which includes free private repos, but you can do that later.~~ (<-- I'm not sure you need this anymore.) [Bitbucket Cloud](https://bitbucket.org/) is another popular code sharing service.
+[Github](https://github.com) is the central server where we will save our code. It's also a project management tool and a social network of sorts. It's probably the most popular programming service in the world. [Bitbucket Cloud](https://bitbucket.org/) is another popular code sharing service.
 
 ## Our goals
 
@@ -23,11 +23,13 @@ A repository -- or "repo" -- is a folder on your computer that is tracked by git
 
 ### Use Google Chrome
 
-I recommend that you use Google Chrome as your browser for this class. It is what I'll use in class, and it has lots of development tools built in that will come in handy.
+I recommend that you use Google Chrome as your browser for this class. It is what I'll use in class and demonstrations, and it has lots of development tools built in that will come in handy.
 
 ### Visual Studio Code
 
 We'll start using our code editor, Visual Studio Code, with this assignment. I'll sometimes refer to this program as VS Code or just Code.
+
+In our computer setup and command-line lessons, we used either the Terminal/Git Bash programs to talk to our computers. Now that we have VS Code installed, we'll almost always use our Terminal from inside VS Code. It's the same thing, just tucked inside VS Code.
 
 ## Project setup
 
@@ -36,11 +38,14 @@ This is something we'll do time and again. Don't just follow the steps blindly .
 ### Folders and files
 
 - Use the Finder on your computer to locate your `Documents/icj` folder and inside of it create a new project folder called `yourname-git-practice`. Always use all lower-case letters and dashes instead of space. It's just good practice.
-- Launch Visual Studio Code and start a **New window**. (You can find under the File menu, or use Command-option-N). 
+- Launch Visual Studio Code and start a **New window**. (You can find under the File menu, or use Command-option-N).
 - One the Welcome screen, you will see a link called **Open folder**. (If you don't see this, click on the page icon at top-left, which is the Explorer menu.) Click on that Open Folder button and negotiate your way to your project folder, select it and click the **Open** button.
-- Go to the Terminal menu and choose New Terminal. This will open a terminal window inside of VS Code, which is super handy. The top line of the terminal should give you the path to inside your project folder, like `~/Documents/icj/christian-git-practice`. Please hollar if it doesn't, as we have to get this right.
 
-> In our computer setup and command-line lessons, we use either the Terminal/Git Bash programs to talk to our computers. Now that we have VS Code installed, we'll almost always use our Terminal from inside VS Code. It's the same thing, just tucked inside VS Code.
+![Open Folder](../../images/open-folder.png)
+
+- Go to the Terminal menu and choose New Terminal. This will open a terminal window inside of VS Code, which is super handy. The top line of the terminal should give you the path to inside your project folder, like `~/Documents/icj/christian-git-practice`. If it doesn't then you didn't open the folder first.
+
+![VS Code](../../images/vs-code-start.png)
 
 ### The README
 
@@ -49,6 +54,9 @@ Every coding project should have a special file called a [README file](https://w
 I want you to _always_ have a README file with your projects, and it should _always_ be called `README.md`. Yes, with capital letters for `README` and lower-case letters for `.md`. It breaks filename conventions because it is special.
 
 - Create the file first. I would recommend using the Terminal inside VS Code and doing `touch README.md`. (There are other ways, but get used to using `touch`).
+
+![Make readme](../../images/make-readme.gif)
+
 - The file now appears in the file explorer in VS Code on the left. You can click on that to open it.
 - Now add a title, your name, the assignment name and when it is due. Like this:
 
@@ -59,8 +67,9 @@ By Christian McDonald, Intro Coding for Journalists class
 
 This repo is a class assignment to learn git. It is due Month Day, Year.
 ```
+![Make readme](../../images/make-readme.gif)
 
-- Save and close that file.
+- Update the files with your info, save and close it.
 
 I want something like that on every project you make in this class: **title, your name, the assignment and when it is due**. Your projects early in the class won't have an extensive README [like some others](https://github.com/statesman/advanced-courses), but I want you to be in the habit of using them.
 
@@ -73,6 +82,10 @@ Creating hidden files like the `.gitignore` through the Mac/Windows regular file
 - In your Integrated Terminal in VS Code type the command `touch .gitignore`. Yes, it starts with a period and there is NO file extension for this file, so no `.txt` or anything ... it should be just `.gitignore`. Once created, it should show up in your list of files in VS Code on the left-hand screen. Go ahead and open it in VS Code by double-clicking on in the explorer.
 - Go to the website [gitignore.io](https://www.gitignore.io/) in a browser. Type in "VisualStudioCode" and choose it from the list. (Make sure is it "VisualStudioCode" and not just "VisualStudio"). Type in "macOS" and add it, then "Windows" and add it to the list. Do them both, even if you only work on a Mac, just to be nice for future collaborators. (If you were using other programs like MicrosoftOffice or languages like Python, you would add those as well.) Click the **Create** button.
 - Copy all the code there and paste it into your `.gitignore` file and save it. You can then close the file.
+
+Here is a [screencast of making a gitignore file](https://drive.google.com/file/d/1VWyziglWMOMfCuTsGrRMAyiTgr8MAj9L/view?usp=sharing).
+
+(Gifs are really big files, so I have longer demos as a video. By the way, the way I switch between programs like on a Mac is by using command-tab.)
 
 ### Initializing your local repo
 
@@ -110,13 +123,15 @@ This will add (or "stage") all the untracked files to git, but it hasn't saved t
 git commit -m "my first commit"
 ```
 
+![first commit](../../images/first-commit.gif)
+
 Congratulations ... you have now saved a snapshot in time of all these files. Now it's time to push them to the Internet in Github.
 
 ### Creating your public Github repo
 
 - Go to [github.com](https://github.com) (and log in if you are not) and find the + sign at the top right.
 - Click on that and choose **New repository**.
-  - Name the repo the same as your local one: `yourname-git-practice`. (I always name my Github repo the same name as the folder on my computer for clarity, but know they could be different.)
+  - Name the repo the same as your local one: `yourname-git-practice`. (I always name my Github repo the same name as the folder on my computer for clarity, but know they technically could be different.)
   - Give it a description so you know what it is later.
   - Keep it Public.
   - DO NOT include a README here, or a gitignore or license.
@@ -126,11 +141,13 @@ Congratulations ... you have now saved a snapshot in time of all these files. No
 - Do `git push origin master` push your local code to Github.
 - Go back to Github and refresh to make sure your files made it.
 
+[Screencast of making a Github repo](https://drive.google.com/file/d/1Zt8yuMn3GLbQaAhr3EmoxGeOJB9d-b9q/view?usp=sharing) and connecting it to a local repo.
+
 ### Adding a new file
 
-We're going to use the Integrated Terminal again (I'm just going to say "Terminal" from now on) to create yet another a new file.
+We're going to use the Integrated Terminal again (I'm just going to say "terminal" from now on) to create yet another a new file.
 
-- Go into the Terminal and use the `touch` command to create a new file, **using your name** for the file name. It will be a Markdown file:
+- Go into the terminal and use the `touch` command to create a new file, **using your name** for the file name. It will be a Markdown file:
 
 ```bash
 touch myname.md
@@ -151,10 +168,10 @@ You can save the file, but keep it open.
 
 ### The git cycle
 
-There typically three steps to committing code in git:
+There are typically three steps to committing code in git:
 
 - `git add` to stage files that have changed.
-- `git commit` to commit (or save) the files. We'll add a comment at the same time.
+- `git commit -m` to commit (or save) the files. We'll add the message at the same time.
 - `git push origin <branch>` to publish the changes to Github.
 
 There is a fourth command we also use with the three above, but you can do it at any time to check where you are in the git workflow:
@@ -251,7 +268,7 @@ $ git add .
 ✔ ~/Documents/icj/christian-git-practice [master|●1]
 ```
 
-There isn't really a response for staging a file if it is successful.
+There is no response for staging a file if it is successful.
 
 - Now finish it out by committing the changes:
 
@@ -278,11 +295,7 @@ To github.com:critmcdonald/christian-git-practice.git
 ✔ ~/Documents/icj/christian-git-practice [master|✔]
 ```
 
-Well done! You've learned the basic git cycle and pushed code to Github so others can work on it. That's next.
-
----
-
-Next: [Working with others](git-02-clone.md)
+Well done! You've learned the basic git cycle and pushed code to Github.
 
 ---
 
@@ -303,3 +316,7 @@ If this happens:
 You'll get thrown back into your regular Terminal and be able to continue.
 
 I don't want to get into what the VIM commands are, but basically `:wq` means "write" and "quit".
+
+This GIF shows the process, but not the keystrokes, so use the directions above. Best yet, DON'T FORGET `-m`!
+
+![commit-vim](../../images/commit-vim.gif)

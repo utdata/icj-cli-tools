@@ -1,6 +1,6 @@
 # Moving around in Bash
 
-> Of note: I use the terms "folder" and "directory" interchangeably here. They are the same thing.
+> I use the terms "folder" and "directory" interchangeably here. They are the same thing.
 
 ## Goal
 
@@ -8,31 +8,19 @@ Our goal here is to become familiar with Terminal and the Bash commands to move 
 
 We'll also create our class folder, which you will use for the rest of the semester.
 
-## Home directory
-
-I want to make sure we are all starting from the same relative location. Do this command and hit return:
-
-`$ cd ~`
-
-That tilde is usually at the top left of your keyboard.
-
-> Remember: If you see a command like this that starts with `$`, don't type that in. It's just a note that it is a terminal command.
-
-You probably didn't get anything in return and that is OK. Typically if you type a command in the shell and you don't get an error, you are fine.
-
-You used your first Bash command, `cd`, which is "change directory". The `~` is a shortcut that takes you to the "home" directory of the logged in user. You can always use `cd ~` to get you back to home.
-
 ## pwd
 
 One of the hardest things to get a handle on when first working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, we'll use [pwd](https://man.cx/pwd), or "print working directory" to do this:
 
 `$ pwd`
 
+> Remember not to type the `$`.
+
 That should tell you where you are in your computer's file system. When I launch a new shell and type that in, I get this:
 
 `/Users/christian`
 
-That tells me I'm in my own user directory. I bet you are in yours, but do it and see. So, remember, `~` is a shortcut to take you to this longer directory path.
+That tells me I'm in my own user directory or "home directory". I bet you are in yours, but do it and see.
 
 ## List directory
 
@@ -167,9 +155,7 @@ The [cd](https://man.cx/cd) command is **change directory**. Let's change direct
 
 `$ cd Documents`
 
-> Macs are particular that you capitalize a folder like `Documents`. We shouldn't rename this folder, so we'll just deal with it and type the capital D.
-
-> Some PC's call this folder `My Documents`, so we might need some adjustments there. You might try typing "My" and hit the Tab key, and it will fill in the rest.
+> This is where we may run into some challenges with PCs that use One Drive. It could be that the `Documents` folder your "home directory" is not the same as the one in your One Drive folder. If you have trouble finding your files, reach out to me so we can figure it out together.
 
 Let's do a review real quick. Where are you? What is your "working directory?"
 
@@ -179,7 +165,7 @@ What is in this current directory? It could be something like this:
 
 `/Users/ccm346/Documents`
 
-It should end with Documents. If it doesn't, PLEASE RAISE YOUR HAND.
+It should end with Documents. If it doesn't, you aren't in the right place.
 
 ## mkdir
 
@@ -211,7 +197,7 @@ newdirectory
 A couple of things about this:
 
 - You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know its path.
-- If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders. I try to avoid capitalization, too, because sometimes it matters.
+- If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders and use `-` or `_` instead. I avoid capitalization, too, because sometimes it matters, especially on PCs.
 
 Now, let's go inside the `icj` folder:
 
@@ -254,7 +240,7 @@ Which should still be `icj`. So you had listed the files for the folder "above" 
 
 ## Tab completion
 
-If you are doing `ls` or `cd` or otherwise referencing a path in the terminal, you don't have to type the whole word for each directory. If  you are trying to list the contents of "newdirectory", then start with `ls newd` and then hit tab, and it will finish out the path as `ls newdirectory`. This is SUPER handy and you should use it often. Like all the time.
+If you are doing `ls` or `cd` or otherwise referencing a path in the terminal, you don't have to type the whole word for each directory. If you are trying to list the contents of "newdirectory", then start with `ls newd` and then hit tab, and it will finish out the path as `ls newdirectory`. This is SUPER handy and you should use it often. Like all the time.
 
 ## On the right path
 
@@ -271,17 +257,6 @@ You can reference the "root" or the top level of whatever server or machine you 
 ### Absolute paths
 
 An absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
-
-
-### Getting to your icj folder
-
-There will be many times in the class that you will want to get into your `icj` folder, or something inside of it. Because everyone in class created this folder in the same place relative to their home folder, we can use a special command to get there, no matter where we are starting. And because of tab completion, as you are typing this, when you type Documents you only need `Docu` then hit tab and it will complete the rest of the word.
-
-`$ cd ~/Documents/icj`
-
-And if you knew you wanted to get inside a folder there, say called `my-project`, it would be:
-
-`$ cd ~/Documents/icj/my-project`
 
 ---
 
