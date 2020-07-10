@@ -297,6 +297,10 @@ To github.com:critmcdonald/christian-git-practice.git
 
 Well done! You've learned the basic git cycle and pushed code to Github.
 
+## Turn in your assignment
+
+In Canvas, find "Version control assignment" and submit the URL of your Github repo.
+
 ---
 
 ## If you forget -m
