@@ -1,30 +1,16 @@
-# What is a Terminal
+# Using a Terminal
 
-Terminal (Mac) and Git Bash (Windows) are programs that can run a **shell**, which is the user interface your computer understands. The default language for these interactions is called **Bash**. All these crazy [commands](bash-04-commands.md) I'm going to teach you are BASH commands.
+## Terminal vs shell
 
-> Newer Macs are using **zsh** instead of **Bash**. Mac users take a minute to [check and/or change it to Bash](bash-change-mac.md).
+Terminal (Mac) and Git Bash (Windows) are programs that can run a **shell**, which is a word-based user interface where you type commands that your computer understands. The default language for these interactions is called **Bash**, and we used them when we set up your computer in [icj-setting-up](https://github.com/utdata/icj-setting-up).
 
-People (including myself) will use the term **shell** to mean "the terminal window you have open". This means when I say "type into your shell", I mean type at the prompt in your terminal window.
+People (including myself) will use the term **shell** and **terminal** interchangeably. This means when I say "type into your shell", I mean type at the prompt in your terminal window. Just to add confusion, Mac named their program "Terminal". (I actually use a different Mac program called iTerm, but Terminal is fine.)
 
-## Macintosh
+Macs understand Bash natively, but some day they will change to a similar language called zsh. When you launch a shell on newer Macs you might get a message **The default interactive shell is now zsh. To update your account to use zsh, please run `chsh -s /bin/zsh`.** DON'T DO THIS! JUST IGNORE IT. We will continue to use **Bash**. If somehow you are set to use zsh, you can [check and/or change it to Bash](bash-change-mac.md).
 
-Oh, you are so lucky. Since Macs are Unix-based, you have everything you need already on your computer to get started with some command-line fun.
+**PCs** don't understand Bash at all without the help of another program. This is why we installed **Git Bash** so we can all speak the same language.
 
-Look for a program called **Terminal** on your computer. I do this by clicking on the rocket ship icon and searching for **Terminal**.
-
-It'll look something like this:
-
-![Terminal](../../images/iterm2-start.png)
-
-I use an alternative shell program called [iTerm2](https://iterm2.com/) which has some additional functionality, but Apple's Terminal program is just fine.
-
-## PCs
-
-For the PCs, when you installed git for Windows, it also installed  **Git Bash**, which is the terminal program we'll use. Windows is NOT a Unix-based machine like a Mac, so it doesn't naturally understand Unix commands. Git Bash is a program that does.
-
-You should be able to use the Windows "Search" bar to find **Git Bash** to launch it.
-
-> When using the Terminal within Visual Studio code on Windows, we might need to change the default shell to Git Bash. I think there is a drop-down menu for that.
+For what its worth, Bash is a Unix-based program. Most of the Internet runs on Unix (or Linux) computers.
 
 ## Code examples in lessons
 

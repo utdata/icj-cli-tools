@@ -1,6 +1,6 @@
 # Git branches and pull requests
 
-> It's been a while since we used this in class. Edits might be necessary.
+> This has never been used in class and probably needs edits.
 
 One of the features of Git is to "branch" code into a copy so you can make changes while the original "master" branch lives on. This is useful in the coding world when you want to add a feature or make changes that you don't want to yet add to the master.
 
