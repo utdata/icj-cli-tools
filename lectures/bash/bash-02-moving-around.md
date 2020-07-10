@@ -155,7 +155,7 @@ The [cd](https://man.cx/cd) command is **change directory**. Let's change direct
 
 `$ cd Documents`
 
-> This is where we may run into some challenges with PCs that use One Drive. It could be that the `Documents` folder your "home directory" is not the same as the one in your One Drive folder. If you have trouble finding your files, reach out to me so we can figure it out together.
+> This is where we may run into some challenges with PCs that use One Drive. It could be that the `Documents` folder in your "home directory" is not the same as the one in your One Drive folder. If you have trouble finding your files, reach out to me so we can figure it out together.
 
 Let's do a review real quick. Where are you? What is your "working directory?"
 
@@ -224,8 +224,8 @@ christian:icj$ pwd
 So to break that down:
 
 - I printed my working directory, which showed me I was in my Users folder.
-- I did `cd` into `icj` which moved me to inside that directory.
-- Now that I'm inside `icj`, I did `ls` to see the contents of my current folder, and it showed me that `newdirectory` was indeed inside.
+- I did `cd` into **icj** which moved me to inside that directory.
+- Now that I'm inside **icj**, I did `ls` to see the contents of my current folder, and it showed me that **newdirectory** was indeed inside.
 - I did `pwd` to show that my current working directory (where I am) is inside the `icj` folder.
 
  Now let's get crazy:

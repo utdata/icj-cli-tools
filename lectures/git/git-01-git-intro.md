@@ -83,9 +83,9 @@ Creating hidden files like the `.gitignore` through the Mac/Windows regular file
 - Go to the website [gitignore.io](https://www.gitignore.io/) in a browser. Type in "VisualStudioCode" and choose it from the list. (Make sure is it "VisualStudioCode" and not just "VisualStudio"). Type in "macOS" and add it, then "Windows" and add it to the list. Do them both, even if you only work on a Mac, just to be nice for future collaborators. (If you were using other programs like MicrosoftOffice or languages like Python, you would add those as well.) Click the **Create** button.
 - Copy all the code there and paste it into your `.gitignore` file and save it. You can then close the file.
 
-Here is a [screencast of making a gitignore file](https://drive.google.com/file/d/1VWyziglWMOMfCuTsGrRMAyiTgr8MAj9L/view?usp=sharing).
+You can open this [screencast of making a gitignore file](https://drive.google.com/file/d/1VWyziglWMOMfCuTsGrRMAyiTgr8MAj9L/view?usp=sharing) in a new browser window (control-click on the link and choose **Open in new tab**) and watch an example.
 
-(Gifs are really big files, so I have longer demos as a video. By the way, the way I switch between programs like on a Mac is by using command-tab.)
+(Gifs are really big files, so for longer demos I use videos. By the way, in the video I switch between programs by holding down the command button and then using tab to cycle through the programs. Very useful! It's Alt-tab on a PC.)
 
 ### Initializing your local repo
 
@@ -197,7 +197,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 ✔ ~/Documents/icj/christian-git-practice [master|…1]
 ```
 
-We have one untracked file, `christian.md`, and Git has been nice enough to tell you how to stage your file. Let's add it with `git add christian.md` (but your your filename). Here is the command and response:
+We have one untracked file, `christian.md`, and Git has been nice enough to tell you how to stage your file. Let's add it with `git add christian.md` (but use your filename). Here is the command and response:
 
 ``` bash
 $ git add christian.md
@@ -218,7 +218,7 @@ $ git commit -m "adding my new file"
 
 Congrats! You have made your second commit, saving this point in time on your computer. Our next step is to push that new change to Github.
 
-- Use the `git push origin master` command to push this to Github. Part of the `push` command is to say exactly where to send these change. Do this, then I'll explain it:
+- Use the `git push origin master` command to push this to Github. Part of the `push` command is to say exactly where to send these change. This is the command and the response:
 
 ```bash
 $ git push origin master
