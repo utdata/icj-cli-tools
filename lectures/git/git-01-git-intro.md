@@ -39,7 +39,7 @@ This is something we'll do time and again. Don't just follow the steps blindly .
 
 - Use the Finder on your computer to locate your `Documents/icj` folder and inside of it create a new project folder called `yourname-git-practice`. Always use all lower-case letters and dashes instead of space. It's just good practice.
 - Launch Visual Studio Code and start a **New window**. (You can find under the File menu, or use Command-option-N).
-- One the Welcome screen, you will see a link called **Open folder**. (If you don't see this, click on the page icon at top-left, which is the Explorer menu.) Click on that Open Folder button and negotiate your way to your project folder, select it and click the **Open** button.
+- On the Welcome screen, you will see a link called **Open folder**. (If you don't see this, click on the page icon at top-left, which is the Explorer menu.) Click on that Open Folder button and negotiate your way to your project folder, select it and click the **Open** button.
 
 ![Open Folder](../../images/open-folder.png)
 
@@ -54,9 +54,6 @@ Every coding project should have a special file called a [README file](https://w
 I want you to _always_ have a README file with your projects, and it should _always_ be called `README.md`. Yes, with capital letters for `README` and lower-case letters for `.md`. It breaks filename conventions because it is special.
 
 - Create the file first. I would recommend using the Terminal inside VS Code and doing `touch README.md`. (There are other ways, but get used to using `touch`).
-
-![Make readme](../../images/make-readme.gif)
-
 - The file now appears in the file explorer in VS Code on the left. You can click on that to open it.
 - Now add a title, your name, the assignment name and when it is due. Like this:
 
@@ -67,6 +64,7 @@ By Christian McDonald, Intro Coding for Journalists class
 
 This repo is a class assignment to learn git. It is due Month Day, Year.
 ```
+
 ![Make readme](../../images/make-readme.gif)
 
 - Update the files with your info, save and close it.
