@@ -14,7 +14,7 @@ One of the hardest things to get a handle on when first working in the terminal 
 
 `$ pwd`
 
-> Remember not to type the `$`.
+> Remember to NOT type the `$`.
 
 That should tell you where you are in your computer's file system. When I launch a new shell and type that in, I get this:
 
