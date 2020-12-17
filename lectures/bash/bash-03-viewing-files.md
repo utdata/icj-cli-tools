@@ -39,9 +39,9 @@ data.csv
 
 `$ head data.csv`
 
-will give you this: 
+will give you this:
 
-```
+```bash
 christian:myproject$ head data.csv
 Quarter,Taxpayer Number,Taxpayer Name,Taxpayer Address,Taxpayer City,Taxpayer State,Taxpayer Zip Code,Taxpayer County,Outlet Number,Location Name,Location Address,Location City,Location State,Location Zip Code,Location County,Location Room Capacity,Location Tot Room Receipts,Location Taxable Receipts
 Q1,32051871906,DSN HOSPITALITY LLC,4710 S LAMAR BLVD,AUSTIN,TX,78745,227,00001,DSN HOSPITALITY LLC,3110 STATE HIGHWAY 71 EAST,AUSTIN,TX,78745,011,37,91205.03,90870.01
@@ -112,7 +112,7 @@ Now, `combined.csv` would be the combination of both files.
 
 ## grep
 
-[grep](http://man.cx/grep) is for using regular expressions to find patterns within a file. It takes a regular expression input and the file name and give in return the lines of the file that match that regular expression.
+[grep](http://man.cx/grep) is for using regular expressions to find patterns within a file. It takes a regular expression input and the file name and gives in return the lines of the file that match that regular expression.
 
 `$ grep 'ATX INVESTMENTS' data.csv`
 

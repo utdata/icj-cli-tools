@@ -14,9 +14,21 @@ My prompt line in my terminal is really long. It looks like this:
 
 You can shorten it to just your login name by adding this line to your `.bash_profile` file, which is found in your home directory: `code ~/.bash_profile` should open it in VS Code so you can edit it.
 
-`PS1='\u:\W\$ '`
+```text
+# shortens prompt name
+PS1='\u:\W\$ '
+```
 
-Now close your Terminal window and open a new one, and the prompt should be shorter.
+Now close your Terminal window and open a new one, and the prompt should be shorter, with just your username.
+
+## Hide the zsh message
+
+Adding this to your bash_profile hides the message about changing to zsh.
+
+```text
+# hides zsh prompt
+export BASH_SILENCE_DEPRECATION_WARNING=1
+```
 
 ## List all long including hidden
 

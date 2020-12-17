@@ -4,9 +4,9 @@
 
 ## Goal
 
-Our goal here is to become familiar with Terminal and the Bash commands to move around and access different folders on your computer.
+Our goal here is to become familiar with a terminal and the Bash commands to move around and access different folders on your computer.
 
-We'll also create our class folder, which you will use for the rest of the semester.
+We'll also create your class folder, which you will use for the rest of the semester.
 
 ## pwd
 
@@ -16,11 +16,14 @@ One of the hardest things to get a handle on when first working in the terminal 
 
 > Remember to NOT type the `$`.
 
-That should tell you where you are in your computer's file system. When I launch a new shell and type that in, I get this:
+Here is the command and the response that I see:
 
-`/Users/christian`
+```bash
+crit:~$ pwd
+/Users/ccm346
+```
 
-That tells me I'm in my own user directory or "home directory". I bet you are in yours, but do it and see.
+Because I'm using my work computer "name" of my user in my computer is "ccm346". Yours might be your name or part of your name. That tells me I'm in my own user directory or "home directory". I bet you are in yours, but do it and see.
 
 ## List directory
 
@@ -31,7 +34,7 @@ Do this:
 This will list everything in the directory you are in. Mine looks like this:
 
 ``` bash
-christian:~$ ls
+crit:~$ ls
 Applications			Music
 Applications (Parallels)	Pictures
 Audio				Public
@@ -44,11 +47,11 @@ Library				waller.csv.sav
 Movies
 ```
 
-It listed the names of all the folders and files of the directory I'm in.
+It listed the names of all the folders and files of the directory I'm in. This is similar to opening a folder browser on your computer and then opening your home folder and looking inside of it.
 
 ### Flags
 
-But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which add nuance or detail to a command. They start with a dash, and you can pile them on, as I'll demonstrate. First, try this:
+But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which add nuance or detail to a terminal command. They start with a dash, and you can pile them on, as I'll demonstrate. First, try this:
 
 `$ ls -l`
 
@@ -57,7 +60,7 @@ But sometimes, I want to know more information about the files, like their modif
 My output looks like this:
 
 ``` Bash
-christian:~$ ls -l
+crit:~$ ls -l
 total 15880
 drwxr-xr-x   7 christian  staff      238 Jul 22  2015 Applications
 drwxr-xr-x@  6 christian  staff      204 Feb 14  2014 Applications (Parallels)
@@ -99,7 +102,7 @@ Let's add another flag to your command:
 My list got a TON longer:
 
 ```
-christian:~$ ls -al
+crit:~$ ls -al
 total 16144
 drwxr-xr-x+  71 christian  staff     2414 Jul  8 17:16 .
 drwxr-xr-x    5 root       admin      170 Feb 19 06:56 ..
@@ -131,7 +134,7 @@ The `-a` flag means "all" files and folders, including hidden ones. When you nor
 Let's look at the first two listed here:
 
 ```
-christian:~$ ls -al
+crit:~$ ls -al
 total 16144
 drwxr-xr-x+  71 christian  staff     2414 Jul  8 17:16 .
 drwxr-xr-x    5 root       admin      170 Feb 19 06:56 ..
@@ -165,7 +168,7 @@ What is in this current directory? It could be something like this:
 
 `/Users/ccm346/Documents`
 
-It should end with Documents. If it doesn't, you aren't in the right place.
+It should end with _Documents_. If it doesn't, you aren't in the right place.
 
 ## mkdir
 
@@ -190,14 +193,14 @@ Now you can do an `ls` on icj folder to see what is inside it.
 It should show you `newdirectory`. Something like this:
 
 ``` bash
-christian:~$ ls icj
+crit:~$ ls icj
 newdirectory
 ```
 
 A couple of things about this:
 
-- You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on a file or folder if you know its path.
-- If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders and use `-` or `_` instead. I avoid capitalization, too, because sometimes it matters, especially on PCs.
+- You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on any file or folder on your computer if you know its _path_. The **path** is just the folder structure between where you "are" in the terminal to where the new file/folder is.
+- If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders and use `-` or `_` instead. I avoid capitalization, too, because our folders become url names and sometimes caps mess it up, especially on PCs.
 
 Now, let's go inside the `icj` folder:
 
@@ -212,13 +215,13 @@ That should show you a result with the `newdirectory` that we created earlier.
 Here are the commands and results of these last few commands in my terminal. I started with a `pwd` so you can see where I started from:
 
 ```
-christian:~$ pwd
-/Users/christian
-christian:~$ cd icj
-christian:icj$ ls
+crit:~$ pwd
+/Users/ccm346
+crit:~$ cd icj
+crit:icj$ ls
 newdirectory
-christian:icj$ pwd
-/Users/christian/icj
+crit:icj$ pwd
+/Users/ccm346/icj
 ```
 
 So to break that down:
@@ -246,17 +249,17 @@ If you are doing `ls` or `cd` or otherwise referencing a path in the terminal, y
 
 ### Relative paths
 
-You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move "up" the folder structure and then use the name of the directory to move inside it. So a path like this: `ls ../../Users/Cory` is to travel up two folders, then into `Users` then into `Cory` and then list all the files there.
+You can `ls` files or `cd` into any directory relative to your current working directory using `../` to move "up" the folder structure and then use the name of the new directory to move inside it. So a path like this: `ls ../../Users/Cory` is to travel up two folders, then into `Users` then into `Cory` and then list all the files there.
 
 This is very powerful in programming, because you might be writing and testing code on your own computer, but then run the program on another computer, so if `file01.py` needs to talk to `file02.py`, you don't want to hard-code a path like `http://utdata.cmcdonald.com/scripts/file02.py`, because you might not always be on utdata.cmcdonald.com. If it's in the same folder, you could use `file02.py` or `./file02.py`.
 
 ### Root-relative paths
 
-You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/file01.py`. That's called a **root-relative** path. If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in.
+You can reference the "root" or the top level of whatever server or machine you are on even if you don't know the name of it, by starting your path with a slash like this: `/scripts/file01.py`. That's called a **root-relative** path. If you know the root-relative path to a file or folder, you can always find it no matter what directory you are currently in. We won't use this much in this class.
 
 ### Absolute paths
 
-An absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer.
+An absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer. We avoid using absolute paths in this class for this reason.
 
 ---
 

@@ -83,33 +83,17 @@ Creating hidden files like the `.gitignore` through the Mac/Windows regular file
 
 You can open this [screencast of making a gitignore file](https://drive.google.com/file/d/1VWyziglWMOMfCuTsGrRMAyiTgr8MAj9L/view?usp=sharing) in a new browser window (control-click on the link and choose **Open in new tab**) and watch an example.
 
-(Gifs are really big files, so for longer demos I use videos. By the way, in the video I switch between programs by holding down the command button and then using tab to cycle through the programs. Very useful! It's Alt-tab on a PC.)
+(Gifs are really big files, so for longer demos I use videos. By the way, in the video I switch between programs by holding down the command button and then using tab to cycle through the programs. Very useful! It's Alt-tab on a Windows.)
 
 ### Initializing your local repo
 
 The next steps are to initialize your local git record, stage files and commit them. We do these commands in our integrated Terminal.
 
 - Do `git init` to initialize the repo so git will start tracking changes.
-- Do `git status` and you'll get a return like this:
 
-```bash
-$ git status
-On branch master
+### Stage changes
 
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-        .gitignore
-        README.md
-
-nothing added to commit but untracked files present (use "git add" to track)
-```
-
-This response is telling you are on the master branch (we'll talk later about branches), that there are no commits yet (commits are saves) and that there are two untracked files, and it lists them. Then it tells you what to do next.
-
-So, next we will "stage" our files by adding them to the list of tracked files. You sometimes don't want to track all your files, so you can add each one using their file name. This time we do want to track all of them, so we'll use a shortcut:
+Next we will "stage" our files by adding them to the list of tracked files. You sometimes don't want to track all your files, so you can add each one using their file name. This time we do want to track all of them, so we'll use a shortcut:
 
 ```bash
 git add .
@@ -123,7 +107,19 @@ git commit -m "my first commit"
 
 ![first commit](../../images/first-commit.gif)
 
-Congratulations ... you have now saved a snapshot in time of all these files. Now it's time to push them to the Internet in Github.
+Congratulations ... you have now saved a snapshot in time of all these files. 
+
+### Change master to main
+
+We're going to digress here a minute. When you created your repo the default "branch" was named _master_, which some people find offensive given the history of slavery in the world. Sometime in 2021, perhaps even during the course of this class, git will change the default branch name to _main_. Github, our internet cloud service we are using, has already made the switch, so we want to change our branch name NOW.
+
+```
+git branch -M main
+```
+
+This changes the default branch name to _main_. We only have to do this once, the first time we set up a repo.
+
+> This change from master to main is new and fluid. As such, you may see references to _master_ in my videos and lessons, and we may have to make other adjustments during the semester. If you see reference to the _master_ branch in any directions, try _main_ first.
 
 ### Creating your public Github repo
 

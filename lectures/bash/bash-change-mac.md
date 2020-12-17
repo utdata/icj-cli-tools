@@ -8,3 +8,6 @@ Mac Catalina changes the default shell program from **Bash** to **zsh**. While z
 4. Choose a shell from the ”Login shell” menu, then click OK to save the changes.
 
 ![Default to bash](../../images/default-to-bash.png)
+
+- Click OK and close the System Preferences window.
+- Close any Terminal windows you have open and restart them.
