@@ -1,33 +1,39 @@
 # Moving around in Bash
 
-> I use the terms "folder" and "directory" interchangeably here. They are the same thing.
-
 ## Goal
 
-Our goal here is to become familiar with a terminal and the Bash commands to move around and access different folders on your computer.
+Our goal for this lesson is to become familiar with a terminal and the Bash commands to move around and access different folders on your computer.
 
 We'll also create your class folder, which you will use for the rest of the semester.
 
+> I use the terms "folder" and "directory" interchangeably here. They are the same thing.
+
 ## pwd
 
-One of the hardest things to get a handle on when first working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, we'll use [pwd](https://man.cx/pwd), or "print working directory" to do this:
+One of the hardest things to get a handle on when first working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, we'll use [pwd](https://man.cx/pwd), or "print working directory".
+
+- In your Terminal, type and execute:
 
 `$ pwd`
 
 > Remember to NOT type the `$`.
 
-Here is the command and the response that I see:
+When I do this on my machine, here is what the command and response look like:
 
 ```bash
 crit:~$ pwd
 /Users/ccm346
 ```
 
-Because I'm using my work computer "name" of my user in my computer is "ccm346". Yours might be your name or part of your name. That tells me I'm in my own user directory or "home directory". I bet you are in yours, but do it and see.
+Because I'm using my work computer my user directory is called "ccm346". Yours might be your name or part of your name. This user directory is called your "home directory". All of _your_ computer files are stored inside your home directory.
+
+When you launch a new terminal it usually puts you inside this directory.
 
 ## List directory
 
-Do this:
+Let's see what is inside our home directory.
+
+- Do this:
 
 `$ ls`
 
@@ -51,7 +57,9 @@ It listed the names of all the folders and files of the directory I'm in. This i
 
 ### Flags
 
-But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which add nuance or detail to a terminal command. They start with a dash, and you can pile them on, as I'll demonstrate. First, try this:
+But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which add nuance or detail to a terminal command. They start with a dash, and you can pile them on, as I'll demonstrate.
+
+- First, try this:
 
 `$ ls -l`
 
@@ -83,7 +91,7 @@ drwxr-xr-x   5 christian  staff      170 Jul  4 20:24 trifacta
 -rw-r--r--   1 christian  staff  8046293 Aug 13  2015 waller.csv.sav
 ```
 
-Well, that's a lot of info, and much of it jibberish. Let's break it down:
+Well, that's a lot of info, and much of it jibberish. Here is what each part of those lines means ...
 
 - `drwxr-xr-x` and similar is the permission information for a that file or folder. We aren't going to get into it here, but [you can read more](https://en.wikipedia.org/wiki/File_system_permissions#Notation_of_traditional_Unix_permissions) if you like.
 - The next number is the number of files inside the folder, sort of. If this is a file, the number will be "1". If it is a folder, the number will always be at least "2". We'll come back to this.
@@ -95,7 +103,9 @@ Well, that's a lot of info, and much of it jibberish. Let's break it down:
 
 ### Hidden files
 
-Let's add another flag to your command:
+Let's add another flag to your command.
+
+- Do this:
 
 `$ ls -al`
 
@@ -131,62 +141,91 @@ drwxr-xr-x    5 christian  staff      170 Jul  4 20:24 trifacta
 
 The `-a` flag means "all" files and folders, including hidden ones. When you normally open a folder on your computer, it only shows you some of the files and folders available. Hidden folders and files start with a period, and there can be a lot of them ... I have 50 of them in my home folder, far more than regular files and folders.
 
-Let's look at the first two listed here:
+- Let's list again with just the `-a` flag:
 
+`$ ls -a`
+
+Here is the top of my list:
+
+```bash
+(base) crit:~$ ls -a
+.
+..
+.CFUserTextEncoding
+.DS_Store
+.QtWebEngineProcess
+.R
+.Renviron
+.Rhistory
 ```
-crit:~$ ls -al
-total 16144
-drwxr-xr-x+  71 christian  staff     2414 Jul  8 17:16 .
-drwxr-xr-x    5 root       admin      170 Feb 19 06:56 ..
+
+But let's consider the first two returns:
+
+``` bash
+(base) crit:~$ ls -a
+.
+..
 ```
 
-These are two special designations in the Unix world. A single period designates "this directory" and two periods designates the "parent directory". Every directory has these, so that's why the `ls -l` always shows two items inside a directory, even if it is "empty" of regular files or folders.
+These are two special designations in the Unix world. A single period `.` designates "this directory" and two periods `..` designates the "parent directory", i.e. the folder "above" this one. Every directory has these, so that's why the `ls -l` always shows two items inside a directory, even if it is "empty" of regular files or folders.
 
-We can use these period designations (there's probably a fancy word for them I don't know) to move around into different directories, and to manage files in our current directories.
+We can use these period designations (there's probably a fancy word for them I don't know) to move around into different directories, and to manage files in our current directories. They become super important when we make "paths" between files in our programs and web pages.
 
-Let's see this "dot" designation in action. Do this command:
+Let's see this "dot" designation in action.
+
+- Do this command:
 
 `$ open .`
 
-Since you are in your home directory, this should open that folder in your Finder.
+Since you are inside your "home directory", this should open that folder in your Finder.
 
 ## cd
 
 Both Macs and PCs have a `Documents` folder inside each user's home folder. It's typically where you save all your stuff (better than your Desktop!). It's time for us to move in our Terminal to inside this Documents folder.
 
-The [cd](https://man.cx/cd) command is **change directory**. Let's change directory into your `Documents`:
+The [cd](https://man.cx/cd) command is **change directory**.
+
+- Let's change directory into your `Documents`:
 
 `$ cd Documents`
 
-> This is where we may run into some challenges with PCs that use One Drive. It could be that the `Documents` folder in your "home directory" is not the same as the one in your One Drive folder. If you have trouble finding your files, reach out to me so we can figure it out together.
+> **AN IMPORTANT WORD** about iCloud, OneDrive an other cloud storage services. If you use one of these services you might regularly save your files in those folders so they are backed up. I WOULD NOT save projects from this class in a cloud drive because our projects can have thousands of tiny files (like 10,000+) that clog up syncing services. Don't worry, your work will be backed up on Github, which accounts for this.
 
-Let's do a review real quick. Where are you? What is your "working directory?"
+Let's do a review real quick. Where are you? What is your "working directory" now?
+
+- Do pwd to check:
 
 `$ pwd`
 
-What is in this current directory? It could be something like this:
+It should be something like this ...
 
 `/Users/ccm346/Documents`
 
-It should end with _Documents_. If it doesn't, you aren't in the right place.
+... and it should end with _Documents_. If it doesn't, you aren't in the right place.
 
-## mkdir
-
-Now, let's make a new empty folder inside this directory, using the [mkdir](https://man.cx/mkdir) command:
-
-`$ mkdir icj`
-
-Then list your directory again to see the new directory:
+- Now use `ls` to list what is in your Documents folder.
 
 `$ ls`
 
-You should see your new `icj` directory there along with all your other stuff inside Documents. Creating a directory like this is exactly the same as opening a desktop window on your Mac creating a new folder. Folders and directories are the same thing.
+Perhaps you'll recognize some of the folders listed here if you regularly use your Documents folder.
 
-Cool, let's make another directory inside of `icj`.
+## mkdir
+
+Next we are going to make a new empty folder to store all our class files using the [mkdir](https://man.cx/mkdir) command.
+
+- Do this:
+
+`$ mkdir icj`
+
+- Then use `ls` again to see your new directory amongst the others.
+
+Creating a directory like this is exactly the same as opening a desktop window on your Mac creating a new folder. Folders and directories are the same thing.
+
+- Cool, let's make another directory inside of `icj`.
 
 `$ mkdir icj/newdirectory`
 
-Now you can do an `ls` on icj folder to see what is inside it.
+- Now you can do an `ls` on icj folder to see what is inside it.
 
 `$ ls icj`
 
@@ -199,14 +238,15 @@ newdirectory
 
 A couple of things about this:
 
-- You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on any file or folder on your computer if you know its _path_. The **path** is just the folder structure between where you "are" in the terminal to where the new file/folder is.
-- If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders and use `-` or `_` instead. I avoid capitalization, too, because our folders become url names and sometimes caps mess it up, especially on PCs.
+You have listed the contents of the `icj` directory without being inside of it. You can list the contents of any folder on your computer if you know the path to it. In fact, you can do any command on any file or folder on your computer if you know its _path_. The **path** is the folder structure between where you "are" in the terminal to where the new file/folder is.
 
-Now, let's go inside the `icj` folder:
+If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders and use `-` or `_` instead. I avoid capitalization, too, because our folders become url names and sometimes caps mess it up, especially on PCs.
+
+- Now, let's go inside the `icj` folder:
 
 `$ cd icj`
 
-Let's see what is inside:
+- Let's see what is inside:
 
 `$ ls`
 
@@ -261,8 +301,14 @@ You can reference the "root" or the top level of whatever server or machine you 
 
 An absolute path includes the domain or computer name. If I reference `http://utdata.cmcdonald.com/scripts/file01.py` in my code or script, it will only work if I'm on `utdata.cmcdonald.com`. If I move that script to another computer or server, it will still try to pull from `utdata.cmcdonald.com` instead of the version on the new computer. We avoid using absolute paths in this class for this reason.
 
+### The home directory shortcut
+
+There is also a path shortcut called `~/` that stands for "the home directory of the logged in person". You might see that referenced in paths like `~/Documents/` but that would really take me to `/Users/ccm346/Documents/` on my computer. But what's cool is the same `~/Documents/` path works on YOUR computer, even though your user directory is different.
+
 ---
 
-Next: [Git version control](../git/git-01-git-intro.md)
+Next: Now that we know a little about using a terminal, we need to finish our [computer setup](https://github.com/utdata/icj-setting-up).
+
+After that, we'll come back here for [Git version control](../git/git-01-git-intro.md).
 
 If you want to learn more about using the command line, you can review [Looking at files](bash-03-viewing-files.md) on your own time.

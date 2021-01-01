@@ -4,15 +4,15 @@
 
 Terminal (Mac) and Git Bash (Windows) are programs that can run a **shell**, which is a text-based user interface where you type commands that your computer understands.
 
-> People (including myself) will use the term **shell** and **terminal** interchangeably. This means when I say "type into your shell", I mean type at the prompt in your terminal window. Just to add confusion, Mac named their program "Terminal". (I actually use a different Mac program called iTerm, but Terminal is fine.)
+> People (including myself) will use the term **shell** and **terminal** interchangeably. This means when I say "type into your shell" or "in your terminal", I mean type at the prompt in your Terminal or Git Bash program. (Just to add confusion, I use a different Mac terminal program called iTerm, but Terminal is fine.)
 
-Developers use a terminal to issue commands to their computer to do things, like install programs, change what folder their are in, etc. Using a terminal can be confusing at first, but it will become second-nature as you progress through this class.
+Developers use a shell to issue commands to their computer to do things, like install programs, change what folder their are in, etc. Using a terminal program to use your computer can be confusing at first, but it will become second-nature as you progress through this class.
 
-The language we use for these interactions is called **Bash**.
+The shell programming language we will use for these text-based interactions is called **Bash**.
 
 **Macs** understand Bash natively, but some day they will change to a similar language called zsh. When you launch a shell on newer Macs you might get a message _The default interactive shell is now zsh. To update your account to use zsh, please run `chsh -s /bin/zsh`._ **DON'T DO THIS! JUST IGNORE IT.** We will continue to use **Bash**. Later we will add a command to disable this message. If somehow your terminal gets set to use zsh, you can [check and/or change it to Bash](bash-change-mac.md).
 
-**Windows** doesn't understand Bash at all without the help of another program. This is why we installed **Git Bash** so we can all speak the same language.
+**Windows** doesn't understand Bash at all without the help of another program. This is why we installed **Git Bash** so we can all speak the same language. (If you are a Windows user and haven't yet installed Git, [do it now](https://github.com/utdata/icj-setting-up/blob/master/windows-01.md#install-git).)
 
 For what its worth, Bash is a Unix-based program. Most of the Internet runs on Unix (or Linux) computers.
 
@@ -42,9 +42,9 @@ The first part before the `~` is my computer name, and the part after is my user
 
 > I actually shorten my prompt name to `crit:~$` so you'll see that in my examples. We'll shorten yours later, too.
 
-Lastly we have the `$`. This is the "prompt" where you type commands. You type them AFTER the $ and then hit **Return** to execute them.
+Lastly we have the `$`. This is the "prompt" where you type commands. You type your commands AFTER the $ and then hit **Return** to execute them.
 
-When I give command instructions for you to type, I sometimes include the `$` at the beginning to indicate this should go at the prompt in your terminal. DON'T TYPE IN THE $. For instance:
+When I give command instructions for you to type, I sometimes (but not always) include the `$` at the beginning to indicate this should go at the prompt in your terminal. DON'T TYPE IN THE $. For instance:
 
 `$ pwd`
 

@@ -1,5 +1,7 @@
 # Commands in bash
 
+These are some common commands used in bash.
+
 | To do this               | Mac   | Windows       | Notes |
 |--------------------------|-------|---------------|-------|
 | print working directory  | pwd   | pwd           |       |

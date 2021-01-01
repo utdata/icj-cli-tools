@@ -1,23 +1,36 @@
 # Looking at files
 
+This is an extended lesson on bash that is not always assigned, but is still useful.
+
 ## Goal
 
 Let's learn some more command-line juju for working with files. These commands will help look at code files on your computer.
 
 ## Set up
 
-Let's make sure we are in our class folder. (This is review from [Moving Around](bash-moving-around.md)).
+Let's make sure we are in our class folder. (This is review from [Moving Around](02-bash-moving-around.md)).
+
+- Make sure you are in your icj project folder:
 
 ``` bash
-cd ~/Documents/icj
-mkdir myproject
-cd myproject
-pwd
+$ cd ~/Documents/icj
 ```
 
-We need some text to work with, so we're going to pull down some text from Github. I might as well explain what we are doing.
+- Create a new folder called `myproject`:
+
+```bash
+mkdir myproject
+```
+
+- Use `cd` to move inside the myproject folder then use `pwd` to make sure you are in the right place. The result should be something like this:
+
+```bash
+Users/ccm346/Documents/icj/myproject
+```
 
 ## curl
+
+We need some text to work with, so we're going to pull down some text from Github. I might as well explain what we are doing.
 
 [curl](http://man.cx/curl) is a command to transfer files. I think of it as "Capture URL". We need to give `curl` a couple of flags (or options) for this job:
 
