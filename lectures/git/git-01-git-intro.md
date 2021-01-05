@@ -107,19 +107,8 @@ git commit -m "my first commit"
 
 ![first commit](../../images/first-commit.gif)
 
-Congratulations ... you have now saved a snapshot in time of all these files. 
+Congratulations ... you have now saved a snapshot in time of all these files.
 
-### Change master to main
-
-We're going to digress here a minute. When you created your repo the default "branch" was named _master_, which some people find offensive given the history of slavery in the world. Sometime in 2021, perhaps even during the course of this class, git will change the default branch name to _main_. Github, our internet cloud service we are using, has already made the switch, so we want to change our branch name NOW.
-
-```
-git branch -M main
-```
-
-This changes the default branch name to _main_. We only have to do this once, the first time we set up a repo.
-
-> This change from master to main is new and fluid. As such, you may see references to _master_ in my videos and lessons, and we may have to make other adjustments during the semester. If you see reference to the _master_ branch in any directions, try _main_ first.
 
 ### Creating your public Github repo
 
@@ -140,11 +129,25 @@ Once you create the repo, you'll get a page back with a lot of code.
 
 - Paste those into your VS Code Terminal and run it. You _might_ have to press return again to run the last line.
 
+Here is what these three lines of code did:
+
+1. Added a `git remote` connection between your local computer and the Github repo. Now your local files are are linked to those store don the Internet.
+2. Changed the name of your branch to `main`. (More on this below.)
+3. Pushed the changes from your local machine to Github so the Internet has the most recent version.
+
 From now on, you'll use `git push origin main` to push your code.
 
-- Go back to Github and refresh to make sure your files made it.
+- If you go back to your Github repo and refresh the page you'll see your new files listed there.
 
-[Screencast of making a Github repo](https://drive.google.com/file/d/1Zt8yuMn3GLbQaAhr3EmoxGeOJB9d-b9q/view?usp=sharing) and connecting it to a local repo.
+Here is a [screencast of the complete project setup](https://drive.google.com/file/d/1qdL7BS6wtk14Rise5YO9MTW9FLvyRw-k/view?usp=sharing) of creating a local project, README, gitignore, initializing git, creating a Github repo and connecting it to your local project.
+
+### Change master to main
+
+We're going to digress here a minute. When you created your repo the default "branch" was named _master_, a term that many people find offensive given the history of slavery in the world. Sometime in 2021, perhaps even during the course of this class, git will change the default branch name to _main_. Github, our internet cloud service we are using, has already made the switch, one of the commands Github suggested you do was `git branch -M main`, which change the branch name.
+
+We only have to do this once, the first time we set up a repo.
+
+> This change from master to main is new and fluid. As such, you will likely see references to _master_ in my videos, lessons and elsewhere. We might have to make workflow adjustments during the semester. If you see reference to the _master_ branch in any directions, you might try _main_ first.
 
 ### Adding a new file
 
@@ -175,7 +178,7 @@ There are typically three steps to committing code in git:
 
 - `git add` to stage files that have changed.
 - `git commit -m` to commit (or save) the files. We'll add the message at the same time.
-- `git push origin <branch>` to publish the changes to Github.
+- `git push origin <branch>` to publish the changes to Github. We will almost always be using the `main` branch.
 
 There is a fourth command we also use with the three above, but you can do it at any time to check where you are in the git workflow:
 
