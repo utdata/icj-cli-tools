@@ -335,6 +335,5 @@ This GIF shows the process, but not the keystrokes, so use the directions above.
 
 Notes to self:
 
-- github repo creation video uses master
 - first-commit.gif uses master
 - vim-commit.png uses master
