@@ -6,15 +6,15 @@ Make sure you've [installed VS Code, Git, have configured it and have a Github a
 
 [Search on google](https://www.google.com/search?q=understanding+git+version+control&oq=understanding+git+version+control) and you'll find a ton of [posts](https://www.atlassian.com/git/tutorials/what-is-version-control), [tutorials](https://www.codecademy.com/learn/learn-git) and [videos](https://www.youtube.com/watch?v=Y9XZQO1n_7c) about Git and version control systems. I encourage you to explore some that fit your learning style. We'll just cover enough here to get you going and we'll learn by doing.
 
-At its most basic, Git allows you to save your work at intervals and it keeps a history of files on your computer when you choose to save them. Once you have something that works, you can "commit" it and leave a comment about what you've done. You can then go back to that exact point in time if you need to. This frees the coder to experiment and make changes that may NOT work, because you know you can always go back. It works for any kind of file you want to put under version control.
+At its most basic, Git allows you to save your work at intervals and it keeps a history of files on your computer when you choose to save them. Once you have something that works, you can "commit" it and leave a comment about what you've done. You can then go back to that exact point in time if you need to. This frees the developer to experiment and make changes that may NOT work, because you know you can always go back. It works for any kind of file you want to put under version control.
 
 Git allows for a "distributed" version control system, meaning that all the code can be stored on a central server (like on the Internet) so other people can work on the shared code. When they "check out" a repository (or repo), they get the entire code base. Contributors can then make changes and "check in" those changes for others to use.
 
-[Github](https://github.com) is the central server where we will save our code. It's also a project management tool and a social network of sorts. It's probably the most popular programming service in the world. [Bitbucket Cloud](https://bitbucket.org/) is another popular code sharing service.
+[Github](https://github.com) is the central server we will use to save our code. It's also a project management tool and a social network of sorts. It's probably the most popular programming service on the planet. [Bitbucket Cloud](https://bitbucket.org/) is another popular code sharing service.
 
 ## Our goals
 
-A repository -- or "repo" -- is a folder on your computer that is tracked by git. Our goals here are the following:
+A repository — or "repo" — is a folder on your computer that is tracked by git. Our goals here are the following:
 
 - Create a local repo inside our `icj` project folder.
 - Create a public repo on Github.
@@ -130,16 +130,25 @@ This changes the default branch name to _main_. We only have to do this once, th
   - Keep it Public.
   - DO NOT include a README here, or a gitignore or license.
   - Click **Create repository**.
-- In the resulting directions, copy the line that starts with `git remote add`.
-- Go back to you VS Code Terminal and paste that command into your Terminal and run it to connect your local repo to the Github repo.
-- Do `git push origin master` push your local code to Github.
+
+Once you create the repo, you'll get a page back with a lot of code.
+
+- Make sure the `SSH` button is selected in the top box. (We are selecting this because during your computer setup we set up SSH keys between your computer and Github.)
+- Go to the second block **"… or push an existing repository from the command line"** and copy the code there to get the three lines.
+
+![Connect to Github](../../images/00-connect-github.png)
+
+- Paste those into your VS Code Terminal and run it. You _might_ have to press return again to run the last line.
+
+From now on, you'll use `git push origin main` to push your code.
+
 - Go back to Github and refresh to make sure your files made it.
 
 [Screencast of making a Github repo](https://drive.google.com/file/d/1Zt8yuMn3GLbQaAhr3EmoxGeOJB9d-b9q/view?usp=sharing) and connecting it to a local repo.
 
 ### Adding a new file
 
-We're going to use the Integrated Terminal again (I'm just going to say "terminal" from now on) to create yet another a new file.
+We're going to use the Integrated Terminal again (I'm just going to say "terminal" from now on) to create yet another a new file, commit it, and then push it to Github.
 
 - Go into the terminal and use the `touch` command to create a new file, **using your name** for the file name. It will be a Markdown file:
 
@@ -151,7 +160,7 @@ touch myname.md
 - Add a headline and some text to the file, like this below:
 
 ``` markdown
-# My first Github project
+# A new Markdown page
 
 I'm learning git and Github and this repo will help me. Don't judge.
 ```
@@ -180,42 +189,42 @@ Let's check the status of our repo.
 
 ``` bash
 $ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
+On branch main
+Your branch is up-to-date with 'origin/main'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
 
         christian.md
 
 nothing added to commit but untracked files present (use "git add" to track)
-✔ ~/Documents/icj/christian-git-practice [master|…1]
+✔ ~/Documents/icj/christian-git-practice [main|…1]
 ```
 
 We have one untracked file, `christian.md`, and Git has been nice enough to tell you how to stage your file. Let's add it with `git add christian.md` (but use your filename). Here is the command and response:
 
 ``` bash
 $ git add christian.md
-✔ ~/Documents/icj/christian-git-practice [master|●1]
+✔ ~/Documents/icj/christian-git-practice [main|●1]
 ```
 
-There wasn't really a response back because it "worked", but because I have the git-bash-prompt extension installed (which you should have installed in [setting-up](https://github.com/utdata/icj-setting-up)), I have some feedback. We haven't talked about that yet, but that part `[master L|●1]` tells me we are on the `master` branch (more on that later) and that I have one staged file. Just watch how those signals change as we go through the cycle.
+There wasn't really a response back because it "worked", but because I have the git-bash-prompt extension installed (which you should have installed in [setting-up](https://github.com/utdata/icj-setting-up)), I have some feedback. We haven't talked about that yet, but that part `[main L|●1]` tells me we are on the `main` branch (more on that later) and that I have one staged file. Just watch how those signals change as we go through the cycle.
 
 Now let's commit the file. We will also add a "message" to the commit using the flag `-m`, which you should ALWAYS do. It's good coding practice. Here is the call and response:
 
 ``` bash
 $ git commit -m "adding my new file"
-[master 8809887] adding my new file
+[main 8809887] adding my new file
  1 file changed, 3 insertions(+)
  create mode 100644 christian.md
-✔ ~/Documents/icj/christian-git-practice [master ↑·1|✔]
+✔ ~/Documents/icj/christian-git-practice [main ↑·1|✔]
 ```
 
 Congrats! You have made your second commit, saving this point in time on your computer. Our next step is to push that new change to Github.
 
-- Use the `git push origin master` command to push this to Github. Part of the `push` command is to say exactly where to send these change. This is the command and the response:
+- Use the `git push origin main` command to push this to Github. Part of the `push` command is to say exactly where to send these change. This is the command and the response:
 
 ```bash
-$ git push origin master
+$ git push origin main
 Enumerating objects: 3, done.
 Counting objects: 100% (3/3), done.
 Delta compression using up to 8 threads.
@@ -223,13 +232,13 @@ Compressing objects: 100% (2/2), done.
 Writing objects: 100% (2/2), 274 bytes | 274.00 KiB/s, done.
 Total 2 (delta 0), reused 0 (delta 0)
 To github.com:critmcdonald/christian-git-practice.git
-   50688af..2f80abc  master -> master
-✔ ~/Documents/icj/christian-git-practice [master L|✔]
+   50688af..2f80abc  main -> main
+✔ ~/Documents/icj/christian-git-practice [main L|✔]
 ```
 
 That's a lot of mumbo jumbo that we don't have to understand details of, we just have to recognize that it did "Writing" and you didn't get an error.
 
-Why `origin master`? This is the part that sends this to our Github repo to share with the world. The `master` part is the branch name, and that is something we may get into later in the semester.
+Why `origin main`? This is the part that sends this to our Github repo to share with the world. The `main` part is the branch name, and that is something we may get into later in the semester.
 
 - Now go back to your Github repo in your browser and hit refresh on your repo, and you'll see the result there. Woo hoo!
 
@@ -242,8 +251,8 @@ Now let's make another change to your file and repeat the cycle.
 
 ```bash
 $ git status
-On branch master
-Your branch is up to date with 'origin/master'.
+On branch main
+Your branch is up to date with 'origin/main'.
 
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -252,14 +261,14 @@ Changes not staged for commit:
         modified:   christian.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
-✔ ~/Documents/icj/christian-git-practice [master|✚ 1]
+✔ ~/Documents/icj/christian-git-practice [main|✚ 1]
 ```
 
 - The return says we have one modified file. Since it is the only modified file and we want to stage it, we'll use a fancy command to add "all" the modified files so we don't have to name it. The period means "all changed files".
 
 ```bash
 $ git add .
-✔ ~/Documents/icj/christian-git-practice [master|●1]
+✔ ~/Documents/icj/christian-git-practice [main|●1]
 ```
 
 There is no response for staging a file if it is successful.
@@ -268,15 +277,15 @@ There is no response for staging a file if it is successful.
 
 ```bash
 $ git commit -m "adding changes"
-[master 22acae0] adding changes
+[main 22acae0] adding changes
  1 file changed, 2 insertions(+)
-✔ ~/Documents/icj/christian-git-practice [master ↑·1|✔]
+✔ ~/Documents/icj/christian-git-practice [main ↑·1|✔]
 ```
 
-- And then push them to master:
+- And then push them to main with: `git push origin main`
 
 ```bash
-$ git push origin master
+$ git push origin main
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
 Delta compression using up to 8 threads.
@@ -285,8 +294,8 @@ Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:critmcdonald/christian-git-practice.git
-   8809887..b36328f  master -> master
-✔ ~/Documents/icj/christian-git-practice [master|✔]
+   8809887..b36328f  main -> main
+✔ ~/Documents/icj/christian-git-practice [main|✔]
 ```
 
 Well done! You've learned the basic git cycle and pushed code to Github.
@@ -318,3 +327,11 @@ I don't want to get into what the VIM commands are, but basically `:wq` means "w
 This GIF shows the process, but not the keystrokes, so use the directions above. Best yet, DON'T FORGET `-m`!
 
 ![commit-vim](../../images/commit-vim.gif)
+
+---
+
+Notes to self:
+
+- github repo creation video uses master
+- first-commit.gif uses master
+- vim-commit.png uses master
