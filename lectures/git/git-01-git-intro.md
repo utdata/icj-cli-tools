@@ -99,7 +99,13 @@ Next we will "stage" our files by adding them to the list of tracked files. You 
 git add .
 ```
 
-This will add (or "stage") all the untracked files to git, but it hasn't saved them yet. Next we want to "commit" them (which means save them) and include a message to say why we made changes to these files. ALWAYS include the `-m` flag when you commit, with a message.
+This will add (or "stage") all the untracked files to git, but it hasn't saved them yet.
+
+### Commit changes
+
+Next we want to "commit" them (which means save them) and include a message to say why we made changes to these files. ALWAYS include the `-m` flag when you commit, with a message.
+
+- Do this command in your Terminal. Note the quotes:
 
 ```bash
 git commit -m "my first commit"
