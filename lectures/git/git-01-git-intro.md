@@ -115,7 +115,6 @@ git commit -m "my first commit"
 
 Congratulations ... you have now saved a snapshot in time of all these files.
 
-
 ### Creating your public Github repo
 
 - Go to [github.com](https://github.com) (and log in if you are not) and find the + sign at the top right.

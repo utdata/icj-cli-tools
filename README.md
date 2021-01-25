@@ -4,7 +4,9 @@ This lesson is a beginner's guide to using a command-line interface tools for co
 
 I use a Mac, and there are some differences for Windows users. The first major difference is Windows users have to install Git (and Git Bash, which comes with it) before we can go much further.
 
-- Windows users [install Git](https://github.com/utdata/icj-setting-up/blob/master/windows-01.md#install-git) and then return here. There will be a link telling you when to come back here.
+## An IMPORTANT note for Windows users
+
+- Windows users need to install a program called **Git** before they proceed with this lesson. Go to [this part of the icj-setting-up lesson](https://github.com/utdata/icj-setting-up/blob/master/windows-01.md#install-git) to follow the directions to install Git, then come return here when the directions tell you to.
 
 ## A word about my lessons
 

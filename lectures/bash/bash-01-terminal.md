@@ -10,11 +10,11 @@ Developers use a shell to issue commands to their computer to do things, like in
 
 The shell programming language we will use for these text-based interactions is called **Bash**.
 
-**Macs** understand Bash natively, but some day they will change to a similar language called zsh. When you launch a shell on newer Macs you might get a message _The default interactive shell is now zsh. To update your account to use zsh, please run `chsh -s /bin/zsh`._ **DON'T DO THIS! JUST IGNORE IT.** We will continue to use **Bash**. Later we will add a command to disable this message. If somehow your terminal gets set to use zsh, you can [check and/or change it to Bash](bash-change-mac.md).
-
 **Windows** doesn't understand Bash at all without the help of another program. This is why we installed **Git Bash** so we can all speak the same language. (If you are a Windows user and haven't yet installed Git, [do it now](https://github.com/utdata/icj-setting-up/blob/master/windows-01.md#install-git).)
 
 For what its worth, Bash is a Unix-based program. Most of the Internet runs on Unix (or Linux) computers.
+
+**Macs** understand Bash natively, but some day they will change to a similar language called zsh. When you launch a shell on newer Macs you might get a message _The default interactive shell is now zsh. To update your account to use zsh, please run `chsh -s /bin/zsh`._ **DON'T DO THIS! JUST IGNORE IT.** We will continue to use **Bash**. Later we will add a command to disable this message. If somehow your terminal gets set to use zsh, you can [check and/or change it to Bash](bash-change-mac.md).
 
 ## Launch your terminal
 
