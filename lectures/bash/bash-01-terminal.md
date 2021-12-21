@@ -18,13 +18,13 @@ For what its worth, Bash is a Unix-based program. Most of the Internet runs on U
 
 ## Launch your terminal
 
-- For **Macs** you can use your Launchpad icon (it looks like a rocket) and type in _Terminal_ and launch it.
+1. For **Macs** you can use your Launchpad and type in _Terminal_ and launch it. Or you can use the Spotlight search to find it.
 
 It will look like this:
 
 ![Mac Terminal](../../images/terminal-startup.png)
 
-- For **Windows** you can go to your Start menu and type in _Git Bash_ and launch it.
+1. For **Windows** you can go to your Start menu and type in _Git Bash_ and launch it.
 
 It will look like this:
 

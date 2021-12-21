@@ -10,23 +10,29 @@ I use a Mac, and there are some differences for Windows users. The first major d
 
 ## A word about my lessons
 
-For all my coding lessons I typically put directions for YOU to do in bullet lists:
+For all my lessons I typically put directions for YOU to do in numbered lists:
 
-- Do this thing.
-- Then do that thing.
+1. Do this thing.
+1. Then do that thing.
 
 Sometimes there is code after or among the the directions, but it is in a code block with a grey background.
 
-- Do this thing:
+1. Do this thing:
 
 ```bash
 $ command --flag
 This is the output
 ```
 
-- Then do the next thing. Sometimes the code will be in the bullet item itself, but still in a code block. Do this: `$ command`.
+1. Then do the next thing.
+1. Sometimes the code will be in the bullet item itself, but still in a code block. Do this: `$ command`.
 
-I'll sometimes use bullet lists for, well, lists of things, but you can typically tell when it is a direction or not.
+I typically use an unordered bullet list for non-"do" things:
+
+- This is just a note about something
+- And this is another
+
+But sometimes I forget and put "do" things in an unordered list. Hopefully you can typically tell when it is a direction or not.
 
 Regular paragraph text such as this one are usually an explanation, background or whatever.
 
@@ -42,13 +48,16 @@ I try to be consistent, but I'm human so sometimes I'm not.
 
 - [What is a terminal?](lectures/bash/bash-01-terminal.md)
 - [Moving around](lectures/bash/bash-02-moving-around.md)
-- [Looking at files](lectures/bash/bash-03-viewing-files.md)
-- [Bash commands](lectures/bash/bash-04-commands.md)
-- [Bash profiles](lectures/bash/bash-05-profiles.md)
 
 ## Using Git and Github
 
 - [Git & Github](lectures/git/git-01-git-intro.md)
+- [Git in VS Code](lectures/git/git-04-vscode.md)
+
+## Some other lessons not assigned
+
+- [Looking at files](lectures/bash/bash-03-viewing-files.md)
+- [Bash commands](lectures/bash/bash-04-commands.md)
+- [Bash profiles](lectures/bash/bash-05-profiles.md)
 - [Sharing code](lectures/git/git-02-clone.md)
 - [Git branches](lectures/git/git-03-branch.md)
-- [Git in VS Code](lectures/git/git-04-vscode.md)

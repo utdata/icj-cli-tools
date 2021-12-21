@@ -12,7 +12,7 @@ We'll also create your class folder, which you will use for the rest of the seme
 
 One of the hardest things to get a handle on when first working in the terminal is to figure out where you are on your computer. It's important, because you can run commands on any file on your computer from where you are, but you gotta know where that is before you can do so. So, we'll use [pwd](https://man.cx/pwd), or "print working directory".
 
-- In your Terminal, type and execute:
+1. In your Terminal, type and execute:
 
 `$ pwd`
 
@@ -33,7 +33,7 @@ When you launch a new terminal it usually puts you inside this directory.
 
 Let's see what is inside our home directory.
 
-- Do this:
+1. Do this:
 
 `$ ls`
 
@@ -59,7 +59,7 @@ It listed the names of all the folders and files of the directory I'm in. This i
 
 But sometimes, I want to know more information about the files, like their modification date. To do this, we introduce something called **flags**, which add nuance or detail to a terminal command. They start with a dash, and you can pile them on, as I'll demonstrate.
 
-- First, try this:
+1. First, try this:
 
 `$ ls -l`
 
@@ -105,7 +105,7 @@ Well, that's a lot of info, and much of it jibberish. Here is what each part of 
 
 Let's add another flag to your command.
 
-- Do this:
+1. Do this:
 
 `$ ls -al`
 
@@ -141,7 +141,7 @@ drwxr-xr-x    5 christian  staff      170 Jul  4 20:24 trifacta
 
 The `-a` flag means "all" files and folders, including hidden ones. When you normally open a folder on your computer, it only shows you some of the files and folders available. Hidden folders and files start with a period, and there can be a lot of them ... I have 50 of them in my home folder, far more than regular files and folders.
 
-- Let's list again with just the `-a` flag:
+1. Let's list again with just the `-a` flag:
 
 `$ ls -a`
 
@@ -173,7 +173,7 @@ We can use these period designations (there's probably a fancy word for them I d
 
 Let's see this "dot" designation in action.
 
-- Do this command:
+1. Do this command:
 
 `$ open .`
 
@@ -185,7 +185,7 @@ Both Macs and PCs have a `Documents` folder inside each user's home folder. It's
 
 The [cd](https://man.cx/cd) command is **change directory**.
 
-- Let's change directory into your `Documents`:
+1. Let's change directory into your `Documents`:
 
 `$ cd Documents`
 
@@ -193,7 +193,7 @@ The [cd](https://man.cx/cd) command is **change directory**.
 
 Let's do a review real quick. Where are you? What is your "working directory" now?
 
-- Do pwd to check:
+1. Do pwd to check:
 
 `$ pwd`
 
@@ -203,7 +203,7 @@ It should be something like this ...
 
 ... and it should end with _Documents_. If it doesn't, you aren't in the right place.
 
-- Now use `ls` to list what is in your Documents folder.
+1. Now use `ls` to list what is in your Documents folder.
 
 `$ ls`
 
@@ -213,19 +213,19 @@ Perhaps you'll recognize some of the folders listed here if you regularly use yo
 
 Next we are going to make a new empty folder to store all our class files using the [mkdir](https://man.cx/mkdir) command.
 
-- Do this:
+1. Do this:
 
 `$ mkdir icj`
 
-- Then use `ls` again to see your new directory amongst the others.
+1. Then use `ls` again to see your new directory amongst the others.
 
 Creating a directory like this is exactly the same as opening a desktop window on your Mac creating a new folder. Folders and directories are the same thing.
 
-- Cool, let's make another directory inside of `icj`.
+1. Cool, let's make another directory inside of `icj`.
 
 `$ mkdir icj/newdirectory`
 
-- Now you can do an `ls` on icj folder to see what is inside it.
+1. Now you can do an `ls` on icj folder to see what is inside it.
 
 `$ ls icj`
 
@@ -242,11 +242,11 @@ You have listed the contents of the `icj` directory without being inside of it. 
 
 If you try to name a directory with a **space** in it, you'll not get what you want unless you put quotes around it. Because of this, I avoid using spaces in files and folders and use `-` or `_` instead. I avoid capitalization, too, because our folders become url names and sometimes caps mess it up, especially on PCs.
 
-- Now, let's go inside the `icj` folder:
+1. Now, let's go inside the `icj` folder:
 
 `$ cd icj`
 
-- Let's see what is inside:
+1. Let's see what is inside:
 
 `$ ls`
 

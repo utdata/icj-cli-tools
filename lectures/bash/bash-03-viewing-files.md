@@ -10,19 +10,19 @@ Let's learn some more command-line juju for working with files. These commands w
 
 Let's make sure we are in our class folder. (This is review from [Moving Around](02-bash-moving-around.md)).
 
-- Make sure you are in your icj project folder:
+1. Make sure you are in your icj project folder:
 
 ``` bash
 $ cd ~/Documents/icj
 ```
 
-- Create a new folder called `myproject`:
+1. Create a new folder called `myproject`:
 
 ```bash
 mkdir myproject
 ```
 
-- Use `cd` to move inside the myproject folder then use `pwd` to make sure you are in the right place. The result should be something like this:
+1. Use `cd` to move inside the myproject folder then use `pwd` to make sure you are in the right place. The result should be something like this:
 
 ```bash
 Users/ccm346/Documents/icj/myproject
