@@ -1,5 +1,10 @@
 # Introduction to command-line interface tools
 
+::: callout-important
+This repo has been archived and the content inserted into the [Intro to Coding for Journalists](https://github.com/utdata/icj-class).
+:::
+----
+
 This lesson is a beginner's guide to using a command-line interface tools for coding and data-journalism. It is designed for students who may have never used a terminal program before but are taking my [Intro to Coding for Journalists](https://github.com/utdata/icj-class) class.
 
 I use a Mac, and there are some differences for Windows users. The first major difference is Windows users have to install Git (and Git Bash, which comes with it) before we can go much further.
